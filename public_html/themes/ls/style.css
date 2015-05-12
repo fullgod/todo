@@ -14,8 +14,6 @@ body {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 100%;
 	outline: 0 none;
-	padding-left: 20%;
-	padding-right: 20%;
 	vertical-align: baseline;
 }
 .clear {
@@ -443,7 +441,6 @@ h2 {
 	font-size: 1.5em;
 	float: left;
 	padding-right: 10px;
-	background-color: #ffffff;
 }
 h3 {
     border-bottom: 2px solid #B5D5FF;

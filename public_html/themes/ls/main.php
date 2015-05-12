@@ -1,10 +1,4 @@
 <div id="sidebar" class="with">
-  <div class="access">
-  <a href="http://content.the-design.org/todo/"><h2><?php mttinfo('title'); ?></h2></a> 
-  </div>  
-  <div class="access">
-  <a href="http://content.the-design.org/"><h2>БЛОГ</h2></a> 
-  </div>
   <div class="mainNav">
   <center><div id="loading"></div></center>
   <ul class="nav">
@@ -56,7 +50,7 @@
         <div class="list-action"></div>
       </a>
     </div>
-    <!--
+    
     
     <div class="widget">
     <div class="whead">
@@ -96,7 +90,7 @@
     <div class="clear"></div>
     </div>
     </div>
-        -->
+      
     <!--
     
     <div id="slmenucontainer" class="mtt-menu-container">
