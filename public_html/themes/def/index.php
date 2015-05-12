@@ -1,164 +1,100 @@
-<<<<<<< HEAD
-<div id="sidebar" class="with">
-  <div class="mainNav">
-  <center><div id="loading"></div></center>
-  <ul class="nav">
-    <li>
-    <a class="active" title="" href="#settings">
-    <img alt="" src="<?php mttinfo('template_url'); ?>images/icon_forms.png">
-    <span>
-      <a id="settings"><?php _e('a_settings');?></a>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a class="active" id="tagcloudbtn">
-    <img alt="" src="<?php mttinfo('template_url'); ?>images/menu_tag.png">
-    <span>Темы</a></span>
-    </a></li>
-  </ul>
-        <div id="tagcloud" style="display:none">
-        <a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
-        <div id="tagcloudload"></div>
-        <div id="tagcloudcontent"></div>
-      </div>
-  </div>
-  <div class="secNav">    
-  <div class="center">
-      <span class="mtt-notes-showhide">
-      <?php _e('notes');?> <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a>
-      </span>
+<?php header("Content-type: text/html; charset=utf-8"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php mttinfo('title'); ?></title>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style.css?v=<?php echo Config::get('version'); ?>" media="all" />
+<?php if(Config::get('rtl')): ?>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style_rtl.css?=<?php echo Config::get('version'); ?>" media="all" />
+<?php endif; ?>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>print.css?v=<?php echo Config::get('version'); ?>" media="print" />
+</head>
 
-    </div>
-  <ul class="middleNavR">
-    <li>
-    <div class="mtt-tabs-add-button">
-    <a class="tipN" href="#">
-    <img alt="<?php _e('list_new'); ?>" src="<?php mttinfo('template_url'); ?>images/add.png" title="<?php _e('list_new'); ?>"><span></span>
-    </a></div>
-    </li>         
-    <li>
-          <div>
-          <a><span id="taskview" class="mtt-menu-button">
-          <span id="total">0</span>
-          </span></a></div>
-    </li>
-  </ul>
+<body>
+<link href="<?php mttinfo('template_url'); ?>/images/logo32x32.png" rel="shortcut icon apple-touch-icon" />
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/jquery/jquery-ui-1.8.7.custom.min.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/jquery/jquery.autocomplete-1.1.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/mytinytodo.js?v=<?php echo Config::get('version'); ?>"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/mytinytodo_lang.php?v=<?php echo Config::get('version'); ?>"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/mytinytodo_ajax_storage.js?v=<?php echo Config::get('version'); ?>"></script>
 
-    <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
-      <a class="sideB bLightBlue" href="#alltasks">
-        <span><?php _e('alltasks'); ?></span>
-        <div class="list-action"></div>
-      </a>
-    </div>
-    <!--
-    
-    <div class="widget">
-    <div class="whead">
-      <h6>Website statistics</h6>
-      <div class="titleOpt">
-        <a data-toggle="dropdown" href="#">
-        <span class="iconb" data-icon=""></span>
-        <span class="clear"></span>
-        </a>
-        <ul class="dropdown-menu pull-right">
-          <li>
-          <a class="" href="#">
-          <span class="icon-plus"></span>
-          Add
-          </a>
-          </li>
-          <li>
-          <a class="" href="#">
-          <span class="icon-remove"></span>
-          Remove
-          </a>
-          </li>
-          <li>
-          <a class="" href="#">
-          <span class="icon-pen_alt2"></span>
-          Edit
-          </a>
-          </li>
-          <li>
-          <a class="" href="#">
-          <span class="icon-heart"></span>
-          Do whatever you like
-          </a>
-          </li>
-          </ul>
-      </div>
-    <div class="clear"></div>
-    </div>
-    </div>
-        -->
-    <!--
-    
-    <div id="slmenucontainer" class="mtt-menu-container">
-    <ul>
-     <li id="slmenu_list:-1" class="list-id--1 mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>><div class="menu-icon"></div><a href="#alltasks"><?php _e('alltasks'); ?></a></li>
-     <li class="mtt-menu-delimiter slmenu-lists-begin mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>></li>
-    </ul>
-    </div>
-    
-    
-    -->
-    <span id="bar_auth">
-    <span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
-      <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
-      <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
-    </span>
-    <div class="divider"><span></span></div>
-    <!--
-    <div class="sidePad">
-      <div class="searchLine">
-      <form action="">
-      <input class="ac ui-autocomplete-input" type="text" placeholder="Enter search text..." name="search" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-      <button value="" name="find" type="submit">
-      <span class="icos-search"></span>
-      </button>
-      </form>
-      </div>
-    </div>
-    <div class="divider"><span></span></div>
-    
-    -->   
-    <div id="lists" class="item_list">
-      <ul class="mtt-tabs"></ul>
-      <div id="tabs_buttons">
-      <div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>"><span><a class="sideB bLightBlue" title="Ещё">Ещё</a></span>
-      </div>
-      
-      </div>
-    </div>  
-    <div id="slmenucontainer" class="mtt-menu-container projects-block" style="display:none">
-      <ul>
-       <li id="slmenu_list:-1" class="list-id--1 mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>><div class="menu-icon"></div><a href="#alltasks"><?php _e('alltasks'); ?></a></li>
-       <li class="mtt-menu-delimiter slmenu-lists-begin mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>></li>
-      </ul>
-    </div>
-    <div class="divider"><span></span></div>
-    
-    <div class="sidePad">
-      <a href="http://www.free-lance.ru/users/the-design/"><img src="<?php mttinfo('template_url'); ?>images/free-lance.bmp"></a>
-      </div>
-    <div class="divider"><span></span></div>
-  </div>
-</div>
-=======
->>>>>>> origin/master
+<script type="text/javascript">
+$().ready(function(){
+	mytinytodo.mttUrl = "<?php mttinfo('mtt_url'); ?>";
+	mytinytodo.templateUrl = "<?php mttinfo('template_url'); ?>";
+	mytinytodo.db = new mytinytodoStorageAjax(mytinytodo);
+	mytinytodo.init({
+		needAuth: <?php echo $needAuth ? "true" : "false"; ?>,
+		isLogged: <?php echo ($needAuth && is_logged()) ? "true" : "false"; ?>,
+		showdate: <?php echo (Config::get('showdate')) ? "true" : "false"; ?>,
+		singletab: <?php echo (isset($_GET['singletab'])) ? "true" : "false"; ?>,
+		duedatepickerformat: "<?php echo htmlspecialchars(Config::get('dateformat2')); ?>",
+		firstdayofweek: <?php echo (int) Config::get('firstdayofweek'); ?>,
+		autotag: <?php echo Config::get('autotag') ? "true" : "false"; ?>
+		<?php if(isset($_GET['list'])) echo ",openList: ". (int)$_GET['list']; ?>
+	}).loadLists(1);
+});
+</script>
+
+<div id="wrapper">
 <div id="container">
 <div id="mtt_body">
-<center><div id="loading"></div></center>
-<div id="bar"><div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div></div>
+
+<h2><?php mttinfo('title'); ?></h2>
+
+<div id="loading"></div>
+
+<div id="bar">
+ <div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div>
+ <div class="bar-menu">
+ <span class="menu-owner" style="display:none">
+   <a href="#settings" id="settings"><?php _e('a_settings');?></a>
+ </span>
+ <span class="bar-delim" style="display:none"> | </span>
+ <span id="bar_auth">
+  <span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
+  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
+  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
+ </span>
+ </div>
+</div>
+
+<br clear="all" />
+
 <div id="page_tasks" style="display:none">
+
+<div id="lists">
+ <ul class="mtt-tabs"></ul>
+ <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span></div>
+ <div id="tabs_buttons">
+  <div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>"><span></span></div>
+ </div>
+ <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden"><a href="#alltasks"><span><?php _e('alltasks'); ?></span><div class="list-action"></div></a></div>
+</div>
+
+
+
 <div id="toolbar" class="mtt-htabs">
+
+<div id="htab_search">
+ <table class="mtt-searchbox"><tr><td>
+  <div class="mtt-searchbox-c">
+   <input type="text" name="search" value="" maxlength="250" id="search" autocomplete="off" />
+   <div class="mtt-searchbox-icon mtt-icon-search"></div>
+   <div id="search_close" class="mtt-searchbox-icon mtt-icon-cancelsearch"></div>
+  </div> 
+ </td></tr></table>
+</div>
+
 <div id="htab_newtask">
  <table class="mtt-taskbox"><tr><td class="mtt-tb-cell">
   <div class="mtt-tb-c">
    <form id="newtask_form" method="post">
     <label id="task_placeholder" class="placeholding" for="task">
      <input type="text" name="task" value="" maxlength="250" id="task" autocomplete="off" />
+     <span><?php _e('htab_newtask');?></span>
     </label>
     <div id="newtask_submit" class="mtt-taskbox-icon mtt-icon-submittask" title="<?php _e('btn_add');?>"></div>
    </form>
@@ -174,17 +110,24 @@
 
 </div>
 
+
+<h3>
+<span id="taskview" class="mtt-menu-button"><span class="btnstr"><?php _e('tasks');?></span> (<span id="total">0</span>) <span class="arrdown"></span></span>
+<span class="mtt-notes-showhide"><?php _e('notes');?> <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a></span>
 <span id="mtt_filters"></span>
+<span id="tagcloudbtn" class="mtt-menu-button"><?php _e('tagcloud');?> <span class="arrdown2"></span></span>
+</h3>
 
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
 </div>
+
 </div> <!-- end of page_tasks -->
 
 
 <div id="page_taskedit" style="display:none">
 
-<div class="mtt-back-button"><a href="#" class="mtt-back-button"><?php _e('go_back');?></a></div>
+<div><a href="#" class="mtt-back-button"><?php _e('go_back');?></a></div>
 
 <h3 class="mtt-inadd"><?php _e('add_task');?></h3>
 <h3 class="mtt-inedit"><?php _e('edit_task');?>
@@ -251,6 +194,12 @@
 </ul>
 </div>
 
+<div id="tagcloud" style="display:none">
+ <a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
+ <div id="tagcloudload"></div>
+ <div id="tagcloudcontent"></div>
+</div>
+
 
 <div id="listmenucontainer" class="mtt-menu-container" style="display:none">
 <ul>
@@ -309,6 +258,15 @@
  <li class="mtt-menu-delimiter slmenu-lists-begin mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>></li>
 </ul>
 </div>
+
 <div id="page_ajax" style="display:none"></div>
+
 </div>
+<div id="space"></div>
 </div>
+
+<div id="footer"><div id="footer_content">Powered by <strong><a href="http://www.mytinytodo.net/">myTinyTodo</a></strong> <?php echo Config::get('version'); ?> </div></div>
+
+</div>
+</body>
+</html>

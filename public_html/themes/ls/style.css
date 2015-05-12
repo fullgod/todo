@@ -14,8 +14,11 @@ body {
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 100%;
 	outline: 0 none;
+<<<<<<< HEAD
 	padding-left: 30%;
 	padding-right: 30%;
+=======
+>>>>>>> origin/master
 	vertical-align: baseline;
 }
 .clear {
@@ -51,10 +54,7 @@ img {
 	z-index: 99;
 }
 .secNav {
-	padding-left: 100px;
 	padding-top: 0px;
-	position: relative;
-	z-index: 98;
 }
 
 .nav {
@@ -68,6 +68,8 @@ img {
 	border-top: 1px solid #555555;
 	position: relative;
 	padding-top: 10px;
+	text-align: center;
+	margin: auto;
 }
 .nav li a,
 .nav li a.active {
@@ -84,8 +86,6 @@ img {
 .nav li a {
 	display: block;
 	font-size: 11px;
-	padding: 0px 0px 8px;
-	width: 100px;
 }
 .nav li a.active img,
 .nav li a:hover img {
@@ -281,31 +281,12 @@ img {
 	border-width: 1px medium;
 	margin-top: 0;
 }
-.secNav .whead {
-	border-radius: 0 0 0 0;
-	box-shadow: 0 1px 0 #F2F2F2;
-}
-.secNav .whead h6 {
-	padding: 8px 12px 7px;
-}
-.secNav .widget .body {
-	padding: 10px 12px;
-}
 .widget {
 	background: none repeat scroll 0 0 #F7F7F7;
-	border: 1px solid #CDCDCD;
-	border-radius: 3px 3px 3px 3px;
-	box-shadow: 0 2px 2px -2px #CCCCCC;
-	margin-top: 35px;
-	position: relative;
 }
 
 .widget > [class*="whead"] {
 	border-bottom: 1px solid #CDCDCD;
-	box-shadow: 0 1px 0 #FFFFFF;
-	position: relative;
-	text-shadow: 0 1px #FFFFFF;
-	height: 35px;
 }
 
 .whead {
@@ -323,9 +304,10 @@ img {
 	padding: 8px 14px 7px;
 }
 .titleOpt {
-	float: right;
-	font-size: 11px;
+	float: left;
+	font-size: 12px;
 	font-weight: bold;
+	padding: 0px 20px;
 }
 .titleOpt > a {
 	border-left: 1px solid #C3C3C3;
@@ -398,7 +380,6 @@ img {
 	background: none repeat scroll 0 0 #F5F5F5;
 }
 #container {
-	margin-left: 327px;
 	position: relative;
 	min-height: 100%;
 	height: 100%;
@@ -443,7 +424,6 @@ h2 {
 	font-size: 1.5em;
 	float: left;
 	padding-right: 10px;
-	background-color: #ffffff;
 }
 h3 {
     border-bottom: 2px solid #B5D5FF;
@@ -1384,12 +1364,6 @@ a.mtt-back-button {
 }
 
 #taskview {
-    border-radius: 50% 50% 50% 50%;
-    color: #999999;
-    font-size: 32px;
-    padding: 15px;
-    position: relative;
-    top: 21%;
 }
 
 .ui-datepicker {
@@ -1495,10 +1469,8 @@ a.mtt-back-button {
 }
 .mtt-menu-button:hover,
 .mtt-menu-button.mtt-menu-button-active {
-	border: 1px solid #ccc;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	border-radius: 3px;
 }
 
 .mtt-menu-container {
