@@ -21,6 +21,6 @@ $config['clock'] = 24;
 $config['dateformat'] = 'd F Y';
 $config['dateformat2'] = 'd/m/y';
 $config['dateformatshort'] = 'j M';
-$config['template'] = 'default';
+$config['template'] = 'ls';
 $config['showdate'] = 1;
 ?>

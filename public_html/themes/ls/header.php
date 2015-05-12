@@ -13,9 +13,18 @@
 <meta name="viewport" id="viewport" content="width=device-width" />
 <link rel="stylesheet/less" type="text/css" href="<?php mttinfo('template_url'); ?>less/bootstrap.less" />
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/less-1.7.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style.css?v=1.4.2" media="all" />
+<?php if(Config::get('rtl')): ?>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style_rtl.css?v=1.4.2" media="all" />
+<?php endif; ?>
 </head>
 <body>
-
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>jquery/jquery-ui-1.8.7.custom.min.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>jquery/jquery.autocomplete-1.1.js"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>mytinytodo.js?v=1.4.2"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>mytinytodo_lang.php?v=1.4.2"></script>
+<script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>mytinytodo_ajax_storage.js?v=1.4.2"></script>
 <script type="text/javascript">
 $().ready(function(){
 
