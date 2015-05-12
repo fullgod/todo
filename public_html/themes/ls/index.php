@@ -7,10 +7,11 @@
         <div class="col-sm-3 col-md-2 sidebar">
         	<?php include ($template.'sidebar.php');?>
         </div>
+        <!--
         <div class="col-sm-3 col-md-2 sidebar">
           <?php include ($template.'sidebar2.php');?>
-        </div>
-      	<div class="col-sm-6 col-md-8 main">
+        </div> -->
+      	<div class="col-sm-12 col-md-12 main">
           <center><div id="loading"></div></center>
         	<?php include ($template.'main.php');?>
         </div>
