@@ -3,12 +3,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php mttinfo('title'); ?></title>
 <meta name="viewport" id="viewport" content="width=device-width" />
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link rel="stylesheet/less" type="text/css" href="<?php mttinfo('template_url'); ?>less/bootstrap.less" />
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/less-1.7.0.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style.css" media="all" />
-<?php if(Config::get('rtl')): ?>
-<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style_rtl.css" media="all" />
-<?php endif; ?>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>css/animation.css" media="all" />
+<!--[if IE 7]><link rel="stylesheet" href="css/todo-ico-ie7.css"><![endif]-->
 </head>
 <body>
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>jquery/jquery-1.4.4.min.js"></script>
