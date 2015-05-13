@@ -1,7 +1,8 @@
 <div id="container">
 <div id="mtt_body">
   <div class="topbar">
-    <div id="toolbar" class="mtt-htabs">
+    <div id="toolbar">
+    <div class="header-left">
     <div id="htab_newtask">
        <table class="mtt-taskbox"><tr><td class="mtt-tb-cell">
         <div class="mtt-tb-c">
@@ -34,11 +35,11 @@
 </div>
 
 <span id="mtt_filters"></span>
-
+<!--
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
 </div>
-</div> <!-- end of page_tasks -->
+</div>  end of page_tasks -->
 
 
 <div id="page_taskedit" style="display:none">
