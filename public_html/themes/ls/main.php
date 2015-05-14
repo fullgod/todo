@@ -11,6 +11,7 @@
 
 
 
+ <!--
                     <div class="mtt-tb-c">
                         <form id="newtask_form" method="post">
 
@@ -19,20 +20,22 @@
                                 <span>New task</span>
                             </label>
 
+                            <div id="newtask_submit" class="mtt-taskbox-icon mtt-icon-submittask" title="Add"></div>
+                        </form>
+                    </div>
+                    <a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a>
+                </div>
 
-            <a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a>
-        </div>
-
-        <div class="append-icon">
-          <input id="email-search" class="form-control form-white pull-right" type="text" placeholder="Search...">
-          <i class="icon-magnifier"></i>
-        </div>
-
-    </div>
+-->
 
 
-    <div class="header-right">
-        <!--
+                <div class="append-icon">
+                    <input id="email-search" class="form-control form-white pull-right" type="text" placeholder="Search...">
+                    <i class="icon icon-list-add">&#xe847;</i>
+                </div>
+
+
+
 
 
 
