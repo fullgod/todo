@@ -1,25 +1,68 @@
 <div id="container">
 <div id="mtt_body">
+
+
+
   <div class="topbar">
-    <div id="toolbar">
-    <div class="header-left">
-    <div id="htab_newtask">
-       <table class="mtt-taskbox"><tr><td class="mtt-tb-cell">
-        <div class="mtt-tb-c">
-         <form id="newtask_form" method="post">
-          <label id="task_placeholder" class="placeholding" for="task">
-           <input type="text" name="task" value="" maxlength="250" id="task" autocomplete="off" />
-          </label>
-          <div id="newtask_submit" class="mtt-taskbox-icon mtt-icon-submittask" title="<?php _e('btn_add');?>"></div>
-         </form>
+    
+      <div id="toolbar" class="header-left col-sm-6 col-md-6">
+       
+        <div id="htab_newtask">
+
+
+
+
+<div class="mtt-tb-c">
+  <form id="newtask_form" method="post">
+    
+    <label id="task_placeholder" class="placeholding" for="task">
+      <input id="task" type="text" autocomplete="off" maxlength="250" value="" name="task">
+      <span>New task</span>
+    </label>
+    
+    <div id="newtask_submit" class="mtt-taskbox-icon mtt-icon-submittask" title="Add"></div>
+  </form>
+</div>
+
+
+
+
+            <a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a>
         </div>
-       </td>
-       <td><a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a></td>
-       </tr>
-       </table>
+
+        <div class="append-icon">
+          <input id="email-search" class="form-control form-white pull-right" type="text" placeholder="Search...">
+          <i class="icon-magnifier"></i>
+        </div>
+
     </div>
+
+
+    <div class="header-right">
+        <!--
+        111
+          <div id="htab_search">
+           <table class="mtt-searchbox"><tr><td>
+            <div class="mtt-searchbox-c">
+             <input type="text" name="search" value="" maxlength="250" id="search" autocomplete="off" />
+             <div class="mtt-searchbox-icon mtt-icon-search"></div>
+             <div id="search_close" class="mtt-searchbox-icon mtt-icon-cancelsearch"></div>
+            </div> 
+           </td></tr></table>
+          </div>
+        222
+-->
+    </div>
+
   </div>
-  </div>
+
+
+
+
+
+
+
+
 <center><div id="loading"></div></center>
 <div id="bar"><div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div></div>
 
