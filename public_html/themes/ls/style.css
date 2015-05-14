@@ -19,6 +19,7 @@ body {
     height: 100%;
     line-height: 1.42857;
     margin: 0;
+	font-size: 14px;
 }
 .sidebar {
     bottom: 0;
@@ -131,7 +132,6 @@ textarea, select {
 }
 form {
 	display: inline;
-	width: 100%;
 }
 h2, h3 {
 	margin: 0;
@@ -454,14 +454,13 @@ a {
 
 
 #toolbar > div {
-    padding: 5px 10px;
+    padding: 5px 0px;
 }
 .mtt-tb-c {
     padding-left: 22px;
     position: relative;
 }
 #task_placeholder  {
-	 width: 100%;
 }
 #task_placeholder span {
     color: #ccc;
@@ -511,13 +510,95 @@ a {
     box-shadow: none;
     outline: medium none !important;
 }
+
+.append-icon {
+    position: relative;
+}
+
+.form-control {
+    background-color: #ecedee;
+    border: 1px solid #ecedee;
+    border-radius: 2px;
+    box-shadow: none !important;
+    color: #555555;
+    display: inline-block;
+    font-size: 13px;
+    height: auto;
+    line-height: 20px;
+    padding: 6px 12px 6px;
+    transition: all 0.2s ease-out 0s;
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid #ecedee;
+    font-size: 18px;
+    font-size: 14px;
+}
+.form-control:-moz-placeholder {
+    color: #b5b5b5;
+}
+.form-control::-moz-placeholder {
+    color: #b5b5b5;
+}
+.form-control:focus {
+    background-color: #e9ebef !important;
+    border: 1px solid #cfd2d6;
+    box-shadow: none;
+    outline: medium none !important;
+}
+.form-control[class*="bg-"] {
+    color: #121212 !important;
+}
+.form-control[class*="bg-"]:-moz-placeholder {
+    color: #eeeeee;
+}
+.form-control[class*="bg-"]::-moz-placeholder {
+    color: #eeeeee;
+}
+.form-control.form-white {
+    background-color: #ffffff;
+    border: 3px solid #ecedee;
+    color: #555555;
+}
+.form-control.form-white:hover {
+    background-color: #ffffff !important;
+    border: 3px solid #c5c8cb;
+    color: #555555;
+    outline: medium none;
+}
+.form-control.form-white:focus {
+    background-color: #ffffff !important;
+    border: 3px solid #c5c8cb;
+    color: #555555;
+    outline: medium none;
+}
+.form-control.form-white:visited {
+    background-color: #ffffff !important;
+    border: 3px solid #c5c8cb;
+    color: #555555;
+    outline: medium none;
+}
+
+.append-icon i {
+    font-size: 40px;
+}
+.append-icon i {
+    color: rgba(27, 30, 37, 0.3);
+    left: auto;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+
 .center{
 	text-align:center;
 	padding-top: 5px;
 }
 .mtt-taskbox-icon {
     height: 16px;
-    margin-top: -8px;
+    margin-top: -5px;
     position: absolute;
     top: 50%;
     width: 16px;
