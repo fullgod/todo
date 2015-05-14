@@ -2,7 +2,6 @@
     <div id="mtt_body">
 
 
-
         <div class="topbar">
 
             <div id="toolbar" class="header-left col-sm-6 col-md-6">
@@ -27,21 +26,23 @@
                 </div>
 
 -->
+ <form id="newtask_form" method="post">
 
+                <label id="task_placeholder" class="placeholding" for="task">
 
                 <div class="append-icon">
-                    <input id="email-search" class="form-control form-white pull-right" type="text" placeholder="Search...">
-                    <i class="icon icon-list-add">&#xe847;</i>
+                    <input id="task" class="form-control form-white" type="text" autocomplete="off" maxlength="250"  placeholder="Новая задача">
+                    <i id="newtask_submit" class="icon icon-list-add" title="Add">&#xe847;</i>
                 </div>
+                </label>
+ </form>
 
-
-
-
+</div>
 
 
 
             </div>
-
+<div class="header-left"><a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a></div>
 
             <div class="header-right">
                 <!--
