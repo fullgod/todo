@@ -71,7 +71,7 @@
 <!--Создание задачи-->
 
         <div id="page_taskedit" style="display:none">
-
+http://themes-lab.com/make/admin/layout2/forms-wizard.html
             <div class="mtt-back-button">
                 <a href="#" class="mtt-back-button">
                     <?php _e( 'go_back');?>
