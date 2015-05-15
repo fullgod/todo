@@ -13,9 +13,9 @@
 	font-size: 11px;
 }
 body {
-	background: url("images/sidebar.jpg") repeat scroll 0 0 transparent;
+	background: none repeat scroll 0 0 #f5f5f5;
     color: #5b5b5b;
-    font-family: "Lato","Open Sans",Helvetica,sans-serif !important;
+    font-family: Helvetica !important;
     height: 100%;
     line-height: 1.42857;
     margin: 0;
@@ -34,13 +34,22 @@ body {
 .sidebar .logopanel {
     height: 50px;
     left: 0;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     right: auto;
     top: 0;
     transition: color 0.2s ease-out 0s;
     width: 240px;
     z-index: 2;
+	background: none repeat scroll 0 0 #181a1d;
+	box-shadow: 0px 3px 3px #fff;
+}
+.sidebar .logopanel h1{
+	font-family: "Lato","Open Sans",Helvetica,sans-serif !important;
+	font-size: 35px;
+
+	font-weight: bold;
+	text-align: center;
 }
 .sidebar .sidebar-inner {
     height: 100%;
@@ -77,13 +86,11 @@ body {
     background-color: #373a41;
     text-decoration: none;
 }
-
 .main {
     background: none repeat scroll 0 0 #f5f5f5;
     margin-left: 240px;
     min-height: 750px;
 }
-
 .topbar {
 	background: none repeat scroll 0 0 #0000;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
@@ -96,20 +103,30 @@ body {
 .topbar {
     height: 50px;
 }
-
 .topbar::after {
     clear: both;
     content: "";
     display: block;
 }
-
-
 .topbar .header-left {
     float: left;
 }
 .topbar .header-right {
     float: right;
 }
+.main-content {
+    background: none repeat scroll 0 0 #f5f5f5;
+    margin-top: 50px;
+    overflow: hidden;
+    padding: 20px 50px 0;
+    position: relative;
+}
+.main-content::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .nav {
 	border-top: 1px solid #2e2e2e;
 	list-style: outside none none;
@@ -120,12 +137,10 @@ body {
 	text-align: center;
 }
 
-#container {
-}
+
 
 
 form {
-	display: inline;
 }
 .access {
 	list-style-type: none;
@@ -396,27 +411,6 @@ a {
 	visibility: hidden;
 }
 
-.mtt-img-button {
-	width: 16px;
-	height: 16px;
-	padding: 0px 0 0 10px;
-	border: 1px solid transparent;
-	display: inline-block;
-	margin-top: 8px;
-}
-.mtt-img-button:hover {
-	border: 1px solid #ccc;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-.mtt-img-button span {
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-top: 0;
-}
-
 .arrdown {
 	display: inline-block;
 	height: 7px;
@@ -518,74 +512,58 @@ label#task_placeholder{
     position: relative;
 }
 .append-icon i {
-    font-size: 40px;
+    font-size: 25px;
 }
 .append-icon i {
     color: rgba(27, 30, 37, 0.3);
     left: auto;
-    line-height: 40px;
+    line-height: 37px;
     position: absolute;
-    right: 0;
+    right: 10px;
     text-align: center;
     top: 0;
 }
-
+#newtask_adv i {
+	padding-top: 5px 0;
+	padding: 10px 0;
+	font-size: 30px;
+}
 
 .center{
 	text-align:center;
 	padding-top: 5px;
 }
-.mtt-taskbox-icon {
-    height: 16px;
-    margin-top: -5px;
-    position: absolute;
-    top: 50%;
-    width: 16px;
-}
-.mtt-taskbox-icon.mtt-icon-submittask {
-	background: url(images/mzl.png) 0px -32px no-repeat;
-}
 
-#newtask_adv span {
-	background: url("images/buttons.png") no-repeat scroll 0 -48px transparent;
-}
-#newtask_adv:hover span {
-	background-position: -16px -48px;
-}
 #mtt_body.show-all-tasks #htab_newtask,
 #mtt_body.readonly #htab_newtask {
 	display: none;
 }
 
 
-/* Live Search */
+
+/* Search */
+
 #htab_search {
-	float: right;
+	padding: 6px 10px;
 }
 #search {
 	color: #444444;
-	background: #fff;
-	height: 1.35em;
-	padding: 2px 18px;
-	width: 100%;
-	margin-left: -38px;
+	width: auto;
+	margin-left: -45px;
 	/*padding border*/
- border: 1px inset #F0F0F0;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	padding-left: 30px;
 }
 #search_close {
 	display: none;
 }
 
-.mtt-searchbox td {
-	padding: 0px;
-	width: 180px;
-}
+
 .mtt-searchbox-c {
 	position: relative;
-	padding-left: 38px;
+	padding-left: 40px;
 	/*input padding border*/ ;
 }
 .mtt-searchbox-icon {
@@ -602,7 +580,7 @@ label#task_placeholder{
 }
 .mtt-searchbox-icon.mtt-icon-cancelsearch {
 	background: url(images/mzl.png) 0px 0px no-repeat;
-	right: 4px;
+	right: 12px;
 }
 
 #searchbar {
@@ -615,8 +593,14 @@ label#task_placeholder{
 	font-weight: bold;
 }
 
-
 /* */
+form#taskedit_form {
+	background: #fff;
+	padding: 20px;
+}
+
+
+
 #mtt_body.no-lists #page_tasks h3 > * {
 	visibility: hidden;
 }
@@ -873,7 +857,6 @@ li.task-completed .task-note-block .task-note {
 	width: 500px;
 	color: #444444;
 	border: 1px solid #C3CBD3;
-    border-radius: 5px 5px 5px 5px;
 }
 .in100 {
 	width: 100px;
@@ -916,21 +899,17 @@ li.task-completed .task-note-block .task-note {
 .task-prio.prio-zero {
 	display: none;
 }
-
 .form-row {
-	margin: 2%;
+	padding: 10px 0;
 }
-.form-row .h {
-	font-weight: bold;
-	color: #333333;
-	padding: 10px;
-	font-size: 12px;
+
+/*Task edit*/
+
+#page_taskedit {
 }
-.form-row-short-end {
-	clear: both;
-}
+
 #page_taskedit .form-row .in500 {
-	width: 90%;
+	width: 100%;
 	padding: 10px;
 	font: 11px;
 }
@@ -938,12 +917,9 @@ li.task-completed .task-note-block .task-note {
 	height: 200px;
 	/*resize:none;*/ ;
 }
-#page_taskedit .form-row-short {
-	float: left;
-	margin-right: 12px;
-}
 #page_taskedit .form-bottom-buttons {
-	text-align: center;
+	text-align: left;
+	padding: 20px 0px;
 }
 #alltags .tag {
 	font-weight: bold;
@@ -964,6 +940,11 @@ li.task-completed .task-note-block .task-note {
 #page_taskedit.mtt-inedit .mtt-inadd {
 	display: none;
 }
+.mtt-inadd h3, .mtt-inadd h3 {
+	font-size: 28px;
+	padding: 0 0 20px;
+	color: #00a2d9;
+}
 #taskedit-date {
 	font-size: 1em;
 	font-weight: normal;
@@ -972,22 +953,11 @@ li.task-completed .task-note-block .task-note {
 	margin-left: 8px;
 }
 .mtt-back-button {
- float:left;
- padding: 10px;
+	padding: 10px 30px;
 }
-a.mtt-back-button {
+.mtt-back-button a {
 	font-size: 0.8em;
-	background: -moz-linear-gradient(center top , #5BA5CB 0%, #3A70AB 100%) repeat scroll 0 0 transparent;
-    border: 1px solid #3E76AF;
-    box-shadow: 0 1px 2px 0 #66B2D2 inset;
-	border-radius: 2px 2px 2px 2px;
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 14px;
-    text-shadow: 0 -1px #6F6F6F;
-	   padding: 7px 15px;
+    font-size: 16px;
 }
 
 /* autocomplete */

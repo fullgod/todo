@@ -1,67 +1,50 @@
-<div id="container">
     <div id="mtt_body">
 
 
         <div class="topbar">
 
             <div id="toolbar" class="header-left col-sm-6 col-md-6">
-
                 <div id="htab_newtask">
-
-
-
- <!--
-                    <div class="mtt-tb-c">
-                        <form id="newtask_form" method="post">
-
-                            <label id="task_placeholder" class="placeholding" for="task">
-                                <input id="task" type="text" autocomplete="off" maxlength="250" value="" name="task">
-                                <span>New task</span>
-                            </label>
-
-                            <div id="newtask_submit" class="mtt-taskbox-icon mtt-icon-submittask" title="Add"></div>
-                        </form>
-                    </div>
-                    <a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a>
+                    <form id="newtask_form" method="post">
+                        <label id="task_placeholder" class="placeholding" for="task">
+                          <div class="append-icon">
+                            <input id="task" class="form-control form-white" type="text" autocomplete="off" maxlength="250"  placeholder="Новая задача">
+                            <i id="newtask_submit" class="icon icon-list-add" title="Add">&#xe847;</i>
+                          </div>
+                        </label>
+                    </form>
                 </div>
-
--->
- <form id="newtask_form" method="post">
-
-                <label id="task_placeholder" class="placeholding" for="task">
-
-                <div class="append-icon">
-                    <input id="task" class="form-control form-white" type="text" autocomplete="off" maxlength="250"  placeholder="Новая задача">
-                    <i id="newtask_submit" class="icon icon-list-add" title="Add">&#xe847;</i>
-                </div>
-                </label>
- </form>
-
-</div>
-
-
-
             </div>
-<div class="header-left"><a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a></div>
+            
+            <div class="header-left">
+              <a href="#" id="newtask_adv" title="<?php _e('advanced_add');?>">
+                  <i class="icon icon-publish">&#xe824;</i>
+              </a>
+            </div>
 
             <div class="header-right">
-                <!--
-        111
-          <div id="htab_search">
-           <table class="mtt-searchbox"><tr><td>
-            <div class="mtt-searchbox-c">
-             <input type="text" name="search" value="" maxlength="250" id="search" autocomplete="off" />
-             <div class="mtt-searchbox-icon mtt-icon-search"></div>
-             <div id="search_close" class="mtt-searchbox-icon mtt-icon-cancelsearch"></div>
-            </div> 
-           </td></tr></table>
-          </div>
-        222
--->
+
+              <div id="htab_search">
+                <div class="mtt-searchbox-c">
+                 <input type="text" name="search" class="form-control form-white" maxlength="250" id="search" autocomplete="off" />
+                 <div class="mtt-searchbox-icon mtt-icon-search"></div>
+                 <div id="search_close" class="mtt-searchbox-icon mtt-icon-cancelsearch"></div>
+                </div> 
+              </div>
+
+              <div id="page_tasks" style="display:none">
+                <div id="searchbar" style="display:none">
+                    <?php _e( 'searching');?> <span id="searchbarkeyword"></span>
+                </div>
+                <div style="clear:both"></div>
+              </div>
+
             </div>
-
         </div>
+        <div class="main-content">
+          
 
+        
 
 
 
@@ -75,16 +58,7 @@
             </div>
         </div>
 
-        <div id="page_tasks" style="display:none">
 
-
-            <div id="searchbar" style="display:none">
-                <?php _e( 'searching');?> <span id="searchbarkeyword"></span>
-            </div>
-
-            <div style="clear:both"></div>
-
-        </div>
 
         <span id="mtt_filters"></span>
         <!--
@@ -94,6 +68,8 @@
 </div>  end of page_tasks -->
 
 
+<!--Создание задачи-->
+
         <div id="page_taskedit" style="display:none">
 
             <div class="mtt-back-button">
@@ -102,18 +78,18 @@
                 </a>
             </div>
 
+            <form id="taskedit_form" name="edittask" method="post">            
             <h3 class="mtt-inadd"><?php _e('add_task');?></h3>
             <h3 class="mtt-inedit"><?php _e('edit_task');?>
- <div id="taskedit-date" class="mtt-inedit">
-  (<span class="date-created" title="<?php _e('taskdate_created');?>"><span></span></span><span class="date-completed" title="<?php _e('taskdate_completed');?>"> &mdash; <span></span></span>)
- </div>
-</h3>
+              <div id="taskedit-date" class="mtt-inedit">
+                (<span class="date-created" title="<?php _e('taskdate_created');?>"><span></span></span><span class="date-completed" title="<?php _e('taskdate_completed');?>"> &mdash; <span></span></span>)
+            </div>
+            </h3>
 
-            <form id="taskedit_form" name="edittask" method="post">
                 <input type="hidden" name="isadd" value="0" />
                 <input type="hidden" name="id" value="" />
                 <div class="form-row form-row-short">
-                    <span class="h"><?php _e('priority');?></span>
+                    <span><?php _e('priority');?></span>
                     <select name="prio">
                         <option value="2">+2</option>
                         <option value="1">+1</option>
@@ -322,5 +298,5 @@
             </ul>
         </div>
         <div id="page_ajax" style="display:none"></div>
-    </div>
-</div>
+      </div>
+  </div>

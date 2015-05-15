@@ -18,7 +18,6 @@
           <?php include ($template.'sidebar2.php');?>
         </div> -->
       	<div class="main">
-          <center><div id="loading"></div></center>
         	<?php include ($template.'main.php');?>
         </div>
 
