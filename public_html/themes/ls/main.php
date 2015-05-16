@@ -41,6 +41,12 @@
 
             </div>
         </div>
+        
+
+
+
+
+
         <div class="main-content">
           
 
@@ -60,25 +66,38 @@
 
 
 
-        <span id="mtt_filters"></span>
-        <!--
+
+<!--Отображение задач по фильтрам (теги..) -->
+  <!--  
+  <span id="mtt_filters"></span>
+-->
+
+
+
+
+
+<!--Отображение задач -->
+
+<!--     
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
 </div>
-</div>  end of page_tasks -->
+</div>  
+-->
 
 
 <!--Создание задачи-->
 
-        <div id="page_taskedit" style="display:none">
-http://themes-lab.com/make/admin/layout2/forms-wizard.html
+    <div id="page_taskedit" style="display:none">
+
+        <form id="taskedit_form" name="edittask" method="post"> 
             <div class="mtt-back-button">
                 <a href="#" class="mtt-back-button">
                     <?php _e( 'go_back');?>
                 </a>
             </div>
 
-            <form id="taskedit_form" name="edittask" method="post">            
+                       
             <h3 class="mtt-inadd"><?php _e('add_task');?></h3>
             <h3 class="mtt-inedit"><?php _e('edit_task');?>
               <div id="taskedit-date" class="mtt-inedit">
@@ -90,7 +109,7 @@ http://themes-lab.com/make/admin/layout2/forms-wizard.html
                 <input type="hidden" name="id" value="" />
                 <div class="form-row form-row-short">
                     <span><?php _e('priority');?></span>
-                    <select name="prio">
+                    <select class="selectpicker" name="prio">
                         <option value="2">+2</option>
                         <option value="1">+1</option>
                         <option value="0" selected="selected">&plusmn;0</option>
@@ -143,7 +162,7 @@ http://themes-lab.com/make/admin/layout2/forms-wizard.html
                 </div>
             </form>
 
-        </div>
+    </div>
 
 
         <!-- end of page_taskedit -->
@@ -298,5 +317,7 @@ http://themes-lab.com/make/admin/layout2/forms-wizard.html
             </ul>
         </div>
         <div id="page_ajax" style="display:none"></div>
+
+
       </div>
   </div>
