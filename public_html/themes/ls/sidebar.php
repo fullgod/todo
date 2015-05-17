@@ -8,9 +8,6 @@
   
   <ul class="nav">
     <li>
-        <a href="#settings" id="settings"><?php _e('a_settings');?></a>
-    </li>
-    <li>
         <a class="active" id="tagcloudbtn"><span>Темы</span></a>
         <div id="tagcloud" style="display:none">
             <a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
@@ -44,7 +41,7 @@
   </ul>
 
   <div class="sidebar-footer">
-      <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">
+      <a href="#settings" id="settings" class="pull-left footer-settings" title="<?php _e('a_settings');?>" data-rel="tooltip">
         <i class="icon icon-cog">&#xe810;</i>
       </a>
       <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">

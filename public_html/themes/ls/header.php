@@ -46,13 +46,8 @@ $().ready(function(){
 		autotag: <?php echo Config::get('autotag') ? "true" : "false"; ?>
 		<?php if(isset($_GET['list'])) echo ",openList: ". (int)$_GET['list']; ?>
 		<?php if(isset($_GET['pda'])) echo ", touchDevice: true"; ?>
-<<<<<<< HEAD
 	})
 	.loadLists(1);
 	});
 </script>
-=======
-	}).loadLists(1);
-});
-</script>
->>>>>>> 6d23e41710348b5ef871d6cb05e549913e42256b
+
