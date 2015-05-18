@@ -1,6 +1,5 @@
     <div id="mtt_body">
 
-
         <div class="topbar">
 
             <div id="toolbar" class="header-left col-sm-6 col-md-6">
@@ -42,39 +41,67 @@
             </div>
         </div>
         
-
-
-
-
-
         <div class="main-content">
-          
+		
+	
+	<div class="row page-settings">
+		<div class="col-sm-4">
+			<span id="bar_auth">
+				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
+				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
+				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
+			</span>
+		</div>
+	</div>
+	
+	<div class="row page-settings">
+		
+		<div class="col-sm-4">
+		    <h6>Текущие задачи</h6>
+			<div class="titleOpt">
+				<a><span id="taskview" class="mtt-menu-button"><span id="total">0</span></span></a>  
+				<div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
+					<a href="#alltasks">
+						<span><?php _e('alltasks'); ?></span>
+						<div class="list-action"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-sm-4">
+			<a class="active" id="tagcloudbtn"><span>Темы</span></a>
+				<div id="tagcloud" style="display:none">
+					<a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
+					<div id="tagcloudload"></div>
+					<div id="tagcloudcontent"></div>
+				</div>
+		</div>		
+		
+		<div class="col-sm-4">
+			<span class="mtt-notes-showhide">
+				<?php _e('notes');?> 
+				<a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / 
+				<a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a>
+			</span>
+		</div>
+	
+	</div>
 
-        
-
-
-
-
-        <center>
-            <div id="loading"></div>
-        </center>
+		
+		
+		
+        <div id="loading" class="center"></div>
         <div id="bar">
             <div id="msg"><span class="msg-text"></span>
                 <div class="msg-details"></div>
             </div>
         </div>
 
-
-
-
 <!--Отображение задач по фильтрам (теги..) -->
   <!--  
   <span id="mtt_filters"></span>
 -->
-
-
-
-
 
 <!--Отображение задач -->
 
@@ -84,7 +111,6 @@
 </div>
 </div>  
 -->
-
 
 <!--Создание задачи-->
 
@@ -164,11 +190,10 @@
 
     </div>
 
+<!-- end of page_taskedit -->
 
-        <!-- end of page_taskedit -->
 
-
-        <div id="authform" style="display:none">
+	<div id="authform" style="display:none">
             <form id="login_form">
                 <div class="h">
                     <?php _e( 'password');?>
@@ -182,14 +207,14 @@
             </form>
         </div>
 
-        <div id="priopopup" style="display:none">
+    <div id="priopopup" style="display:none">
             <span class="prio-neg prio-neg-1">&minus;1</span>
             <span class="prio-zero">&plusmn;0</span>
             <span class="prio-pos prio-pos-1">+1</span>
             <span class="prio-pos prio-pos-2">+2</span>
         </div>
 
-        <div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
+    <div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="view_tasks">
                     <?php _e( 'tasks');?> (<span id="cnt_total">0</span>)</li>
@@ -202,7 +227,7 @@
             </ul>
         </div>
 
-        <div id="listmenucontainer" class="mtt-menu-container" style="display:none">
+    <div id="listmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li class="mtt-need-list mtt-need-real-list" id="btnRenameList">
                     <?php _e( 'list_rename');?>
@@ -255,7 +280,7 @@
             </ul>
         </div>
 
-        <div id="listexportmenucontainer" class="mtt-menu-container" style="display:none">
+    <div id="listexportmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li class="mtt-need-list mtt-need-real-list" id="btnExportCSV">
                     <?php _e( 'list_export_csv');?>
@@ -266,7 +291,7 @@
             </ul>
         </div>
 
-        <div id="taskcontextcontainer" class="mtt-menu-container" style="display:none">
+    <div id="taskcontextcontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="cmenu_edit"><b><?php _e('action_edit');?></b>
                 </li>
@@ -287,7 +312,7 @@
             </ul>
         </div>
 
-        <div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
+    <div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="cmenu_prio:2">
                     <div class="menu-icon"></div>+2</li>
@@ -300,12 +325,12 @@
             </ul>
         </div>
 
-        <div id="cmenulistscontainer" class="mtt-menu-container" style="display:none">
+    <div id="cmenulistscontainer" class="mtt-menu-container" style="display:none">
             <ul>
             </ul>
         </div>
 
-        <div id="slmenucontainer" class="mtt-menu-container" style="display:none">
+    <div id="slmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="slmenu_list:-1" class="list-id--1 mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>>
                     <div class="menu-icon"></div>
@@ -316,8 +341,10 @@
                 <li class="mtt-menu-delimiter slmenu-lists-begin mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>></li>
             </ul>
         </div>
-        <div id="page_ajax" style="display:none"></div>
+        
+	<div id="page_ajax" style="display:none"></div>
 
 
-      </div>
-  </div>
+    </div>
+ 
+ </div>

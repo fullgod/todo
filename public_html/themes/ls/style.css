@@ -21,6 +21,16 @@ body {
     margin: 0;
 	font-size: 14px;
 }
+
+.submit {
+	background: none repeat scroll 0px 0px transparent;
+	font-size: 16px;
+	border-color: rgb(0, 0, 0);
+	color: #000;
+}
+
+/* Sidebar */
+
 .sidebar {
     bottom: 0;
     left: 0;
@@ -86,11 +96,16 @@ body {
     background-color: #373a41;
     text-decoration: none;
 }
+
+
+
 .main {
     background: none repeat scroll 0 0 #f5f5f5;
     margin-left: 240px;
     min-height: 750px;
 }
+
+
 .topbar {
 	background: none repeat scroll 0 0 #0000;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
@@ -135,9 +150,6 @@ body {
 .nav li {
 	text-align: center;
 }
-
-
-
 
 form {
 }
@@ -214,10 +226,8 @@ a {
 	font-weight: bold;
 }
 #loading {
-	float: left;
 	padding-top: 5px;
 	background-color: #ffffff;
-	display: none;
 	padding-right: 6px;
 	width: 16px;
 	height: 16px;
@@ -583,10 +593,13 @@ label#task_placeholder{
 }
 
 #searchbar {
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: normal;
 	display: none;
-	margin-top: 5px;
+	margin-top: 4px;
+	margin: 5px 10px;
+	padding: 5px;
+	background: #fff;
 }
 #searchbarkeyword {
 	font-weight: bold;
@@ -951,13 +964,6 @@ li.task-completed .task-note-block .task-note {
 	color: #777;
 	margin-left: 8px;
 }
-.mtt-back-button {
-	flot: left;
-}
-.mtt-back-button a {
-	font-size: 0.8em;
-    font-size: 12px;
-}
 
 /* autocomplete */
 .ac_results {
@@ -1018,6 +1024,8 @@ li.task-completed .task-note-block .task-note {
 #mtt_body.show-all-tasks #tagcloudbtn {
 	display: none;
 }
+
+
 #tagcloudload {
 	display: none;
 	height: 24px;
@@ -1087,20 +1095,7 @@ li.task-completed .task-note-block .task-note {
 #taskview {
 }
 
-.ui-datepicker {
-	width: 190px;
-	z-index: 202;
-	border: 1px solid #cccccc;
-	background: #ffffff;
-	display: none;
-	padding: 2px;
-	-moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-	box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-}
+
 .ui-datepicker-trigger {
 	cursor: pointer;
 	vertical-align: text-bottom;
@@ -1140,47 +1135,39 @@ li.task-completed .task-note-block .task-note {
 .ui-datepicker-calendar td a:hover {
 	border-color: #5980FF;
 }
+
+
+.ui-widget-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+    position: relative;
+}
 .ui-datepicker-header {
-	padding: 3px 0px;
+    border: 1px solid #cfcfcf;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
 }
-.ui-datepicker-prev {
-	position: absolute;
-	left: 2px;
-	height: 20px;
-	text-decoration: none;
+.ui-datepicker-header .ui-datepicker-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 27%;
+	font-size: 20px;
 }
-.ui-datepicker-next {
-	position: absolute;
-	right: 2px;
-	height: 20px;
-	text-decoration: none;
+.ui-widget-header .ui-datepicker-title {
+    color: #5B5B5B;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
 }
-.ui-datepicker-title {
-	text-align: center;
-	line-height: 20px;
-}
-.ui-icon {
-	width: 16px;
-	height: 16px;
-	text-indent: -99999px;
-	overflow: hidden;
-}
-.ui-datepicker .ui-icon-circle-triangle-w {
-	display: block;
-	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	left: 50%;
-	background: url(images/icons.gif) -48px -16px no-repeat;
-}
-.ui-datepicker .ui-icon-circle-triangle-e {
-	display: block;
-	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	right: 50%;
-	background: url(images/icons.gif) -32px -16px no-repeat;
-}
+
+
+
+
+
+
+
 
 .mtt-menu-button {
 	-moz-user-select: none;
@@ -1212,6 +1199,8 @@ li.task-completed .task-note-block .task-note {
 .projects-block{
 	margin: 0;
 }
+
+
 .mtt-menu-container ul {
 	margin: 0;
 }
@@ -1292,30 +1281,12 @@ li.mtt-item-hidden {
 	background: url(images/buttons.png) 0px -64px no-repeat;
 }
 
-.mtt-settings-table {
-	width: 100%;
-	border-collapse: collapse;
+
+/* Page-settings */
+
+.page-settings {
+	padding: 14px 30px;
+	border-bottom: 1px solid #cfcfcf;
+	font-size: 12px;
 }
-.mtt-settings-table th,
-.mtt-settings-table td {
-	border-bottom: 1px solid #dedede;
-	padding: 8px;
-	vertical-align: top;
-}
-.mtt-settings-table .form-buttons {
-	border-bottom: none;
-	text-align: center;
-}
-.mtt-settings-table th {
-	text-align: left;
-	width: 210px;
-	padding-left: 8px;
-}
-.mtt-settings-table .descr {
-	font-size: 0.8em;
-	font-weight: normal;
-	color: #222;
-}
-.mtt-settings-table .in350 {
-	min-width: 350px;
-}
+

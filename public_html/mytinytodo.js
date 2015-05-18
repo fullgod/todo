@@ -2136,7 +2136,7 @@ function showSettings()
 {
 	if(_mtt.pages.current.page == 'ajax' && _mtt.pages.current.pageClass == 'settings') return false;
 	$('#page_ajax').load(_mtt.mttUrl+'settings.php?ajax=yes',null,function(){ 
-		//showhide($('#page_ajax').addClass('mtt-page-settings'), $('#page_tasks'));
+		showhide($('#page_ajax').addClass('page-settings'), $('#page_tasks'));
 		_mtt.pageSet('ajax','settings');
 	})
 	return false;
