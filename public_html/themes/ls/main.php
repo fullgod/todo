@@ -59,7 +59,6 @@
 		
 		<div class="col-sm-4">
 		    <h6>Текущие задачи</h6>
-			http://themes-lab.com/make/admin/layout2/mailbox.html
 			<div class="titleOpt">
 				<a><span id="taskview" class="mtt-menu-button"><span id="total">0</span></span></a>  
 				<div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
@@ -107,12 +106,12 @@
 
 <!--Отображение задач -->
 
-     
+<!--     
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
 </div>
 </div>  
-
+-->
 
 <!--Создание задачи-->
 
