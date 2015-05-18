@@ -46,6 +46,7 @@
 	
 	<div class="row page-settings">
 		<div class="col-sm-4">
+		bootstrap switch
 			<span id="bar_auth">
 				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
 				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
