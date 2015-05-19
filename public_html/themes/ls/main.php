@@ -1,6 +1,5 @@
-    <div id="mtt_body">
-
-        <div class="topbar">
+<div id="mtt_body">
+  <div class="topbar">
 
             <div id="toolbar" class="header-left col-sm-6 col-md-6">
                 <div id="htab_newtask">
@@ -19,8 +18,46 @@
               <a href="#" id="newtask_adv" title="<?php _e('advanced_add');?>">
                   <i class="icon icon-publish">&#xe824;</i>
               </a>
+              <div id="loading" class="center"></div>
             </div>
 
+            <div class="header-left">
+              <div class="pad">
+                <div class="titleOpt header-left">
+                  <a>
+                    <i class="icon icon-list">&#xe846;</i>
+                    <span id="taskview" class="mtt-menu-button"><span id="total">0</span></span></a>  
+                    <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
+                      <a href="#alltasks">
+                        <span><?php _e('alltasks'); ?></span>
+                        <div class="list-action"></div>
+                      </a>
+                    </div>
+                  </div>
+                  
+                <a class="active" id="tagcloudbtn">
+                  <span><i class="icon icon-tag">&#xe80b;</i></span>
+                </a>
+                <div id="tagcloud" style="display:none">
+                  <a id="tagcloudcancel" class="mtt-img-button">
+                    <span></span>
+                  </a>
+                    <div id="tagcloudload"></div>
+                    <div id="tagcloudcontent"></div>
+                </div>
+              </div>
+
+            </div>
+            <div class="header-left">
+              <div class="pad"> 
+                  <span class="mtt-notes-showhide">
+                      <?php _e('notes');?> 
+                      <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / 
+                      <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a>
+                  </span>
+              </div>
+            </div>
+            
             <div class="header-right">
 
               <div id="htab_search">
@@ -39,65 +76,26 @@
               </div>
 
             </div>
-        </div>
+  </div>
         
-        <div class="main-content">
-		
+  <div class="main-content">
 	
-	<div class="row page-settings">
-		<div class="col-sm-4">
-		bootstrap switch
-			<span id="bar_auth">
-				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
-				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
-				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
-			</span>
-		</div>
-	</div>
-	
-	<div class="row page-settings">
-		
-		<div class="col-sm-4">
-		    <h6>Текущие задачи</h6>
-			<div class="titleOpt">
-				<a><span id="taskview" class="mtt-menu-button"><span id="total">0</span></span></a>  
-				<div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
-					<a href="#alltasks">
-						<span><?php _e('alltasks'); ?></span>
-						<div class="list-action"></div>
-					</a>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-sm-4">
-			<a class="active" id="tagcloudbtn"><span>Теги</span></a>
-				<div id="tagcloud" style="display:none">
-					<a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
-					<div id="tagcloudload"></div>
-					<div id="tagcloudcontent"></div>
-				</div>
-		</div>		
-		
-		<div class="col-sm-4">
-			<span class="mtt-notes-showhide">
-				<?php _e('notes');?> 
-				<a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / 
-				<a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a>
-			</span>
-		</div>
-	
-	</div>
+  	<div class="row page-settings">
+  		<div class="col-sm-4">
+  		bootstrap switch
+  			<span id="bar_auth">
+  				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
+  				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
+  				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
+  			</span>
+  		</div>
+  	</div>
 
-		
-		
-		
-        <div id="loading" class="center"></div>
-        <div id="bar">
+    <div id="bar">
             <div id="msg"><span class="msg-text"></span>
                 <div class="msg-details"></div>
             </div>
-        </div>
+    </div>
 
 <!--Отображение задач по фильтрам (теги..) -->
   <!--  
@@ -106,12 +104,11 @@
 
 <!--Отображение задач -->
 
-<!--     
-<div id="taskcontainer">
- <ol id="tasklist" class="sortable"></ol>
-</div>
+    <div id="taskcontainer">
+      <ol id="tasklist" class="sortable"></ol>
+    </div>
 </div>  
--->
+
 
 <!--Создание задачи-->
 
