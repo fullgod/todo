@@ -1149,8 +1149,9 @@ function tabSelect(elementOrId)
 
 function listMenu(el)
 {
-	if(!mytinytodo.menus.listMenu) mytinytodo.menus.listMenu = new mttMenu('listmenucontainer', {onclick:listMenuClick});
-	mytinytodo.menus.listMenu.show(el);
+	if(!mytinytodo.menus.listMenu) 
+		mytinytodo.menus.listMenu = new mttMenu('listmenucontainer', {onclick:listMenuClick});
+		mytinytodo.menus.listMenu.show(el);
 };
 
 function listMenuClick(el, menu)

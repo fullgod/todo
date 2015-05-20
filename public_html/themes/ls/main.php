@@ -23,10 +23,11 @@
 
             <div class="header-left">
               <div class="pad">
-                <div class="titleOpt header-left">
-                  <a>
+                <div class="header-left">
+                    <span id="taskview" class="mtt-menu-button">
                     <i class="icon icon-list">&#xe846;</i>
-                    <span id="taskview" class="mtt-menu-button"><span id="total">0</span></span></a>  
+                      <span id="total">0</span>
+                    </span>
                     <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
                       <a href="#alltasks">
                         <span><?php _e('alltasks'); ?></span>
@@ -57,7 +58,7 @@
                   </span>
               </div>
             </div>
-            
+
             <div class="header-right">
 
               <div id="htab_search">
@@ -80,16 +81,12 @@
         
   <div class="main-content">
 	
-  	<div class="row page-settings">
-  		<div class="col-sm-4">
-  		bootstrap switch
+
   			<span id="bar_auth">
   				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
   				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
   				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
   			</span>
-  		</div>
-  	</div>
 
     <div id="bar">
             <div id="msg"><span class="msg-text"></span>
@@ -223,7 +220,7 @@
                 <li id="view_soon">
                     <?php _e( 'f_soon');?> (<span id="cnt_soon">0</span>)</li>
             </ul>
-        </div>
+    </div>
 
     <div id="listmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>

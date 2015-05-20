@@ -8,20 +8,22 @@
 	
 
 
-	<div class="container-fluid">
-      <div class="row">
-        <div class="sidebar">
-        	<?php include ($template.'sidebar.php');?>
-        </div>
-        <!--
-        <div class="col-sm-3 col-md-2 sidebar">
-          <?php include ($template.'sidebar2.php');?>
-        </div> -->
-      	<div class="main">
-        	<?php include ($template.'main.php');?>
-        </div>
+	<div id="container">
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="sidebar">
+				<?php include ($template.'sidebar.php');?>
+			</div>
+			<!--
+			<div class="col-sm-3 col-md-2 sidebar">
+			  <?php include ($template.'sidebar2.php');?>
+			</div> -->
+			<div class="main">
+				<?php include ($template.'main.php');?>
+			</div>
 
-      </div>
+		  </div>
+		</div>
     </div>
 
 

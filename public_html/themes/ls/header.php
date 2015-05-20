@@ -9,6 +9,7 @@
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>js/less-1.7.0.min.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style.css" media="all" />
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>css/animation.css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <!--[if IE 7]><link rel="stylesheet" href="css/todo-ico-ie7.css"><![endif]-->
 </head>
 <body>
