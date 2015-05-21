@@ -15,7 +15,7 @@
 body {
 	background: none repeat scroll 0 0 #f5f5f5;
     color: #5b5b5b;
-    font-family: Helvetica !important;
+    font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
     line-height: 1.42857;
     margin: 0;
@@ -55,7 +55,7 @@ input[type="radio"], input[type="checkbox"] {
     width: 240px;
     z-index: 2;
 	background: none repeat scroll 0 0 #181a1d;
-	box-shadow: 0px 3px 3px #fff;
+	box-shadow: 0px 10px 13px -8px #7f8c8d;
 }
 .sidebar .logopanel h1{
 	font-family: "Lato","Open Sans",Helvetica,sans-serif !important;
@@ -137,6 +137,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 .pad .icon {
 	font-size: 40px;
+	margin: 0;
 }
 #total {
     background: none repeat scroll 0 0 white;
@@ -144,7 +145,7 @@ input[type="radio"], input[type="checkbox"] {
     color: red;
     font-size: 14px;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: -12px;
     padding: 0 6px;
     position: absolute;
     top: 4px;
@@ -290,14 +291,17 @@ a {
 .mtt-tabs {
 }
 .mtt-tabs > li {
-    border-bottom: 1px solid #cecece;
 	padding: 6px 0;
+	cursor: pointer;
+}
+.mtt-tabs > li:hover {
+    background: none repeat scroll 0 0 #ececec;
 }
 .mtt-tabs > li > a {
-    color: #fff;
-    font-weight: normal;
+    color: #ecf0f1;
+    font-weight: 400;
     padding: 0px 0px 0px 40px;
-	font-size: 12px;
+	font-size: 16px;
 }
 .mtt-tab a span {
 	min-width: 75px;
@@ -308,29 +312,43 @@ a {
 }
 .mtt-tab .list-action {
 	display: none;
-	float: left;
-	position: absolute;
+	float: right;
 	width: 15px;
 	height: 15px;
 	background: transparent url(images/icons.gif) 0 0 no-repeat;
 	cursor: pointer;
-    right: 10px;
-    top: 15px;
+	margin: 4px 14px;
+	padding: 0;
+	vertical-align: unset;
 }
 .mtt-tab .list-action:hover,
 .mtt-tab .list-action.mtt-menu-button-active {
 	background-position: -16px 0;
 }
 .mtt-tab span, .mtt-tab .mtt-tabs-selected span {
+	color: #000;
 }
 .mtt-tab.mtt-tabs-selected .list-action {
 	display: block;
 }
 .mtt-tab.mtt-tabs-selected {
+<<<<<<< HEAD
 	;
+	color: rgb(0, 0, 0);
+	background: #f5f5f5;
+	font-color: ;
+=======
+	background: none repeat scroll 0 0 #ececec;
+}
+.mtt-tab.mtt-tabs-selected a {
+	color: #5b5b5b;
+>>>>>>> origin/master
 }
 .mtt-tabs li:hover a {
-	color: #8da2a9;
+	color: #5b5b5b;
+}
+.mtt-tabs .mtt-tabs-selected > li > a {
+	color: #5b5b5b;
 }
 .mtt-tabs.mtt-tabs-only-one li {
 	display: none;
@@ -676,8 +694,7 @@ li.task-has-note .task-toggle {
 	visibility: visible;
 }
 li.task-expanded .task-toggle {
-	background-position: -80px -16px;
-	margin: 10px 3px 0px 0px;
+	margin: 0 0px 0 0;
 }
 .task-middle {
 	margin-left: 40px;
@@ -686,11 +703,9 @@ li.task-expanded .task-toggle {
 #tasklist {
 }
 #tasklist li {
-	padding: 10px 2px 10px 6px;
-    background: -moz-linear-gradient(center top , #f7f7f7 0%, #e6e6e6 100%) repeat scroll 0 0 transparent;
-    border-bottom: 1px solid #cecece;
-    border-top: 1px solid #ffffff;
-	min-height: 18px;
+	padding: 12px 2px 12px 6px;
+	min-height: 50px;
+	border-bottom: 1px solid #cfcfcf;
 }
 #tasklist li:hover {
 	background-color: #f6f6f6;
@@ -727,8 +742,9 @@ li.task-expanded .task-toggle {
 	float: right;
 }
 .task-title {
-	font-size: 14px;
+	font-size: 16px;
 	color: #5b5b5b;
+	font-weight: 500;
 }
 .task-title a {
 	font-size: 14px;
@@ -1198,7 +1214,7 @@ li.task-completed .task-note-block .task-note {
 .mtt-menu-container {
 	overflow: hidden;
 	z-index: 1000;
-	background-color: #F9F9F9;
+	background-color: #f9f9f9;
 	padding: 2px 0px;
 	-moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
