@@ -332,17 +332,11 @@ a {
 	display: block;
 }
 .mtt-tab.mtt-tabs-selected {
-<<<<<<< HEAD
-	;
 	color: rgb(0, 0, 0);
 	background: #f5f5f5;
-	font-color: ;
-=======
-	background: none repeat scroll 0 0 #ececec;
 }
 .mtt-tab.mtt-tabs-selected a {
 	color: #5b5b5b;
->>>>>>> origin/master
 }
 .mtt-tabs li:hover a {
 	color: #5b5b5b;
