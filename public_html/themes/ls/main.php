@@ -1,7 +1,7 @@
 <div id="mtt_body">
-  <div class="topbar">
+  <div id="toolbar" class="topbar">
 
-            <div id="toolbar" class="header-left col-sm-6 col-md-6">
+            <div class="header-left col-sm-6 col-md-6">
                 <div id="htab_newtask">
                     <form id="newtask_form" method="post">
                         <label id="task_placeholder" class="placeholding" for="task">
@@ -82,13 +82,13 @@
   <div class="main-content">
 	
 
-  			<span id="bar_auth">
+<span id="bar_auth">
   				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
   				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
   				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
   			</span>
 
-    <div id="bar">
+<div id="bar">
             <div id="msg"><span class="msg-text"></span>
                 <div class="msg-details"></div>
             </div>
@@ -104,8 +104,8 @@
     <div id="taskcontainer">
       <ol id="tasklist" class="sortable"></ol>
     </div>
-</div>  
 
+</div>
 
 <!--Создание задачи-->
 

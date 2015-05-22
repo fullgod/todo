@@ -326,7 +326,6 @@ a {
 	background-position: -16px 0;
 }
 .mtt-tab span, .mtt-tab .mtt-tabs-selected span {
-	color: #000;
 }
 .mtt-tab.mtt-tabs-selected .list-action {
 	display: block;
@@ -453,7 +452,6 @@ a {
 
 
 #toolbar > div {
-    padding: 5px 0px;
 }
 #task_new {
     background-color: #ecedee;
