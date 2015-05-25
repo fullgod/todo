@@ -1,3 +1,9 @@
+/*
+	This file is part of myTinyTodo.
+	(C) Copyright 2009-2010 Max Pozdeev <maxpozdeev@gmail.com>
+	Licensed under the GNU GPL v2 license. See file COPYRIGHT for details.
+*/
+
 (function(){
 
 var taskList = new Array(), taskOrder = new Array();
@@ -990,7 +996,7 @@ function prioPopup(act, el, id)
 		return;
 	}
 	var offset = $(el).offset();
-	$('#priopopup').css({ position: 'absolute', top: '100px', left: '5px' });
+	$('#priopopup').css({ position: 'absolute', top: offset.top + 1, left: offset.left + 1 });
 	objPrio.taskId = id;
 	objPrio.el = el;
 	objPrio.timer = setTimeout("$('#priopopup').show()", 300);
@@ -1149,9 +1155,8 @@ function tabSelect(elementOrId)
 
 function listMenu(el)
 {
-	if(!mytinytodo.menus.listMenu) 
-		mytinytodo.menus.listMenu = new mttMenu('listmenucontainer', {onclick:listMenuClick});
-		mytinytodo.menus.listMenu.show(el);
+	if(!mytinytodo.menus.listMenu) mytinytodo.menus.listMenu = new mttMenu('listmenucontainer', {onclick:listMenuClick});
+	mytinytodo.menus.listMenu.show(el);
 };
 
 function listMenuClick(el, menu)
@@ -1292,8 +1297,6 @@ function clearEditForm()
 	form.id.value = '';
 	toggleEditAllTags(0);
 };
-
-		
 
 function showEditForm(isAdd)
 {
@@ -1655,7 +1658,7 @@ function mttMenu(container, options)
 		var y = offset.top+caller.offsetHeight-1;
 		if(y + this.$container.outerHeight(true) > $(window).height() + $(document).scrollTop()) y = offset.top - this.$container.outerHeight();
 		if(y<0) y=0;
-		this.$container.css({  }).show();
+		this.$container.css({ position: 'absolute', top: y, left: x, width:this.$container.width() /*, 'min-width': $caller.width()*/ }).show();
 		var menu = this;
 		$(document).bind('mousedown.mttmenuclose', function(e){ menu.close(e) });
 		this.menuOpen = true;
@@ -1671,7 +1674,7 @@ function mttMenu(container, options)
 		var y = offset.top + this.parent.$container.offset().top-this.parent.$container.find('li:first').offset().top;
 		if(y +  this.$container.outerHeight(true) > $(window).height() + $(document).scrollTop()) y = $(window).height() + $(document).scrollTop()- this.$container.outerHeight(true) - 1;
 		if(y<0) y=0;
-		this.$container.css({ position: 'absolute', top: y, left: "30.8%", width:this.$container.width() /*, 'min-width': this.$caller.outerWidth()*/ }).show();
+		this.$container.css({ position: 'absolute', top: y, left: x, width:this.$container.width() /*, 'min-width': this.$caller.outerWidth()*/ }).show();
 		this.menuOpen = true;
 	};
 
@@ -2133,7 +2136,7 @@ function showSettings()
 {
 	if(_mtt.pages.current.page == 'ajax' && _mtt.pages.current.pageClass == 'settings') return false;
 	$('#page_ajax').load(_mtt.mttUrl+'settings.php?ajax=yes',null,function(){ 
-		showhide($('#page_ajax').addClass('page-settings'), $('#page_tasks'));
+		//showhide($('#page_ajax').addClass('mtt-page-settings'), $('#page_tasks'));
 		_mtt.pageSet('ajax','settings');
 	})
 	return false;
