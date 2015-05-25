@@ -133,7 +133,7 @@ input[type="radio"], input[type="checkbox"] {
     float: right;
 }
 .pad {
-    padding: 4px 20px;
+    padding: 5px;
 }
 .pad .icon {
 	font-size: 40px;
@@ -1305,9 +1305,11 @@ li.mtt-item-hidden {
 
 
 /* Page-settings */
-
+.mtt-page-settings {
+	margin-top: 55px;
+}
 .page-settings {
-	padding: 14px 30px;
+	padding: 8px 15px;
 	border-bottom: 1px solid #cfcfcf;
 	font-size: 12px;
 }

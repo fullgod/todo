@@ -1,8 +1,7 @@
-<div id="mtt_body">
-  <div id="toolbar" class="topbar">
+<div id="toolbar" class="topbar">
 
             <div class="header-left col-sm-6 col-md-6">
-                <div id="htab_newtask">
+                <div id="htab_newtask" class="pad">
                     <form id="newtask_form" method="post">
                         <label id="task_placeholder" class="placeholding" for="task">
                           <div class="append-icon">
@@ -47,8 +46,8 @@
                     <div id="tagcloudcontent"></div>
                 </div>
               </div>
-
             </div>
+
             <div class="header-left">
               <div class="pad"> 
                   <span class="mtt-notes-showhide">
@@ -60,7 +59,6 @@
             </div>
 
             <div class="header-right">
-
               <div id="htab_search">
                 <div class="mtt-searchbox-c">
                  <input type="text" name="search" class="form-control form-white" maxlength="250" id="search" autocomplete="off" />
@@ -68,42 +66,47 @@
                  <div id="search_close" class="mtt-searchbox-icon mtt-icon-cancelsearch"></div>
                 </div> 
               </div>
-
-              <div id="page_tasks" style="display:none">
-                <div id="searchbar" style="display:none">
-                    <?php _e( 'searching');?> <span id="searchbarkeyword"></span>
-                </div>
-                <div style="clear:both"></div>
-              </div>
-
             </div>
-  </div>
+</div>
         
-  <div class="main-content">
+<div class="main-content">
 	
-
-<span id="bar_auth">
+<!--Авторизация -->
+  
+  <span id="bar_auth">
   				<span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
   				  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
   				  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
-  			</span>
+  </span>
 
-<div id="bar">
-            <div id="msg"><span class="msg-text"></span>
+<!--Отображение сообщений (ошибок и т.д.) -->
+
+        <div id="bar">
+            <div id="msg">
+              <span class="msg-text"></span>
                 <div class="msg-details"></div>
             </div>
-    </div>
+        </div>
 
 <!--Отображение задач по фильтрам (теги..) -->
-  <!--  
+   
   <span id="mtt_filters"></span>
--->
 
-<!--Отображение задач -->
+<!-- Отображение задач -->
 
-    <div id="taskcontainer">
-      <ol id="tasklist" class="sortable"></ol>
-    </div>
+<div id="page_tasks" style="display:none">
+
+  <div id="searchbar" style="display:none">
+    <?php _e( 'searching');?> 
+    <span id="searchbarkeyword"></span>
+  </div>
+
+  <div style="clear:both"></div>
+<!-- Список задач -->
+  <div id="taskcontainer">
+    <ol id="tasklist" class="sortable"></ol>
+  </div>
+</div>
 
 </div>
 
@@ -185,10 +188,7 @@
 
     </div>
 
-<!-- end of page_taskedit -->
-
-
-	<div id="authform" style="display:none">
+<div id="authform" style="display:none">
             <form id="login_form">
                 <div class="h">
                     <?php _e( 'password');?>
@@ -200,16 +200,16 @@
                     <input type="submit" value="<?php _e('btn_login');?>" />
                 </div>
             </form>
-        </div>
+</div>
 
-    <div id="priopopup" style="display:none">
+<div id="priopopup" style="display:none">
             <span class="prio-neg prio-neg-1">&minus;1</span>
             <span class="prio-zero">&plusmn;0</span>
             <span class="prio-pos prio-pos-1">+1</span>
             <span class="prio-pos prio-pos-2">+2</span>
-        </div>
+</div>
 
-    <div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
+<div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="view_tasks">
                     <?php _e( 'tasks');?> (<span id="cnt_total">0</span>)</li>
@@ -220,9 +220,9 @@
                 <li id="view_soon">
                     <?php _e( 'f_soon');?> (<span id="cnt_soon">0</span>)</li>
             </ul>
-    </div>
+</div>
 
-    <div id="listmenucontainer" class="mtt-menu-container" style="display:none">
+<div id="listmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li class="mtt-need-list mtt-need-real-list" id="btnRenameList">
                     <?php _e( 'list_rename');?>
@@ -273,9 +273,9 @@
                     <?php _e( 'list_showcompleted');?>
                 </li>
             </ul>
-        </div>
+</div>
 
-    <div id="listexportmenucontainer" class="mtt-menu-container" style="display:none">
+<div id="listexportmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li class="mtt-need-list mtt-need-real-list" id="btnExportCSV">
                     <?php _e( 'list_export_csv');?>
@@ -284,9 +284,9 @@
                     <?php _e( 'list_export_ical');?>
                 </li>
             </ul>
-        </div>
+</div>
 
-    <div id="taskcontextcontainer" class="mtt-menu-container" style="display:none">
+<div id="taskcontextcontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="cmenu_edit"><b><?php _e('action_edit');?></b>
                 </li>
@@ -305,9 +305,9 @@
                     <?php _e( 'action_delete');?>
                 </li>
             </ul>
-        </div>
+</div>
 
-    <div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
+<div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="cmenu_prio:2">
                     <div class="menu-icon"></div>+2</li>
@@ -318,14 +318,14 @@
                 <li id="cmenu_prio:-1">
                     <div class="menu-icon"></div>&minus;1</li>
             </ul>
-        </div>
+</div>
 
-    <div id="cmenulistscontainer" class="mtt-menu-container" style="display:none">
+<div id="cmenulistscontainer" class="mtt-menu-container" style="display:none">
             <ul>
             </ul>
-        </div>
+</div>
 
-    <div id="slmenucontainer" class="mtt-menu-container" style="display:none">
+<div id="slmenucontainer" class="mtt-menu-container" style="display:none">
             <ul>
                 <li id="slmenu_list:-1" class="list-id--1 mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>>
                     <div class="menu-icon"></div>
@@ -335,11 +335,8 @@
                 </li>
                 <li class="mtt-menu-delimiter slmenu-lists-begin mtt-need-list" <?php if(is_readonly()) echo 'style="display:none"' ?>></li>
             </ul>
-        </div>
+</div>
         
-	<div id="page_ajax" style="display:none"></div>
+<div id="page_ajax" style="display:none"></div>
 
-
-    </div>
- 
- </div>
+</div>

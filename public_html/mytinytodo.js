@@ -1293,6 +1293,8 @@ function clearEditForm()
 	toggleEditAllTags(0);
 };
 
+		
+
 function showEditForm(isAdd)
 {
 	var form = document.getElementById('taskedit_form');

@@ -179,7 +179,7 @@ header('Content-type:text/html; charset=utf-8');
  
 <div class="row page-settings">
 	<div class="col-sm-4">
- <?php _e('set_smartsyntax');?>:<span class="descr"><?php _e('set_smartsyntax_descr');?></span>
+ <?php _e('set_smartsyntax');?>: <span class="descr"><?php _e('set_smartsyntax_descr');?></span>
 	</div>
 	<div class="col-sm-8">
  <label><input type="radio" name="smartsyntax" value="1" <?php if(_c('smartsyntax')) echo 'checked="checked"'; ?> /><?php _e('set_enabled');?></label>
@@ -189,8 +189,7 @@ header('Content-type:text/html; charset=utf-8');
  
 <div class="row page-settings">
 	<div class="col-sm-4">
- <?php _e('set_autotag');?>:<br>
- <span class="descr"><?php _e('set_autotag_descr');?></span> 
+ <?php _e('set_autotag');?>: <span class="descr"><?php _e('set_autotag_descr');?></span> 
  </div>
 	<div class="col-sm-8">
 		<label>
