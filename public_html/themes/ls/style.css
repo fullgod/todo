@@ -35,14 +35,15 @@ input[type="radio"], input[type="checkbox"] {
 /* Sidebar */
 
 .sidebar {
+    background-color: #2f4050;
     bottom: 0;
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
     left: 0;
     position: fixed;
     right: auto;
-    z-index: 202;
-    background-color: #2b2e33;
     top: 50px;
     width: 240px;
+    z-index: 100;
 }
 .sidebar .logopanel {
     height: 50px;
@@ -289,10 +290,6 @@ a {
 /* Sidebar task list*/
 
 .mtt-tabs {
-}
-.mtt-tabs > li {
-	padding: 6px 0;
-	cursor: pointer;
 }
 .mtt-tabs > li:hover {
     background: none repeat scroll 0 0 #ececec;
@@ -1206,9 +1203,8 @@ li.task-completed .task-note-block .task-note {
 .mtt-menu-container {
     background-color: #f9f9f9;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 0 7px 7px 0;
     overflow: hidden;
-    padding: 2px 0;
+    padding: 10px 0;
     z-index: 1000;
 }
 .list_all{

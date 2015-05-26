@@ -14,6 +14,11 @@
     </ul>
 </div>
 -->
+<div id="slmenucontainer" class="mtt-menu-container">
+    <ul>
+     <a href="#alltasks"><?php _e('alltasks'); ?></a></li>
+    </ul>
+</div>
 
 	
 <div id="lists" class="item_list">
