@@ -14,11 +14,7 @@
     </ul>
 </div>
 -->
-<div id="slmenucontainer" class="mtt-menu-container">
-    <ul>
-     <a href="#alltasks"><?php _e('alltasks'); ?></a></li>
-    </ul>
-</div>
+
                     <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
                       <a href="#alltasks">
                         <span><?php _e('alltasks'); ?></span>
