@@ -15,12 +15,7 @@
 </div>
 -->
 
-                    <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
-                      <a href="#alltasks">
-                        <span><?php _e('alltasks'); ?></span>
-                        <div class="list-action"></div>
-                      </a>
-                    </div>
+
 
 	
 <div id="lists" class="item_list">

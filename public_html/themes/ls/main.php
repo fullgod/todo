@@ -27,6 +27,12 @@
                     <i class="icon icon-list">&#xe846;</i>
                       <span id="total">0</span>
                     </span>
+					 <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
+                      <a href="#alltasks">
+                        <span><?php _e('alltasks'); ?></span>
+                        <div class="list-action"></div>
+                      </a>
+                    </div>
                   </div>
                   
                 <a class="active" id="tagcloudbtn">
@@ -104,9 +110,7 @@
 
 </div>
 
-<!--Создание задачи-->
-
-    <div id="page_taskedit" style="display:none">
+<div id="page_taskedit" style="display:none">
 
         <form id="taskedit_form" name="edittask" method="post"> 
             <div class="mtt-back-button">
@@ -332,5 +336,3 @@
 </div>
         
 <div id="page_ajax" style="display:none"></div>
-
-</div>
