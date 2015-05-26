@@ -27,12 +27,6 @@
                     <i class="icon icon-list">&#xe846;</i>
                       <span id="total">0</span>
                     </span>
-                    <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
-                      <a href="#alltasks">
-                        <span><?php _e('alltasks'); ?></span>
-                        <div class="list-action"></div>
-                      </a>
-                    </div>
                   </div>
                   
                 <a class="active" id="tagcloudbtn">

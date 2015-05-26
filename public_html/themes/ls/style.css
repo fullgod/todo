@@ -558,7 +558,6 @@ label#task_placeholder{
 
 #mtt_body.show-all-tasks #htab_newtask,
 #mtt_body.readonly #htab_newtask {
-	display: none;
 }
 
 
@@ -1115,7 +1114,6 @@ li.task-completed .task-note-block .task-note {
 #taskview {
 }
 
-
 .ui-datepicker-trigger {
 	cursor: pointer;
 	vertical-align: text-bottom;
@@ -1131,17 +1129,18 @@ li.task-completed .task-note-block .task-note {
 	font-size: 0.9em;
 }
 .ui-datepicker-calendar tbody td {
-	text-align: right;
-	padding: 1px;
+	text-align: center;
+	padding: 2px 10px;
 }
 .ui-datepicker-calendar td a {
 	display: block;
 	text-decoration: none;
 	color: #444444;
-	border: 1px solid #cccccc;
+	border: 1px solid #ecf0ff;
 	background-color: #f9f9f9;
 	color: #8da2a9;
-	padding: 1px;
+	padding: 4px 7px;
+	border-radius: 25px;
 }
 .ui-datepicker-calendar td.ui-datepicker-current-day a {
 	background-color: #EAF5FF;
@@ -1149,34 +1148,41 @@ li.task-completed .task-note-block .task-note {
 	border-color: #5980FF;
 }
 .ui-datepicker-calendar td.ui-datepicker-today a {
-	color: #8da2a9;
-	background-color: #ccc;
+	color: #fff;
+	background-color: #2ecc71;
 }
 .ui-datepicker-calendar td a:hover {
 	border-color: #5980FF;
 }
 
-
+#ui-datepicker-div {
+	background: #fff none repeat scroll 0 0;
+    border: 5px solid #dbe2e4;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
 .ui-widget-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     position: relative;
 }
 .ui-datepicker-header {
-    border: 1px solid #cfcfcf;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     position: relative;
 }
 .ui-datepicker-header .ui-datepicker-prev {
     cursor: pointer;
     position: absolute;
-    top: 27%;
-	font-size: 20px;
+	font-size: 12px;
+	float: left;
+}
+.ui-datepicker-next {
+	float: right;
 }
 .ui-widget-header .ui-datepicker-title {
     color: #5B5B5B;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
