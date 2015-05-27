@@ -394,12 +394,17 @@ var mytinytodo = window.mytinytodo = _mtt = {
 		}
 
 		$("#tasklist").sortable({
-				items:'> :not(.task-completed)', cancel:'span,input,a,textarea',
-		 		delay:150, start:sortStart, update:orderChanged, 
+				items:'> :not(.task-completed)', 
+				cancel:'span,input,a,textarea',
+		 		delay:150, start:sortStart, 
+				update:orderChanged, 
 				placeholder:'mtt-task-placeholder'
 		});
 
-		$("#lists ul").sortable({delay:150, update:listOrderChanged}); 
+		$("#lists ul").sortable({
+			update:listOrderChanged,
+			placeholder:'task-placeholder'
+		}); 
 		this.applySingletab();
 
 
@@ -543,6 +548,7 @@ var mytinytodo = window.mytinytodo = _mtt = {
 				// or open first if all list are hidden
 				if(!openListId) openListId = res.list[0].id;
 				
+				// sidebar lists builder
 				$.each(res.list, function(i,item){
 					tabLists.add(item);
 					ti += '<li id="list_'+item.id+'" class="mtt-tab'+(item.hidden?' mtt-tabs-hidden':'')+'">'+

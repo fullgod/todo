@@ -18,7 +18,7 @@
 
 
 	
-<div id="lists" class="item_list">
+<div id="lists">
     <ul class="mtt-tabs"></ul>
 	<!--
 	<div id="tabs_buttons">

@@ -111,16 +111,14 @@ input[type="radio"], input[type="checkbox"] {
 
 
 .topbar {
-	background: none repeat scroll 0 0 #0000;
+	background: #f5f5f5 none repeat scroll 0 0;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     left: 240px;
     position: fixed;
     right: 0;
     top: 0;
+	height: 50px;
     z-index: 300;
-}
-.topbar {
-    height: 50px;
 }
 .topbar::after {
     clear: both;
@@ -282,8 +280,6 @@ a {
 #msg.mtt-info .msg-details {
 	border: 1px solid #EFC300;
 }
-.item_list{
-}
 
 
 
@@ -300,12 +296,12 @@ a {
     padding: 0px 0px 0px 40px;
 	font-size: 16px;
 }
-.mtt-tab a span {
-	min-width: 75px;
-	max-width: 195px;
-	cursor: pointer;
-	padding: 0;
-	overflow: hidden;
+.mtt-tabs .task-placeholder {
+	padding: 0px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #fff;
+	border: 1px solid #aaa;
 }
 .mtt-tab .list-action {
 	display: none;
@@ -321,8 +317,6 @@ a {
 .mtt-tab .list-action:hover,
 .mtt-tab .list-action.mtt-menu-button-active {
 	background-position: -16px 0;
-}
-.mtt-tab span, .mtt-tab .mtt-tabs-selected span {
 }
 .mtt-tab.mtt-tabs-selected .list-action {
 	display: block;
@@ -340,12 +334,15 @@ a {
 .mtt-tabs .mtt-tabs-selected > li > a {
 	color: #5b5b5b;
 }
+
+/* Only One */
 .mtt-tabs.mtt-tabs-only-one li {
 	display: none;
 }
 .mtt-tabs.mtt-tabs-only-one li.mtt-tabs-selected {
 	display: block;
 }
+
 
 #mtt_body.readonly li.mtt-tabs-selected span {
 	margin-right: 0;
