@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-<div class="sidebar-inner">
+<div class="sidebar-inner mCustomScrollbar">
 
 <!--
 <div id="slmenucontainer" class="mtt-menu-container">
@@ -42,19 +42,21 @@
 -->
 
 	
-<div class="sidebar-footer">
-      <a href="#settings" id="settings" class="pull-left footer-settings" title="<?php _e('a_settings');?>">
-        <i class="icon icon-cog">&#xe810;</i>
-      </a>
-      <a class="mtt-tabs-add-button tipN pull-left footer-settings" href="#" title="<?php _e('list_new'); ?>">
-        <i class="icon icon-list-add">&#xe847;</i>
-      </a>
-      <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">
-        <i class="icon icon-plus-circled">&#xe804;</i>
-      </a>
-      <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">
-        <i class="icon icon-login">&#xe823;</i>
-      </a>
-  </div>
 
+</div>
+
+
+<div class="sidebar-footer">
+  <a href="#settings" id="settings" class="pull-left footer-settings" title="<?php _e('a_settings');?>">
+    <i class="icon icon-cog">&#xe810;</i>
+  </a>
+  <a class="mtt-tabs-add-button tipN pull-left footer-settings" href="#" title="<?php _e('list_new'); ?>">
+    <i class="icon icon-list-add">&#xe847;</i>
+  </a>
+  <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">
+    <i class="icon icon-plus-circled">&#xe804;</i>
+  </a>
+  <a class="pull-left footer-settings" data-original-title="Settings" data-rel="tooltip" href="#">
+    <i class="icon icon-login">&#xe823;</i>
+  </a>
 </div>

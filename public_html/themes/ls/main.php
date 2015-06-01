@@ -94,7 +94,7 @@
 
 <!-- Отображение задач -->
 
-<div id="page_tasks" style="display:none">
+<div id="page_tasks" style="col-sm-7 col-md-7 display:none">
 
   <div id="searchbar" style="display:none">
     <?php _e( 'searching');?> 
@@ -106,6 +106,9 @@
   <div id="taskcontainer">
     <ol id="tasklist" class="sortable"></ol>
   </div>
+</div>
+
+<div style="col-sm-5 col-md-5 display:none">
 </div>
 
 </div>

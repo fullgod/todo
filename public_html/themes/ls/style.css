@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "font.css";
+@import "css/mcustom_scrollbar.min.css";
 .microtime {
     bottom: 45px;
     clear: both;
@@ -39,6 +40,7 @@ input[type="radio"], input[type="checkbox"] {
     bottom: 0;
     box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
     left: 0;
+    margin-bottom: 40px;
     position: fixed;
     right: auto;
     top: 50px;
@@ -67,10 +69,11 @@ input[type="radio"], input[type="checkbox"] {
 }
 .sidebar .sidebar-inner {
     height: 100%;
+    overflow: auto;
     padding: 0;
     z-index: 2;
 }
-.sidebar .sidebar-inner .sidebar-footer {
+.sidebar .sidebar-footer {
     bottom: 0;
     clear: both;
     display: block;
@@ -81,22 +84,22 @@ input[type="radio"], input[type="checkbox"] {
     width: 240px;
     z-index: 1000;
 }
-.sidebar .sidebar-inner .sidebar-footer i {
+.sidebar .sidebar-footer i {
     font-size: 30px;
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a i {
+.sidebar .sidebar-footer a i {
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a:hover i {
+.sidebar .sidebar-footer a:hover i {
     color: #f7f7f7;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left {
+.sidebar .sidebar-footer .pull-left {
     padding: 5px 0 5px;
     text-align: center;
     width: 25%;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left:hover {
+.sidebar .sidebar-footer .pull-left:hover {
     background-color: #373a41;
     text-decoration: none;
 }
