@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-<div class="sidebar-inner mCustomScrollbar">
+<div class="sidebar-inner">
 
 <!--
 <div id="slmenucontainer" class="mtt-menu-container">
