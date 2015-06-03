@@ -613,14 +613,11 @@ form#taskedit_form {
 }
 
 #page_tasks{
-    bottom: 10%;
-    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
-    height: 100%;
-    left: 240px;
-    margin: 0;
     overflow: auto;
+    padding: 10px;
     position: fixed;
-    top: 50px;
+    top: 60px;
+	height: 90%; 
     z-index: 100;
 }
 
