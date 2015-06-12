@@ -107,11 +107,15 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 </div>
 <div class="col-sm-5 col-md-5">
 йцуй
 </div>
 </div>
+=======
+<div style="col-sm-5 col-md-5 display:none">
+>>>>>>> origin/master
 
 <div id="page_taskedit" style="display:none">
 
@@ -188,6 +192,11 @@
             </form>
 
     </div>
+
+</div>
+
+</div>
+
 
 <div id="authform" style="display:none">
             <form id="login_form">

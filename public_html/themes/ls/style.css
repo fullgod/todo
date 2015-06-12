@@ -1,17 +1,5 @@
-@import "reset.css";
 @import "font.css";
-.microtime {
-    bottom: 45px;
-    clear: both;
-    display: block;
-    background: none repeat scroll 0 0 #181a1d;
-    left: 0;
-    padding: 10px;
-    position: fixed;
-    width: 240px;
-    z-index: 1000;
-	font-size: 11px;
-}
+@import "css/jquery.mCustomScrollbar.css";
 body {
 	background: none repeat scroll 0 0 #f5f5f5;
     color: #5b5b5b;
@@ -39,6 +27,7 @@ input[type="radio"], input[type="checkbox"] {
     bottom: 0;
     box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
     left: 0;
+    margin-bottom: 40px;
     position: fixed;
     right: auto;
     top: 50px;
@@ -55,22 +44,25 @@ input[type="radio"], input[type="checkbox"] {
     transition: color 0.2s ease-out 0s;
     width: 240px;
     z-index: 2;
-	background: none repeat scroll 0 0 #181a1d;
+	background: none repeat scroll 0 0 #00adef;
 	box-shadow: 0px 10px 13px -8px #7f8c8d;
 }
 .sidebar .logopanel h1{
 	font-family: "Lato","Open Sans",Helvetica,sans-serif !important;
 	font-size: 35px;
-
 	font-weight: bold;
 	text-align: center;
 }
+.sidebar .logopanel h1 a{
+	color: #fff;
+}
 .sidebar .sidebar-inner {
     height: 100%;
+    overflow: auto;
     padding: 0;
     z-index: 2;
 }
-.sidebar .sidebar-inner .sidebar-footer {
+.sidebar .sidebar-footer {
     bottom: 0;
     clear: both;
     display: block;
@@ -81,22 +73,22 @@ input[type="radio"], input[type="checkbox"] {
     width: 240px;
     z-index: 1000;
 }
-.sidebar .sidebar-inner .sidebar-footer i {
+.sidebar .sidebar-footer i {
     font-size: 30px;
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a i {
+.sidebar .sidebar-footer a i {
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a:hover i {
+.sidebar .sidebar-footer a:hover i {
     color: #f7f7f7;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left {
+.sidebar .sidebar-footer .pull-left {
     padding: 5px 0 5px;
     text-align: center;
     width: 25%;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left:hover {
+.sidebar .sidebar-footer .pull-left:hover {
     background-color: #373a41;
     text-decoration: none;
 }
@@ -106,7 +98,7 @@ input[type="radio"], input[type="checkbox"] {
 .main {
     background: none repeat scroll 0 0 #f5f5f5;
     margin-left: 240px;
-    min-height: 750px;
+    min-height: 100%;
 }
 
 
@@ -621,7 +613,14 @@ form#taskedit_form {
 	padding: 20px;
 }
 
-
+#page_tasks{
+    overflow: auto;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+	height: 90%; 
+    z-index: 100;
+}
 
 #mtt_body.no-lists #page_tasks h3 > * {
 	visibility: hidden;
