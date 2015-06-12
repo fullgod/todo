@@ -89,11 +89,10 @@
         </div>
 
 <!--Отображение задач по фильтрам (теги..) -->
-   
   <span id="mtt_filters"></span>
 
 <!-- Отображение задач -->
-
+<div class="col-sm-7 col-md-7">
 <div id="page_tasks" style="display:none">
 
   <div id="searchbar" style="display:none">
@@ -108,6 +107,10 @@
   </div>
 </div>
 
+</div>
+<div class="col-sm-5 col-md-5">
+йцуй
+</div>
 </div>
 
 <div id="page_taskedit" style="display:none">
