@@ -1136,8 +1136,8 @@
 		else if (dir < 0) dir = -1;
 		if (dir == 0 && old != null && task.dueClass != old.dueClass) //on saveTask
 		{
-			if (old.dueClass != '') taskCnt[old.dueClass] --;
-			if (task.dueClass != '') taskCnt[task.dueClass] ++;
+			if (old.dueClass != '') taskCnt[old.dueClass]--;
+			if (task.dueClass != '') taskCnt[task.dueClass]++;
 		} else if (dir == 0 && old == null) //on comleteTask
 		{
 			if (!curList.showCompl && task.compl) taskCnt.total--;
@@ -2285,7 +2285,15 @@
 })();
 (function($) {
 	$(window).load(function() {
-		$(".sidebar-inner").mCustomScrollbar();
-		$("#page_tasks").mCustomScrollbar();
+		$(".sidebar-inner").mCustomScrollbar({
+			advanced: {
+				updateOnContentResize: true
+			}
+		});
+		$("#page_tasks").mCustomScrollbar({
+			advanced: {
+				updateOnContentResize: true
+			}
+		});
 	});
 })(jQuery);
