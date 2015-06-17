@@ -1,17 +1,5 @@
-@import "reset.css";
 @import "font.css";
-.microtime {
-    bottom: 45px;
-    clear: both;
-    display: block;
-    background: none repeat scroll 0 0 #181a1d;
-    left: 0;
-    padding: 10px;
-    position: fixed;
-    width: 240px;
-    z-index: 1000;
-	font-size: 11px;
-}
+@import "css/jquery.mCustomScrollbar.css";
 body {
 	background: none repeat scroll 0 0 #f5f5f5;
     color: #5b5b5b;
@@ -35,14 +23,16 @@ input[type="radio"], input[type="checkbox"] {
 /* Sidebar */
 
 .sidebar {
+    background-color: #2f4050;
     bottom: 0;
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
     left: 0;
+    margin-bottom: 40px;
     position: fixed;
     right: auto;
-    z-index: 202;
-    background-color: #2b2e33;
     top: 50px;
     width: 240px;
+    z-index: 100;
 }
 .sidebar .logopanel {
     height: 50px;
@@ -54,22 +44,25 @@ input[type="radio"], input[type="checkbox"] {
     transition: color 0.2s ease-out 0s;
     width: 240px;
     z-index: 2;
-	background: none repeat scroll 0 0 #181a1d;
+	background: none repeat scroll 0 0 #00adef;
 	box-shadow: 0px 10px 13px -8px #7f8c8d;
 }
 .sidebar .logopanel h1{
 	font-family: "Lato","Open Sans",Helvetica,sans-serif !important;
 	font-size: 35px;
-
 	font-weight: bold;
 	text-align: center;
 }
+.sidebar .logopanel h1 a{
+	color: #fff;
+}
 .sidebar .sidebar-inner {
     height: 100%;
+    overflow: auto;
     padding: 0;
     z-index: 2;
 }
-.sidebar .sidebar-inner .sidebar-footer {
+.sidebar .sidebar-footer {
     bottom: 0;
     clear: both;
     display: block;
@@ -80,22 +73,22 @@ input[type="radio"], input[type="checkbox"] {
     width: 240px;
     z-index: 1000;
 }
-.sidebar .sidebar-inner .sidebar-footer i {
+.sidebar .sidebar-footer i {
     font-size: 30px;
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a i {
+.sidebar .sidebar-footer a i {
     color: #ecf0f1;
 }
-.sidebar .sidebar-inner .sidebar-footer a:hover i {
+.sidebar .sidebar-footer a:hover i {
     color: #f7f7f7;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left {
+.sidebar .sidebar-footer .pull-left {
     padding: 5px 0 5px;
     text-align: center;
     width: 25%;
 }
-.sidebar .sidebar-inner .sidebar-footer .pull-left:hover {
+.sidebar .sidebar-footer .pull-left:hover {
     background-color: #373a41;
     text-decoration: none;
 }
@@ -105,21 +98,19 @@ input[type="radio"], input[type="checkbox"] {
 .main {
     background: none repeat scroll 0 0 #f5f5f5;
     margin-left: 240px;
-    min-height: 750px;
+    min-height: 100%;
 }
 
 
 .topbar {
-	background: none repeat scroll 0 0 #0000;
+	background: #f5f5f5 none repeat scroll 0 0;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     left: 240px;
     position: fixed;
     right: 0;
     top: 0;
+	height: 50px;
     z-index: 300;
-}
-.topbar {
-    height: 50px;
 }
 .topbar::after {
     clear: both;
@@ -281,18 +272,12 @@ a {
 #msg.mtt-info .msg-details {
 	border: 1px solid #EFC300;
 }
-.item_list{
-}
 
 
 
 /* Sidebar task list*/
 
 .mtt-tabs {
-}
-.mtt-tabs > li {
-	padding: 6px 0;
-	cursor: pointer;
 }
 .mtt-tabs > li:hover {
     background: none repeat scroll 0 0 #ececec;
@@ -303,12 +288,12 @@ a {
     padding: 0px 0px 0px 40px;
 	font-size: 16px;
 }
-.mtt-tab a span {
-	min-width: 75px;
-	max-width: 195px;
-	cursor: pointer;
-	padding: 0;
-	overflow: hidden;
+.mtt-tabs .task-placeholder {
+	padding: 0px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #fff;
+	border: 1px solid #aaa;
 }
 .mtt-tab .list-action {
 	display: none;
@@ -324,8 +309,6 @@ a {
 .mtt-tab .list-action:hover,
 .mtt-tab .list-action.mtt-menu-button-active {
 	background-position: -16px 0;
-}
-.mtt-tab span, .mtt-tab .mtt-tabs-selected span {
 }
 .mtt-tab.mtt-tabs-selected .list-action {
 	display: block;
@@ -343,12 +326,15 @@ a {
 .mtt-tabs .mtt-tabs-selected > li > a {
 	color: #5b5b5b;
 }
+
+/* Only One */
 .mtt-tabs.mtt-tabs-only-one li {
 	display: none;
 }
 .mtt-tabs.mtt-tabs-only-one li.mtt-tabs-selected {
 	display: block;
 }
+
 
 #mtt_body.readonly li.mtt-tabs-selected span {
 	margin-right: 0;
@@ -627,7 +613,14 @@ form#taskedit_form {
 	padding: 20px;
 }
 
-
+#page_tasks{
+    overflow: auto;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+	height: 90%; 
+    z-index: 100;
+}
 
 #mtt_body.no-lists #page_tasks h3 > * {
 	visibility: hidden;
@@ -1117,8 +1110,15 @@ li.task-completed .task-note-block .task-note {
 
 #taskview {
 }
-
-
+.ui-datepicker {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #dbe2e4;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    padding: 8px 8px;
+    z-index: 202;
+}
 .ui-datepicker-trigger {
 	cursor: pointer;
 	vertical-align: text-bottom;
@@ -1134,17 +1134,20 @@ li.task-completed .task-note-block .task-note {
 	font-size: 0.9em;
 }
 .ui-datepicker-calendar tbody td {
-	text-align: right;
-	padding: 1px;
+	text-align: center;
+	padding: 1px 2px;
 }
 .ui-datepicker-calendar td a {
 	display: block;
 	text-decoration: none;
 	color: #444444;
-	border: 1px solid #cccccc;
+	border: 1px solid #ecf0ff;
 	background-color: #f9f9f9;
 	color: #8da2a9;
-	padding: 1px;
+	padding: 4px 7px;
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: 300;
 }
 .ui-datepicker-calendar td.ui-datepicker-current-day a {
 	background-color: #EAF5FF;
@@ -1152,34 +1155,33 @@ li.task-completed .task-note-block .task-note {
 	border-color: #5980FF;
 }
 .ui-datepicker-calendar td.ui-datepicker-today a {
-	color: #8da2a9;
-	background-color: #ccc;
+	color: #fff;
+	background-color: #2ecc71;
 }
 .ui-datepicker-calendar td a:hover {
 	border-color: #5980FF;
 }
-
-
 .ui-widget-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     position: relative;
 }
 .ui-datepicker-header {
-    border: 1px solid #cfcfcf;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     position: relative;
 }
 .ui-datepicker-header .ui-datepicker-prev {
     cursor: pointer;
-    position: absolute;
-    top: 27%;
-	font-size: 20px;
+	font-size: 12px;
+	float: left;
+}
+.ui-datepicker-next {
+	float: right;
 }
 .ui-widget-header .ui-datepicker-title {
     color: #5B5B5B;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -1206,9 +1208,8 @@ li.task-completed .task-note-block .task-note {
 .mtt-menu-container {
     background-color: #f9f9f9;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 0 7px 7px 0;
     overflow: hidden;
-    padding: 2px 0;
+    padding: 10px 0;
     z-index: 1000;
 }
 .list_all{

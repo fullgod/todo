@@ -27,7 +27,7 @@
                     <i class="icon icon-list">&#xe846;</i>
                       <span id="total">0</span>
                     </span>
-                    <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
+					 <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden list_all">
                       <a href="#alltasks">
                         <span><?php _e('alltasks'); ?></span>
                         <div class="list-action"></div>
@@ -89,11 +89,10 @@
         </div>
 
 <!--Отображение задач по фильтрам (теги..) -->
-   
   <span id="mtt_filters"></span>
 
 <!-- Отображение задач -->
-
+<div class="col-sm-7 col-md-7">
 <div id="page_tasks" style="display:none">
 
   <div id="searchbar" style="display:none">
@@ -108,11 +107,14 @@
   </div>
 </div>
 
+
+</div>
+<div class="col-sm-5 col-md-5">
+йцуй
+</div>
 </div>
 
-<!--Создание задачи-->
-
-    <div id="page_taskedit" style="display:none">
+<div id="page_taskedit" style="display:none">
 
         <form id="taskedit_form" name="edittask" method="post"> 
             <div class="mtt-back-button">
@@ -187,6 +189,11 @@
             </form>
 
     </div>
+
+</div>
+
+</div>
+
 
 <div id="authform" style="display:none">
             <form id="login_form">
@@ -338,5 +345,3 @@
 </div>
         
 <div id="page_ajax" style="display:none"></div>
-
-</div>
