@@ -2294,6 +2294,6 @@
 			advanced: {
 				updateOnContentResize: true
 			}
-		});
+		});		
 	});
 })(jQuery);
