@@ -58,7 +58,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 .sidebar .sidebar-inner {
     height: 100%;
-    overflow: auto;
+    overflow-y: hidden;
     padding: 0;
     z-index: 2;
 }
@@ -282,6 +282,7 @@ ul.mtt-tabs {
 }
 .mtt-tabs  li{
 	list-style:none;
+	line-height: 2.6;
 }
 .mtt-tabs > li:hover {
     background: none repeat scroll 0 0 #ececec;
@@ -293,12 +294,10 @@ ul.mtt-tabs {
 	font-size: 16px;
 }
 .mtt-tabs .task-placeholder {
-	padding: 5px;
-	margin: 5px;
-	height: 25px;
-	line-height: 45px;
-	border: 3px dashed #00adef;
+	border: 2px dashed #181a1d;
+	padding: 16px 0px;
 }
+
 .mtt-tab .list-action {
 	display: none;
 	float: right;
@@ -306,7 +305,7 @@ ul.mtt-tabs {
 	height: 15px;
 	background: transparent url(images/icons.gif) 0 0 no-repeat;
 	cursor: pointer;
-	margin: 4px 14px;
+	margin: 13px 20px;
 	padding: 0;
 	vertical-align: unset;
 }
@@ -1213,7 +1212,7 @@ li.task-completed .task-note-block .task-note {
     background-color: #f9f9f9;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    padding: 10px 0;
+    padding: 0;
     z-index: 1000;
 }
 .list_all{
@@ -1226,6 +1225,8 @@ li.task-completed .task-note-block .task-note {
 
 .mtt-menu-container ul {
 	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 .mtt-menu-container li {
 	margin: 1px 0px;
