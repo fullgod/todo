@@ -52,6 +52,7 @@ input[type="radio"], input[type="checkbox"] {
 	font-size: 35px;
 	font-weight: bold;
 	text-align: center;
+	margin: 0;
 }
 .sidebar .logopanel h1 a{
 	color: #fff;
@@ -276,8 +277,12 @@ a {
 
 
 /* Sidebar task list*/
-
-.mtt-tabs {
+ul.mtt-tabs {
+  margin: 0;
+  padding: 0;
+}
+.mtt-tabs  li{
+	list-style:none;
 }
 .mtt-tabs > li:hover {
     background: none repeat scroll 0 0 #ececec;
@@ -289,11 +294,11 @@ a {
 	font-size: 16px;
 }
 .mtt-tabs .task-placeholder {
-	padding: 0px;
+	padding: 5px;
+	margin: 5px;
 	height: 25px;
-	line-height: 25px;
-	background-color: #fff;
-	border: 1px solid #aaa;
+	line-height: 45px;
+	border: 3px dashed #00adef;
 }
 .mtt-tab .list-action {
 	display: none;
