@@ -20,6 +20,10 @@
 	
 <div id="lists">
     <ul class="mtt-tabs"></ul>
+    <script>
+    var mtt-tab = $(".mtt-tab");
+  $(".mtt-tab span").text( "outerHeight:" + mtt-tab.outerHeight() + " , outerHeight(true):" + mtt-tab.outerHeight(true) );
+  </script>
 	<!--
 	<div id="tabs_buttons">
 		<div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>">
