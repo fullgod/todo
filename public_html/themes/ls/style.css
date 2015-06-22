@@ -618,11 +618,19 @@ form#taskedit_form {
 }
 
 #page_tasks{
+<<<<<<< HEAD
     height: 100%;
     overflow: hidden;
     padding: 0;
     position: fixed;
     top: 60px;
+=======
+    overflow: auto;
+    padding: 0;
+    position: fixed;
+    top: 50px;
+	height: 90%; 
+>>>>>>> origin/master
     z-index: 100;
 }
 
@@ -666,9 +674,27 @@ form#taskedit_form {
 	background: url(images/closetag.gif) 0 0 no-repeat;
 }
 
+#tasklist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#tasklist li {
+	padding: 12px 0px;
+	border-bottom: 1px solid #cfcfcf;
+}
+#tasklist li:hover {
+	background-color: #f6f6f6;
+}
+.task-actions {
+	float: right;
+	width: 20px;
+	text-align: right;
+}
 .task-left {
 	float: left;
-	padding-top: 2px;
+	margin-left: 40px;
+	margin-right: 20px;
 }
 .task-toggle {
 	visibility: hidden;
@@ -689,6 +715,7 @@ li.task-expanded .task-toggle {
 	margin-left: 40px;
 	margin-right: 20px;
 }
+<<<<<<< HEAD
 #tasklist {
 	list-style: inside none none;
     margin: 0;
@@ -707,6 +734,8 @@ li.task-expanded .task-toggle {
 	width: 20px;
 	text-align: right;
 }
+=======
+>>>>>>> origin/master
 .task-date {
 	color: #999999;
 	font-size: 0.8em;
@@ -734,13 +763,15 @@ li.task-expanded .task-toggle {
 	float: right;
 }
 .task-title {
-	font-size: 16px;
+	font-size: 17px;
 	color: #5b5b5b;
 	font-weight: 500;
+
 }
 .task-title a {
-	font-size: 14px;
+	font-size: 17px;
 	color: #5b5b69;
+	font-weight: 500;
 	text-decoration: underline;
 }
 .task-title a:hover {
