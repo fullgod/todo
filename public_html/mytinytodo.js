@@ -636,7 +636,6 @@
 				tabSelect(openListId);
 
 				$('#page_tasks').show();
-				$('#page_tasks').addClass('col-sm-5 col-md-5');
 
 			});
 
