@@ -618,19 +618,11 @@ form#taskedit_form {
 }
 
 #page_tasks{
-<<<<<<< HEAD
-    height: 100%;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    top: 60px;
-=======
     overflow: auto;
     padding: 0;
     position: fixed;
     top: 50px;
 	height: 90%; 
->>>>>>> origin/master
     z-index: 100;
 }
 
@@ -715,7 +707,6 @@ li.task-expanded .task-toggle {
 	margin-left: 40px;
 	margin-right: 20px;
 }
-<<<<<<< HEAD
 #tasklist {
 	list-style: inside none none;
     margin: 0;
@@ -734,8 +725,6 @@ li.task-expanded .task-toggle {
 	width: 20px;
 	text-align: right;
 }
-=======
->>>>>>> origin/master
 .task-date {
 	color: #999999;
 	font-size: 0.8em;
