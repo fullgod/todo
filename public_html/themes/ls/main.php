@@ -87,37 +87,9 @@
         </div>
 
 <!--Отображение задач по фильтрам (теги..) -->
-<<<<<<< HEAD
-  <span id="mtt_filters"></span>
-<div class="row">
-    <!-- Отображение задач -->
-    <div class="col-sm-8">
-    <div id="page_tasks" style="display:none">
-
-      <div id="searchbar" style="display:none">
-        <?php _e( 'searching');?> 
-        <span id="searchbarkeyword"></span>
-      </div>
-
-      <div style="clear:both"></div>
-    <!-- Список задач -->
-      <div id="taskcontainer">
-        <ol id="tasklist" class="sortable"></ol>
-      </div>
-    </div>
-
-
-    </div>
-    
-    <div class="col-sm-4">
-    йцуй
-    </div>
-</div>
-</div>
-=======
 <span id="mtt_filters"></span>
 
-<!-- Отображение задач -->
+<div class="row">
 
 <div id="page_tasks" class="col-md-7" style="display:none">
 
@@ -128,12 +100,9 @@
 	<div style="clear:both"></div>
 <!-- Список задач -->
 	<div id="taskcontainer">
-		<ol id="tasklist" class="sortable"></ol>
+		<ul id="tasklist" class="sortable"></ul>
 	</div>
 </div>
-
-
->>>>>>> origin/master
 
 <div class="col-md-5">
 	<div id="page_taskedit" style="display:none">
@@ -213,6 +182,7 @@
 	</div>
 </div>
 
+</div>
 
 </div>
 

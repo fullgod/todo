@@ -883,6 +883,12 @@
 		});
 	};
 
+// Основной список задач
+// Пример http://themes-lab.com/make/admin/layout2/ui-tree-view.html
+// Цвета http://www.materialui.co/colors
+// http://seantheme.com/color-admin-v1.7/admin/html/email_inbox_v2.html
+// http://seantheme.com/color-admin-v1.7/admin/html/email_inbox.html
+// http://wrapbootstrap.com/preview/WB0N89JMK
 
 	function prepareTaskStr(item, noteExp) {
 		// &mdash; = &#8212; = —
@@ -890,6 +896,7 @@
 		var prio = item.prio;
 		return '<li id="taskrow_' + id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
+			'<i class="jstree-icon jstree-ocl"></i>' + "\n" +
 			'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
 			'<div class="task-left"><div class="task-toggle"></div>' +
 			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
