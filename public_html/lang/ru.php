@@ -1,22 +1,12 @@
 <?php
 
-/*
-	myTinyTodo language pack
-	Language: Russian
-	Original name: Русский
-	Author: Max Pozdeev
-	Author Url: http://www.mytinytodo.net
-	AppVersion: v1.4.2
-	Date: 2011-03-21
-*/
-
 class Lang extends DefaultLang
 {
 	var $js = array
 	(
 		'confirmDelete' => 'Вы действительно хотите удалить задачу?',
 		'confirmLeave' => 'На странице могут быть несохраненные данные. Вы действительно хотите закрыть страницу?',
-		'actionNoteSave' => 'сохранить',
+		'actionNoteSave' => 'Cохранить',
 		'actionNoteCancel' => 'отмена',
 		'error' => 'Ошибка',
 		'denied' => 'Доступ запрещен',
@@ -38,7 +28,7 @@ class Lang extends DefaultLang
 		'advanced_add' => 'Расширенная форма',
 		'searching' => 'Поиск',
 		'tasks' => 'Задачи',
-		'taskdate_inline_created' => 'добавлена %s',
+		'taskdate_inline_created' => '%s',
 		'taskdate_inline_completed' => 'Завершена %s',
 		'taskdate_inline_duedate' => 'В срок %s',
 		'taskdate_created' => 'Дата создания',

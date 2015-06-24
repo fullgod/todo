@@ -890,30 +890,94 @@
 // http://seantheme.com/color-admin-v1.7/admin/html/email_inbox.html
 // http://wrapbootstrap.com/preview/WB0N89JMK
 
+
+
+
+
+
+
+
+
+
+
 	function prepareTaskStr(item, noteExp) {
 		// &mdash; = &#8212; = —
 		var id = item.id;
 		var prio = item.prio;
 		return '<li id="taskrow_' + id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
-			'<i class="jstree-icon jstree-ocl"></i>' + "\n" +
+
 			'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
-			'<div class="task-left"><div class="task-toggle"></div>' +
-			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
-			'<div class="task-middle"><div class="task-through-right">' + prepareDuedate(item) +
-			'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
-			'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span></div>' + "\n" +
-			'<div class="task-through">' + preparePrio(prio, id) + '<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
-			(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
-			prepareTagsStr(item) + '<span class="task-date">' + item.dateInlineTitle + '</span></div>' +
+
+
+			//'<div class="task-left"><div class="task-toggle"></div>' +
+			//'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
+
+			//'<div class="task-middle"><div class="task-through-right">'  +
+			
+			// Дата задачи
+			//+ prepareDuedate(item) +
+
+			// Дата выполненных задач
+			//'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
+			//'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span></div>' + "\n" +
+
+
+			'<div class="task-through">'  +
+			
+			// Приоритет
+			//+ preparePrio(prio, id) + 
+
+			//Название:
+			'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
+
+			// При отображении всех задач - "название раздела"
+			//(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
+			
+			// Теги
+			//prepareTagsStr(item) + 
+
+			// Дата добавления задачи
+			'<span class="task-date label label-default">' + item.dateInlineTitle + '</span>' +
+ 
+			'</div>' +
+
+
+			// Заметка к задаче
 			'<div class="task-note-block">' +
 			'<div id="tasknote' + id + '" class="task-note"><span>' + prepareHtml(item.note) + '</span></div>' +
 			'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
 			'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
 			'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
 			'</div>' +
-			"</div></li>\n";
+			'</div>' +
+
+
+			"</li>\n";
 	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	function prepareHtml(s) {
