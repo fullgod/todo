@@ -647,17 +647,48 @@ form#taskedit_form {
 #tasklist {
     padding: 0;
     margin: 0;
-    list-style: none;
-    display: block;
+    display: inline-block;
+    color: #5f5f5f;
+    font-size: 14px;
+    line-height: 26px;
+    list-style: outside none none;
+    width: 100%;
     li {
-        padding: 15px 15px 15px 20px;
         position: relative;
-        line-height: 24px;
-        margin-left: 24px;
-        min-height: 24px;
-        min-width: 24px;
+        display: list-item;
         border-bottom: 1px solid #ddd;
-        vertical-align: baseline;
+        .info {
+            border-radius: 2px;
+            color: #949494;
+            background: #fafafa none repeat scroll 0 0;
+            padding: 5px 10px;
+            &:after {
+                content: "";
+                display: table;
+                line-height: 0;
+                clear: both;
+            }
+            .name {
+                float: left;  
+                strong {
+                    color: #2c596d;
+                    margin-right: 10px;
+                } 
+                .label {
+
+                }
+                .label-green{
+
+                }
+                .indent{
+
+                }
+            .time{
+                float: right; 
+                }
+            }
+        }
+        
         .task-through-right {
             float: right;
         }
@@ -686,27 +717,22 @@ form#taskedit_form {
             line-height: 50px;
 		}
     }
-    li:hover {
-        background-color: #f6f6f6;
+    .content&:after {
+    clear: both;
     }
-    li.soon {
-        .duedate {color: #008000;}
-    }
-    li.today {
-        .duedate {color: #ff0000;}
-    }
-    li.past {
-        .duedate {color: #a52a2a;}
-    }
+    li:hover { background-color: #f6f6f6;}
+    li.soon  { .duedate {color: #008000;}}
+    li.today { .duedate {color: #ff0000;}}
+    li.past  { .duedate {color: #a52a2a;}}
     li.task-completed {
         opacity: 0.6;
-        filter: alpha(opacity=60);    }
+        filter: alpha(opacity=60);}
     li.task-completed:hover {
         opacity: 1.0;
-        filter: alpha(opacity=100);    }
+        filter: alpha(opacity=100);}
     li.not-in-tagpreview {
         opacity: 0.1;
-        filter: alpha(opacity=10);    }
+        filter: alpha(opacity=10);}
     li.mtt-task-placeholder {
         min-height: 0px;
         padding: 0px;
@@ -716,7 +742,8 @@ form#taskedit_form {
         border: 1px solid #aaa;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
-        border-radius: 5px;}
+        border-radius: 5px;
+    }
     .filter-past li,#tasklist.filter-today li,#tasklist.filter-soon li { display: none;}
     .filter-past li.past,#tasklist.filter-today li.today,#tasklist.filter-soon li.soon { display: block;}
     .filter-past li.task-completed,#tasklist.filter-today li.task-completed,#tasklist.filter-soon li.task-completed { display: none; }

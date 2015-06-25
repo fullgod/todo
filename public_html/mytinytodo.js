@@ -907,11 +907,23 @@
 		return '<li id="taskrow_' + id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
 
-			'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
+			'<div class="info">' +
+			'<span class="name">' +
+			'	<span class="label label-info">'+ prepareDuedate(item) +'</span>' +
+			'	<strong class="indent">Alex</strong>' +
+			'	posted a comment on this task:' +
+			'	<strong>Core Admin</strong>' +
+			'</span>' +
+			'<span class="time pull-right">' +
+			'	<i class="icon icon-cog">&#xe810;</i>' +
+			'	3 minutes ago' +
+			'</span>' +
+			'</div>' +
+			//'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
 
 
 			//'<div class="task-left"><div class="task-toggle"></div>' +
-			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
+			//'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
 
 			//'<div class="task-middle"><div class="task-through-right">'  +
 			
@@ -929,7 +941,7 @@
 			//+ preparePrio(prio, id) + 
 
 			//Название:
-			'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
+			//'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
 
 			// При отображении всех задач - "название раздела"
 			//(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
@@ -938,19 +950,19 @@
 			//prepareTagsStr(item) + 
 
 			// Дата добавления задачи
-			'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
+			//'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
  
 
 
 
 			// Заметка к задаче
-			'<div class="task-note-block">' +
-			'<div id="tasknote' + id + '" class="task-note"><span>' + prepareHtml(item.note) + '</span></div>' +
-			'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
-			'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
-			'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
-			'</div>' +
-			'</div>' +
+			//'<div class="task-note-block">' +
+			//'<div id="tasknote' + id + '" class="task-note"><span>' + prepareHtml(item.note) + '</span></div>' +
+			//'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
+			//'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
+			//'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
+			//'</div>' +
+			//'</div>' +
 
 
 			"</li>\n";
@@ -2361,8 +2373,10 @@
 			}
 		});
 		$("#page_tasks").mCustomScrollbar({
+			theme:"minimal-dark",
 			advanced: {
 				updateOnContentResize: true
+
 			}
 		});		
 	});
