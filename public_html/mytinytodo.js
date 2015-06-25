@@ -911,7 +911,7 @@
 
 
 			//'<div class="task-left"><div class="task-toggle"></div>' +
-			//'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
+			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
 
 			//'<div class="task-middle"><div class="task-through-right">'  +
 			
@@ -923,7 +923,7 @@
 			//'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span></div>' + "\n" +
 
 
-			'<div class="task-through">'  +
+
 			
 			// Приоритет
 			//+ preparePrio(prio, id) + 
@@ -938,9 +938,9 @@
 			//prepareTagsStr(item) + 
 
 			// Дата добавления задачи
-			'<span class="task-date label label-default">' + item.dateInlineTitle + '</span>' +
+			'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
  
-			'</div>' +
+
 
 
 			// Заметка к задаче
