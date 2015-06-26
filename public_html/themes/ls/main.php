@@ -89,14 +89,30 @@
 <!--Отображение задач по фильтрам (теги..) -->
 <span id="mtt_filters"></span>
 
+<!--
+
+http://templatep2p.com/forum/index.php?topic=81577.msg422269#msg422269
+
+INFO: http://themeforest.net/item/pages-responsive-admin-dashboard-template/9694847
+
+DEMO: http://pages.revox.io/1.1.0/#usa
+
+DOWNLOAD v1.1.0:
+https://mega.co.nz/#!X4JQRDaB!u4-xjQSdPQPqkgtG8DtP2YpkuxorjhBDuz3UCsa3yso
+http://www48.zippyshare.com/v/T1CfmWYK/file.html
+
+
+
+https://dribbble.com/shots/893089-Email-App-Design/attachments/97134
+-->
 
 
 <div id="page_tasks" class="col-md-7" style="display:none">
-
-	<div id="searchbar" style="display:none">
-		<?php _e( 'searching');?> 
-		<span id="searchbarkeyword"></span>
-	</div>
+    <div id="page_tasks" class="col-md-7" style="display:none">
+    	<div id="searchbar" style="display:none">
+    		<?php _e( 'searching');?> 
+    		<span id="searchbarkeyword"></span>
+    	</div>
 	<div style="clear:both"></div>
 <!-- Список задач -->
 	<div id="taskcontainer">
