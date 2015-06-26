@@ -79,7 +79,7 @@
   </span>
 
 <!--Отображение сообщений (ошибок и т.д.) -->
-<div id="bar">
+        <div id="bar">
             <div id="msg">
               <span class="msg-text"></span>
                 <div class="msg-details"></div>
@@ -89,7 +89,7 @@
 <!--Отображение задач по фильтрам (теги..) -->
 <span id="mtt_filters"></span>
 
-<div class="row">
+
 
 <div id="page_tasks" class="col-md-7" style="display:none">
 
@@ -182,7 +182,6 @@
 	</div>
 </div>
 
-</div>
 
 </div>
 

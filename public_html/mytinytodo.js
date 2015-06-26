@@ -464,7 +464,7 @@
 				delay: 150,
 				start: sortStart,
 				update: orderChanged,
-				placeholder: 'mtt-task-placeholder'
+				placeholder: 'task-placeholder'
 			});
 
 			$("#lists ul").sortable({
@@ -908,50 +908,46 @@
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
 
 			'<div class="info">' +
+			'<div class="col-md-1 info">' +
+				// Срок окончания задачи
+				'<span class="label label-info">'+ prepareDuedate(item) +'</span>' +
+			'</div>'+
+			'<div class="col-md-9">' +
 			'<span class="name">' +
-			'	<span class="label label-info">'+ prepareDuedate(item) +'</span>' +
-			'	<strong class="indent">Alex</strong>' +
-			'	posted a comment on this task:' +
-			'	<strong>Core Admin</strong>' +
-			'</span>' +
-			'<span class="time pull-right">' +
-			'	<i class="icon icon-cog">&#xe810;</i>' +
-			'	3 minutes ago' +
-			'</span>' +
-			'</div>' +
-			//'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
-
-
-			//'<div class="task-left"><div class="task-toggle"></div>' +
-			//'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
-
-			//'<div class="task-middle"><div class="task-through-right">'  +
+			'<div class="task-toggle"></div>' +
+			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/>' + "\n" +
+ 			// Приоритет
+ 			preparePrio(prio, id) +
+ 			'</span>' +
+			'<strong>' +
+				//Название:
+				'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
+				// Теги
+				'<div class="task-tags pull-right">' + prepareTagsStr(item)  + '</div>' +
 			
-			// Дата задачи
-			//+ prepareDuedate(item) +
-
-			// Дата выполненных задач
-			//'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
-			//'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span></div>' + "\n" +
-
-
-
-			
-			// Приоритет
-			//+ preparePrio(prio, id) + 
-
-			//Название:
-			//'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
-
 			// При отображении всех задач - "название раздела"
 			//(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
 			
-			// Теги
-			//prepareTagsStr(item) + 
+			'</strong>' +
+			'</span>' +
+			'</div>'+
+			'<div class="col-md-1">' +
+			'<span class="time pull-right">' +
+					// Дата добавления задачи
+					'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
+					// Дата выполненных задач
+					'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
+					'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span>' + "\n" +
+			'</span>' +
+			'</div>'+
+			'<div class="col-md-1 pull-right">' +
+			'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
+			'</div>'+
+			'</div>' +
 
-			// Дата добавления задачи
-			//'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
- 
+			//'<div class="task-left"><div class="task-toggle"></div>' +
+			//'<div class="task-middle"><div class="task-through-right">'  +
+
 
 
 
@@ -1023,7 +1019,7 @@
 		for (var i in a) {
 			a[i] = '<a href="#" class="tag" tag="' + a[i] + '" tagid="' + b[i] + '">' + a[i] + '</a>';
 		}
-		return '<span class="task-tags">' + a.join(', ') + '</span>';
+		return  a.join(', ');
 	};
 
 	function prepareTagsClass(ids) {
@@ -2370,7 +2366,11 @@
 		$(".sidebar-inner").mCustomScrollbar({
 			advanced: {
 				updateOnContentResize: true
-			}
+			},
+			scrollButtons: {
+                enable: true
+            },
+            theme: "light-2"
 		});
 		$("#page_tasks").mCustomScrollbar({
 			theme:"minimal-dark",
