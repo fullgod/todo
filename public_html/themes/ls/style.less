@@ -650,7 +650,6 @@ form#taskedit_form {
     display: inline-block;
     color: #5f5f5f;
     font-size: 14px;
-    line-height: 26px;
     list-style: outside none none;
     width: 100%;
     li {
@@ -658,7 +657,6 @@ form#taskedit_form {
         display: list-item;
         border-bottom: 1px solid #ddd;
         .info {
-            border-radius: 2px;
             color: #949494;
             background: #fafafa none repeat scroll 0 0;
             padding: 5px 10px;
@@ -674,11 +672,22 @@ form#taskedit_form {
                     color: #2c596d;
                     margin-right: 10px;
                 } 
-                .label {
-
+                input[type="checkbox"] {
+                    margin-right: 10px;
+                    margin-top: 5px;
+                    vertical-align: middle;
                 }
-                .label-green{
-
+                .label {
+                    display: inline;
+                    padding: 0.3em 0.8em;
+                    vertical-align: baseline;
+                    .duedate {
+                        padding: 0;
+                        margin-left: 5px;
+                    }
+                }
+                .label-info {
+                    background-color: #ef5350;
                 }
                 .indent{
 
@@ -695,9 +704,8 @@ form#taskedit_form {
         .task-date {
             color: #fff;
             font-size: 12px;
-            font-weight: 100;
-            margin-left: 4px;
-            padding: 0.55em 0.5em;
+            font-weight: 300;
+            padding: 0.4em 0.5em;
         }
         .task-date-completed {
             color: #999999;
@@ -707,6 +715,7 @@ form#taskedit_form {
     	.task-actions {
             float: right;
             width: 20px;
+            margin-top: 5px;
             text-align: right;
     	}
     	.task-left {
@@ -769,7 +778,8 @@ form#taskedit_form {
 }
 .task-toggle {
     visibility: hidden;
-    margin-top: 0;
+    margin-right: 20px;
+    margin-top: 4px;
     cursor: pointer;
     width: 15px;
     height: 15px;
@@ -811,14 +821,11 @@ li.task-expanded {
         }
     }
 }
-.task-title {
-    font-size: 17px;
+.task-title, .task-title a {
+    font-size: 14px;
     color: #5b5b5b;
-    font-weight: 500;
+    font-weight: 300;
     a {
-        font-size: 17px;
-        color: #5b5b69;
-        font-weight: 500;
         text-decoration: underline;
     }
     a:hover {
@@ -831,20 +838,14 @@ li.task-expanded {
     padding: 0px 3px;
 }
 .task-tags {
+    margin-right: 20px;
     padding: 0px 2px;
     .tag {
-        font-size: 0.8em;
+        font-size: 0.9em;
         font-weight: bold;
         color: #333333;
         text-decoration: underline;
     }
-}
-.duedate {
-    color: #333333;
-    padding: 0px;
-    padding-left: 1px;
-    margin-left: 5px;
-    font-size: 0.8em;
 }
 li.task-completed {
     .duedate {
