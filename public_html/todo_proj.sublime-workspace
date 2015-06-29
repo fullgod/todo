@@ -1,0 +1,1107 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"text-",
+				"text-decoration"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "themes/ls/style.less",
+			"settings":
+			{
+				"buffer_size": 27691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/ls/sidebar.php",
+			"settings":
+			{
+				"buffer_size": 1917,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 270 files for \"ui-widget-header\"\n\nC:\\Winginx\\home\\todo\\public_html\\jquery\\jquery-ui-1.8.7.custom.min.js:\n 4085  				});\n 4086  			a.element.show().removeAttr(\"title\").addClass(\"ui-dialog-content ui-widget-content\").appendTo(g);\n 4087: 			var f = (a.uiDialogTitlebar = c(\"<div></div>\")).addClass(\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix\").prependTo(g),\n 4088  				h = c('<a href=\"#\"></a>').addClass(\"ui-dialog-titlebar-close ui-corner-all\").attr(\"role\",\n 4089  					\"button\").hover(function() {\n ....\n 4561  				this.range.appendTo(this.element).addClass(\"ui-slider-range\");\n 4562  				if (a.range === \"min\" || a.range === \"max\") this.range.addClass(\"ui-slider-range-\" + a.range);\n 4563: 				this.range.addClass(\"ui-widget-header\")\n 4564  			}\n 4565  			d(\".ui-slider-handle\", this.element).length === 0 && d(\"<a href='#'></a>\").appendTo(this.element).addClass(\"ui-slider-handle\");\n ....\n 5079  			if (b) {\n 5080  				this.element.addClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all\");\n 5081: 				this.list.addClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");\n 5082  				this.lis.addClass(\"ui-state-default ui-corner-top\");\n 5083  				this.panels.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\");\n ....\n 5224  			this.abort();\n 5225  			this.element.unbind(\".tabs\").removeClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible\").removeData(\"tabs\");\n 5226: 			this.list.removeClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");\n 5227  			this.anchors.each(function() {\n 5228  				var e =\n ....\n 6512  						x += '\">'\n 6513  					}\n 6514: 					x += '<div class=\"ui-datepicker-header ui-widget-header ui-helper-clearfix' + t + '\">' + (/all|left/.test(t) && C == 0 ? c ? f : n : \"\") + (/all|right/.test(t) && C == 0 ? c ? n : f : \"\") + this._generateMonthYearHeader(a, g, m, k, o, C > 0 || D > 0, z, w) + '</div><table class=\"ui-datepicker-calendar\"><thead><tr>';\n 6515  					var A = j ? '<th class=\"ui-datepicker-week-col\">' + this._get(a, \"weekHeader\") + \"</th>\" : \"\";\n 6516  					for (t = 0; t < 7; t++) {\n ....\n 6713  				\"aria-valuenow\": this._value()\n 6714  			});\n 6715: 			this.valueDiv = b(\"<div class='ui-progressbar-value ui-widget-header ui-corner-left'></div>\").appendTo(this.element);\n 6716  			this.oldValue = this._value();\n 6717  			this._refreshValue()\n\nC:\\Winginx\\home\\todo\\public_html\\js\\jquery-ui-1.8.7.custom.min.js:\n  375  (function(c,j){var k={buttons:true,height:true,maxHeight:true,maxWidth:true,minHeight:true,minWidth:true,width:true},l={maxHeight:true,maxWidth:true,minHeight:true,minWidth:true};c.widget(\"ui.dialog\",{options:{autoOpen:true,buttons:{},closeOnEscape:true,closeText:\"close\",dialogClass:\"\",draggable:true,hide:null,height:\"auto\",maxHeight:false,maxWidth:false,minHeight:150,minWidth:150,modal:false,position:{my:\"center\",at:\"center\",collision:\"fit\",using:function(a){var b=c(this).css(a).offset().top;b<0&&\n  376  c(this).css(\"top\",a.top-b)}},resizable:true,show:null,stack:true,title:\"\",width:300,zIndex:1E3},_create:function(){this.originalTitle=this.element.attr(\"title\");if(typeof this.originalTitle!==\"string\")this.originalTitle=\"\";this.options.title=this.options.title||this.originalTitle;var a=this,b=a.options,d=b.title||\"&#160;\",e=c.ui.dialog.getTitleId(a.element),g=(a.uiDialog=c(\"<div></div>\")).appendTo(document.body).hide().addClass(\"ui-dialog ui-widget ui-widget-content ui-corner-all \"+b.dialogClass).css({zIndex:b.zIndex}).attr(\"tabIndex\",\n  377: -1).css(\"outline\",0).keydown(function(i){if(b.closeOnEscape&&i.keyCode&&i.keyCode===c.ui.keyCode.ESCAPE){a.close(i);i.preventDefault()}}).attr({role:\"dialog\",\"aria-labelledby\":e}).mousedown(function(i){a.moveToTop(false,i)});a.element.show().removeAttr(\"title\").addClass(\"ui-dialog-content ui-widget-content\").appendTo(g);var f=(a.uiDialogTitlebar=c(\"<div></div>\")).addClass(\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix\").prependTo(g),h=c('<a href=\"#\"></a>').addClass(\"ui-dialog-titlebar-close ui-corner-all\").attr(\"role\",\n  378  \"button\").hover(function(){h.addClass(\"ui-state-hover\")},function(){h.removeClass(\"ui-state-hover\")}).focus(function(){h.addClass(\"ui-state-focus\")}).blur(function(){h.removeClass(\"ui-state-focus\")}).click(function(i){a.close(i);return false}).appendTo(f);(a.uiDialogTitlebarCloseText=c(\"<span></span>\")).addClass(\"ui-icon ui-icon-closethick\").text(b.closeText).appendTo(h);c(\"<span></span>\").addClass(\"ui-dialog-title\").attr(\"id\",e).html(d).prependTo(f);if(c.isFunction(b.beforeclose)&&!c.isFunction(b.beforeClose))b.beforeClose=\n  379  b.beforeclose;f.find(\"*\").add(f).disableSelection();b.draggable&&c.fn.draggable&&a._makeDraggable();b.resizable&&c.fn.resizable&&a._makeResizable();a._createButtons(b.buttons);a._isOpen=false;c.fn.bgiframe&&g.bgiframe()},_init:function(){this.options.autoOpen&&this.open()},destroy:function(){var a=this;a.overlay&&a.overlay.destroy();a.uiDialog.hide();a.element.unbind(\".dialog\").removeData(\"dialog\").removeClass(\"ui-dialog-content ui-widget-content\").hide().appendTo(\"body\");a.uiDialog.remove();a.originalTitle&&\n  ...\n  410   */\n  411  (function(d){d.widget(\"ui.slider\",d.ui.mouse,{widgetEventPrefix:\"slide\",options:{animate:false,distance:0,max:100,min:0,orientation:\"horizontal\",range:false,step:1,value:0,values:null},_create:function(){var b=this,a=this.options;this._mouseSliding=this._keySliding=false;this._animateOff=true;this._handleIndex=null;this._detectOrientation();this._mouseInit();this.element.addClass(\"ui-slider ui-slider-\"+this.orientation+\" ui-widget ui-widget-content ui-corner-all\");a.disabled&&this.element.addClass(\"ui-slider-disabled ui-disabled\");\n  412: this.range=d([]);if(a.range){if(a.range===true){this.range=d(\"<div></div>\");if(!a.values)a.values=[this._valueMin(),this._valueMin()];if(a.values.length&&a.values.length!==2)a.values=[a.values[0],a.values[0]]}else this.range=d(\"<div></div>\");this.range.appendTo(this.element).addClass(\"ui-slider-range\");if(a.range===\"min\"||a.range===\"max\")this.range.addClass(\"ui-slider-range-\"+a.range);this.range.addClass(\"ui-widget-header\")}d(\".ui-slider-handle\",this.element).length===0&&d(\"<a href='#'></a>\").appendTo(this.element).addClass(\"ui-slider-handle\");\n  413  if(a.values&&a.values.length)for(;d(\".ui-slider-handle\",this.element).length<a.values.length;)d(\"<a href='#'></a>\").appendTo(this.element).addClass(\"ui-slider-handle\");this.handles=d(\".ui-slider-handle\",this.element).addClass(\"ui-state-default ui-corner-all\");this.handle=this.handles.eq(0);this.handles.add(this.range).filter(\"a\").click(function(c){c.preventDefault()}).hover(function(){a.disabled||d(this).addClass(\"ui-state-hover\")},function(){d(this).removeClass(\"ui-state-hover\")}).focus(function(){if(a.disabled)d(this).blur();\n  414  else{d(\".ui-slider .ui-state-focus\").removeClass(\"ui-state-focus\");d(this).addClass(\"ui-state-focus\")}}).blur(function(){d(this).removeClass(\"ui-state-focus\")});this.handles.each(function(c){d(this).data(\"index.ui-slider-handle\",c)});this.handles.keydown(function(c){var e=true,f=d(this).data(\"index.ui-slider-handle\"),h,g,i;if(!b.options.disabled){switch(c.keyCode){case d.ui.keyCode.HOME:case d.ui.keyCode.END:case d.ui.keyCode.PAGE_UP:case d.ui.keyCode.PAGE_DOWN:case d.ui.keyCode.UP:case d.ui.keyCode.RIGHT:case d.ui.keyCode.DOWN:case d.ui.keyCode.LEFT:e=\n  ...\n  445  d(this);b.html(b.data(\"label.tabs\")).removeData(\"label.tabs\")})},_tabify:function(b){function e(g,f){g.css(\"display\",\"\");!d.support.opacity&&f.opacity&&g[0].style.removeAttribute(\"filter\")}var a=this,c=this.options,h=/^#.+/;this.list=this.element.find(\"ol,ul\").eq(0);this.lis=d(\" > li:has(a[href])\",this.list);this.anchors=this.lis.map(function(){return d(\"a\",this)[0]});this.panels=d([]);this.anchors.each(function(g,f){var i=d(f).attr(\"href\"),l=i.split(\"#\")[0],q;if(l&&(l===location.toString().split(\"#\")[0]||\n  446  (q=d(\"base\")[0])&&l===q.href)){i=f.hash;f.href=i}if(h.test(i))a.panels=a.panels.add(a.element.find(a._sanitizeSelector(i)));else if(i&&i!==\"#\"){d.data(f,\"href.tabs\",i);d.data(f,\"load.tabs\",i.replace(/#.*$/,\"\"));i=a._tabId(f);f.href=\"#\"+i;f=a.element.find(\"#\"+i);if(!f.length){f=d(c.panelTemplate).attr(\"id\",i).addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\").insertAfter(a.panels[g-1]||a.list);f.data(\"destroy.tabs\",true)}a.panels=a.panels.add(f)}else c.disabled.push(g)});if(b){this.element.addClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all\");\n  447: this.list.addClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");this.lis.addClass(\"ui-state-default ui-corner-top\");this.panels.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\");if(c.selected===p){location.hash&&this.anchors.each(function(g,f){if(f.hash==location.hash){c.selected=g;return false}});if(typeof c.selected!==\"number\"&&c.cookie)c.selected=parseInt(a._cookie(),10);if(typeof c.selected!==\"number\"&&this.lis.filter(\".ui-tabs-selected\").length)c.selected=\n  448  this.lis.index(this.lis.filter(\".ui-tabs-selected\"));c.selected=c.selected||(this.lis.length?0:-1)}else if(c.selected===null)c.selected=-1;c.selected=c.selected>=0&&this.anchors[c.selected]||c.selected<0?c.selected:0;c.disabled=d.unique(c.disabled.concat(d.map(this.lis.filter(\".ui-state-disabled\"),function(g){return a.lis.index(g)}))).sort();d.inArray(c.selected,c.disabled)!=-1&&c.disabled.splice(d.inArray(c.selected,c.disabled),1);this.panels.addClass(\"ui-tabs-hide\");this.lis.removeClass(\"ui-tabs-selected ui-state-active\");\n  449  if(c.selected>=0&&this.anchors.length){a.element.find(a._sanitizeSelector(a.anchors[c.selected].hash)).removeClass(\"ui-tabs-hide\");this.lis.eq(c.selected).addClass(\"ui-tabs-selected ui-state-active\");a.element.queue(\"tabs\",function(){a._trigger(\"show\",null,a._ui(a.anchors[c.selected],a.element.find(a._sanitizeSelector(a.anchors[c.selected].hash))))});this.load(c.selected)}d(window).bind(\"unload\",function(){a.lis.add(a.anchors).unbind(\".tabs\");a.lis=a.anchors=a.panels=null})}else c.selected=this.lis.index(this.lis.filter(\".ui-tabs-selected\"));\n  ...\n  453  this.anchors.bind(c.event+\".tabs\",function(){var g=this,f=d(g).closest(\"li\"),i=a.panels.filter(\":not(.ui-tabs-hide)\"),l=a.element.find(a._sanitizeSelector(g.hash));if(f.hasClass(\"ui-tabs-selected\")&&!c.collapsible||f.hasClass(\"ui-state-disabled\")||f.hasClass(\"ui-state-processing\")||a.panels.filter(\":animated\").length||a._trigger(\"select\",null,a._ui(this,l[0]))===false){this.blur();return false}c.selected=a.anchors.index(this);a.abort();if(c.collapsible)if(f.hasClass(\"ui-tabs-selected\")){c.selected=\n  454  -1;c.cookie&&a._cookie(c.selected,c.cookie);a.element.queue(\"tabs\",function(){s(g,i)}).dequeue(\"tabs\");this.blur();return false}else if(!i.length){c.cookie&&a._cookie(c.selected,c.cookie);a.element.queue(\"tabs\",function(){r(g,l)});a.load(a.anchors.index(this));this.blur();return false}c.cookie&&a._cookie(c.selected,c.cookie);if(l.length){i.length&&a.element.queue(\"tabs\",function(){s(g,i)});a.element.queue(\"tabs\",function(){r(g,l)});a.load(a.anchors.index(this))}else throw\"jQuery UI Tabs: Mismatching fragment identifier.\";\n  455: d.browser.msie&&this.blur()});this.anchors.bind(\"click.tabs\",function(){return false})},_getIndex:function(b){if(typeof b==\"string\")b=this.anchors.index(this.anchors.filter(\"[href$=\"+b+\"]\"));return b},destroy:function(){var b=this.options;this.abort();this.element.unbind(\".tabs\").removeClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible\").removeData(\"tabs\");this.list.removeClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");this.anchors.each(function(){var e=\n  456  d.data(this,\"href.tabs\");if(e)this.href=e;var a=d(this).unbind(\".tabs\");d.each([\"href\",\"load\",\"cache\"],function(c,h){a.removeData(h+\".tabs\")})});this.lis.unbind(\".tabs\").add(this.panels).each(function(){d.data(this,\"destroy.tabs\")?d(this).remove():d(this).removeClass(\"ui-state-default ui-corner-top ui-tabs-selected ui-state-active ui-state-hover ui-state-focus ui-state-disabled ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide\")});b.cookie&&this._cookie(null,b.cookie);return this},add:function(b,\n  457  e,a){if(a===p)a=this.anchors.length;var c=this,h=this.options;e=d(h.tabTemplate.replace(/#\\{href\\}/g,b).replace(/#\\{label\\}/g,e));b=!b.indexOf(\"#\")?b.replace(\"#\",\"\"):this._tabId(d(\"a\",e)[0]);e.addClass(\"ui-state-default ui-corner-top\").data(\"destroy.tabs\",true);var j=c.element.find(\"#\"+b);j.length||(j=d(h.panelTemplate).attr(\"id\",b).data(\"destroy.tabs\",true));j.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide\");if(a>=this.lis.length){e.appendTo(this.list);j.appendTo(this.list[0].parentNode)}else{e.insertBefore(this.lis[a]);\n  ...\n  530  \"closeText\")+\"</button>\":\"\";e=e?'<div class=\"ui-datepicker-buttonpane ui-widget-content\">'+(c?h:\"\")+(this._isInRange(a,r)?'<button type=\"button\" class=\"ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all\" onclick=\"DP_jQuery_'+y+\".datepicker._gotoToday('#\"+a.id+\"');\\\">\"+j+\"</button>\":\"\")+(c?\"\":h)+\"</div>\":\"\";h=parseInt(this._get(a,\"firstDay\"),10);h=isNaN(h)?0:h;j=this._get(a,\"showWeek\");r=this._get(a,\"dayNames\");this._get(a,\"dayNamesShort\");var s=this._get(a,\"dayNamesMin\"),z=\n  531  this._get(a,\"monthNames\"),w=this._get(a,\"monthNamesShort\"),p=this._get(a,\"beforeShowDay\"),v=this._get(a,\"showOtherMonths\"),H=this._get(a,\"selectOtherMonths\");this._get(a,\"calculateWeek\");for(var L=this._getDefaultDate(a),I=\"\",C=0;C<i[0];C++){for(var M=\"\",D=0;D<i[1];D++){var N=this._daylightSavingAdjust(new Date(m,g,a.selectedDay)),t=\" ui-corner-all\",x=\"\";if(l){x+='<div class=\"ui-datepicker-group';if(i[1]>1)switch(D){case 0:x+=\" ui-datepicker-group-first\";t=\" ui-corner-\"+(c?\"right\":\"left\");break;case i[1]-\n  532: 1:x+=\" ui-datepicker-group-last\";t=\" ui-corner-\"+(c?\"left\":\"right\");break;default:x+=\" ui-datepicker-group-middle\";t=\"\";break}x+='\">'}x+='<div class=\"ui-datepicker-header ui-widget-header ui-helper-clearfix'+t+'\">'+(/all|left/.test(t)&&C==0?c?f:n:\"\")+(/all|right/.test(t)&&C==0?c?n:f:\"\")+this._generateMonthYearHeader(a,g,m,k,o,C>0||D>0,z,w)+'</div><table class=\"ui-datepicker-calendar\"><thead><tr>';var A=j?'<th class=\"ui-datepicker-week-col\">'+this._get(a,\"weekHeader\")+\"</th>\":\"\";for(t=0;t<7;t++){var q=\n  533  (t+h)%7;A+=\"<th\"+((t+h+6)%7>=5?' class=\"ui-datepicker-week-end\"':\"\")+'><span title=\"'+r[q]+'\">'+s[q]+\"</span></th>\"}x+=A+\"</tr></thead><tbody>\";A=this._getDaysInMonth(m,g);if(m==a.selectedYear&&g==a.selectedMonth)a.selectedDay=Math.min(a.selectedDay,A);t=(this._getFirstDayOfMonth(m,g)-h+7)%7;A=l?6:Math.ceil((t+A)/7);q=this._daylightSavingAdjust(new Date(m,g,1-t));for(var O=0;O<A;O++){x+=\"<tr>\";var P=!j?\"\":'<td class=\"ui-datepicker-week-col\">'+this._get(a,\"calculateWeek\")(q)+\"</td>\";for(t=0;t<7;t++){var F=\n  534  p?p.apply(a.input?a.input[0]:null,[q]):[true,\"\"],B=q.getMonth()!=g,J=B&&!H||!F[0]||k&&q<k||o&&q>o;P+='<td class=\"'+((t+h+6)%7>=5?\" ui-datepicker-week-end\":\"\")+(B?\" ui-datepicker-other-month\":\"\")+(q.getTime()==N.getTime()&&g==a.selectedMonth&&a._keyEvent||L.getTime()==q.getTime()&&L.getTime()==N.getTime()?\" \"+this._dayOverClass:\"\")+(J?\" \"+this._unselectableClass+\" ui-state-disabled\":\"\")+(B&&!v?\"\":\" \"+F[1]+(q.getTime()==u.getTime()?\" \"+this._currentClass:\"\")+(q.getTime()==b.getTime()?\" ui-datepicker-today\":\n  ...\n  557   *   jquery.ui.widget.js\n  558   */\n  559: (function(b,d){b.widget(\"ui.progressbar\",{options:{value:0,max:100},min:0,_create:function(){this.element.addClass(\"ui-progressbar ui-widget ui-widget-content ui-corner-all\").attr({role:\"progressbar\",\"aria-valuemin\":this.min,\"aria-valuemax\":this.options.max,\"aria-valuenow\":this._value()});this.valueDiv=b(\"<div class='ui-progressbar-value ui-widget-header ui-corner-left'></div>\").appendTo(this.element);this.oldValue=this._value();this._refreshValue()},destroy:function(){this.element.removeClass(\"ui-progressbar ui-widget ui-widget-content ui-corner-all\").removeAttr(\"role\").removeAttr(\"aria-valuemin\").removeAttr(\"aria-valuemax\").removeAttr(\"aria-valuenow\");\n  560  this.valueDiv.remove();b.Widget.prototype.destroy.apply(this,arguments)},value:function(a){if(a===d)return this._value();this._setOption(\"value\",a);return this},_setOption:function(a,c){if(a===\"value\"){this.options.value=c;this._refreshValue();this._value()===this.options.max&&this._trigger(\"complete\")}b.Widget.prototype._setOption.apply(this,arguments)},_value:function(){var a=this.options.value;if(typeof a!==\"number\")a=0;return Math.min(this.options.max,Math.max(this.min,a))},_percentage:function(){return 100*\n  561  this._value()/this.options.max},_refreshValue:function(){var a=this.value(),c=this._percentage();if(this.oldValue!==a){this.oldValue=a;this._trigger(\"change\")}this.valueDiv.toggleClass(\"ui-corner-right\",a===this.options.max).width(c.toFixed(0)+\"%\");this.element.attr(\"aria-valuenow\",a)}});b.extend(b.ui.progressbar,{version:\"1.8.7\"})})(jQuery);\n\nC:\\Winginx\\home\\todo\\public_html\\settings.php:\n  125  header('Content-type:text/html; charset=utf-8');\n  126  ?>\n  127: <div class=\"ui-widget-header ui-datepicker-header\">\n  128  	<a href=\"#\" class=\"mtt-back-button ui-datepicker-prev\" title=\"<?php _e('go_back');?>\">	\n  129  		<i class=\"icon icon-left-circled\">&#xe828;</i>\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\style.less:\n 1171      }\n 1172  }\n 1173: .ui-widget-header {\n 1174      border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n 1175      padding: 0;\n\n14 matches across 4 files\n\n\nSearching 270 files for \"clearfix all\"\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\button-groups.less:\n   35  .btn-toolbar {\n   36    margin-left: -5px; // Offset the first child's margin\n   37:   &:extend(.clearfix all);\n   38  \n   39    .btn-group,\n   ..\n  153    // Clear floats so dropdown menus can be properly placed\n  154    > .btn-group {\n  155:     &:extend(.clearfix all);\n  156      > .btn {\n  157        float: none;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\grid.less:\n    9    padding-left:  (@gutter / 2);\n   10    padding-right: (@gutter / 2);\n   11:   &:extend(.clearfix all);\n   12  }\n   13  \n   ..\n   16    margin-left:  (@gutter / -2);\n   17    margin-right: (@gutter / -2);\n   18:   &:extend(.clearfix all);\n   19  }\n   20  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\modals.less:\n  105    text-align: right; // right align buttons\n  106    border-top: 1px solid @modal-footer-border-color;\n  107:   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons\n  108  \n  109    // Properly space out buttons\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navbar.less:\n   16  \n   17    // Prevent floats from breaking the navbar\n   18:   &:extend(.clearfix all);\n   19  \n   20    @media (min-width: @grid-float-breakpoint) {\n   ..\n   30  \n   31  .navbar-header {\n   32:   &:extend(.clearfix all);\n   33  \n   34    @media (min-width: @grid-float-breakpoint) {\n   ..\n   54    border-top: 1px solid transparent;\n   55    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);\n   56:   &:extend(.clearfix all);\n   57    -webkit-overflow-scrolling: touch;\n   58  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navs.less:\n   11    padding-left: 0; // Override default ul/ol\n   12    list-style: none;\n   13:   &:extend(.clearfix all);\n   14  \n   15    > li {\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\pager.less:\n    9    list-style: none;\n   10    text-align: center;\n   11:   &:extend(.clearfix all);\n   12    li {\n   13      display: inline;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\panels.less:\n   16  .panel-body {\n   17    padding: @panel-body-padding;\n   18:   &:extend(.clearfix all);\n   19  }\n   20  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\type.less:\n  209  .dl-horizontal {\n  210    dd {\n  211:     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present\n  212    }\n  213  \n\n12 matches across 8 files\n\n\nSearching 270 files for \"clearfix\"\n\nC:\\Winginx\\home\\todo\\public_html\\jquery\\jquery-ui-1.8.7.custom.min.js:\n 4085  				});\n 4086  			a.element.show().removeAttr(\"title\").addClass(\"ui-dialog-content ui-widget-content\").appendTo(g);\n 4087: 			var f = (a.uiDialogTitlebar = c(\"<div></div>\")).addClass(\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix\").prependTo(g),\n 4088  				h = c('<a href=\"#\"></a>').addClass(\"ui-dialog-titlebar-close ui-corner-all\").attr(\"role\",\n 4089  					\"button\").hover(function() {\n ....\n 4209  			var b = this,\n 4210  				d = false,\n 4211: 				e = c(\"<div></div>\").addClass(\"ui-dialog-buttonpane ui-widget-content ui-helper-clearfix\"),\n 4212  				g = c(\"<div></div>\").addClass(\"ui-dialog-buttonset\").appendTo(e);\n 4213  			b.uiDialog.find(\".ui-dialog-buttonpane\").remove();\n ....\n 5079  			if (b) {\n 5080  				this.element.addClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all\");\n 5081: 				this.list.addClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");\n 5082  				this.lis.addClass(\"ui-state-default ui-corner-top\");\n 5083  				this.panels.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\");\n ....\n 5224  			this.abort();\n 5225  			this.element.unbind(\".tabs\").removeClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible\").removeData(\"tabs\");\n 5226: 			this.list.removeClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");\n 5227  			this.anchors.each(function() {\n 5228  				var e =\n ....\n 5504  		};\n 5505  		d.extend(this._defaults, this.regional[\"\"]);\n 5506: 		this.dpDiv = d('<div id=\"' + this._mainDivId + '\" class=\"ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all\"></div>')\n 5507  	}\n 5508  \n ....\n 5566  				drawYear: 0,\n 5567  				inline: b,\n 5568: 				dpDiv: !b ? this.dpDiv : d('<div class=\"' + this._inlineClass + ' ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all\"></div>')\n 5569  			}\n 5570  		},\n ....\n 6512  						x += '\">'\n 6513  					}\n 6514: 					x += '<div class=\"ui-datepicker-header ui-widget-header ui-helper-clearfix' + t + '\">' + (/all|left/.test(t) && C == 0 ? c ? f : n : \"\") + (/all|right/.test(t) && C == 0 ? c ? n : f : \"\") + this._generateMonthYearHeader(a, g, m, k, o, C > 0 || D > 0, z, w) + '</div><table class=\"ui-datepicker-calendar\"><thead><tr>';\n 6515  					var A = j ? '<th class=\"ui-datepicker-week-col\">' + this._get(a, \"weekHeader\") + \"</th>\" : \"\";\n 6516  					for (t = 0; t < 7; t++) {\n\nC:\\Winginx\\home\\todo\\public_html\\js\\jquery-ui-1.8.7.custom.min.js:\n  375  (function(c,j){var k={buttons:true,height:true,maxHeight:true,maxWidth:true,minHeight:true,minWidth:true,width:true},l={maxHeight:true,maxWidth:true,minHeight:true,minWidth:true};c.widget(\"ui.dialog\",{options:{autoOpen:true,buttons:{},closeOnEscape:true,closeText:\"close\",dialogClass:\"\",draggable:true,hide:null,height:\"auto\",maxHeight:false,maxWidth:false,minHeight:150,minWidth:150,modal:false,position:{my:\"center\",at:\"center\",collision:\"fit\",using:function(a){var b=c(this).css(a).offset().top;b<0&&\n  376  c(this).css(\"top\",a.top-b)}},resizable:true,show:null,stack:true,title:\"\",width:300,zIndex:1E3},_create:function(){this.originalTitle=this.element.attr(\"title\");if(typeof this.originalTitle!==\"string\")this.originalTitle=\"\";this.options.title=this.options.title||this.originalTitle;var a=this,b=a.options,d=b.title||\"&#160;\",e=c.ui.dialog.getTitleId(a.element),g=(a.uiDialog=c(\"<div></div>\")).appendTo(document.body).hide().addClass(\"ui-dialog ui-widget ui-widget-content ui-corner-all \"+b.dialogClass).css({zIndex:b.zIndex}).attr(\"tabIndex\",\n  377: -1).css(\"outline\",0).keydown(function(i){if(b.closeOnEscape&&i.keyCode&&i.keyCode===c.ui.keyCode.ESCAPE){a.close(i);i.preventDefault()}}).attr({role:\"dialog\",\"aria-labelledby\":e}).mousedown(function(i){a.moveToTop(false,i)});a.element.show().removeAttr(\"title\").addClass(\"ui-dialog-content ui-widget-content\").appendTo(g);var f=(a.uiDialogTitlebar=c(\"<div></div>\")).addClass(\"ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix\").prependTo(g),h=c('<a href=\"#\"></a>').addClass(\"ui-dialog-titlebar-close ui-corner-all\").attr(\"role\",\n  378  \"button\").hover(function(){h.addClass(\"ui-state-hover\")},function(){h.removeClass(\"ui-state-hover\")}).focus(function(){h.addClass(\"ui-state-focus\")}).blur(function(){h.removeClass(\"ui-state-focus\")}).click(function(i){a.close(i);return false}).appendTo(f);(a.uiDialogTitlebarCloseText=c(\"<span></span>\")).addClass(\"ui-icon ui-icon-closethick\").text(b.closeText).appendTo(h);c(\"<span></span>\").addClass(\"ui-dialog-title\").attr(\"id\",e).html(d).prependTo(f);if(c.isFunction(b.beforeclose)&&!c.isFunction(b.beforeClose))b.beforeClose=\n  379  b.beforeclose;f.find(\"*\").add(f).disableSelection();b.draggable&&c.fn.draggable&&a._makeDraggable();b.resizable&&c.fn.resizable&&a._makeResizable();a._createButtons(b.buttons);a._isOpen=false;c.fn.bgiframe&&g.bgiframe()},_init:function(){this.options.autoOpen&&this.open()},destroy:function(){var a=this;a.overlay&&a.overlay.destroy();a.uiDialog.hide();a.element.unbind(\".dialog\").removeData(\"dialog\").removeClass(\"ui-dialog-content ui-widget-content\").hide().appendTo(\"body\");a.uiDialog.remove();a.originalTitle&&\n  ...\n  381  isNaN(e)||(d=Math.max(d,e))}});c.ui.dialog.maxZ=d}return b}},isOpen:function(){return this._isOpen},moveToTop:function(a,b){var d=this,e=d.options;if(e.modal&&!a||!e.stack&&!e.modal)return d._trigger(\"focus\",b);if(e.zIndex>c.ui.dialog.maxZ)c.ui.dialog.maxZ=e.zIndex;if(d.overlay){c.ui.dialog.maxZ+=1;d.overlay.$el.css(\"z-index\",c.ui.dialog.overlay.maxZ=c.ui.dialog.maxZ)}a={scrollTop:d.element.attr(\"scrollTop\"),scrollLeft:d.element.attr(\"scrollLeft\")};c.ui.dialog.maxZ+=1;d.uiDialog.css(\"z-index\",c.ui.dialog.maxZ);\n  382  d.element.attr(a);d._trigger(\"focus\",b);return d},open:function(){if(!this._isOpen){var a=this,b=a.options,d=a.uiDialog;a.overlay=b.modal?new c.ui.dialog.overlay(a):null;a._size();a._position(b.position);d.show(b.show);a.moveToTop(true);b.modal&&d.bind(\"keypress.ui-dialog\",function(e){if(e.keyCode===c.ui.keyCode.TAB){var g=c(\":tabbable\",this),f=g.filter(\":first\");g=g.filter(\":last\");if(e.target===g[0]&&!e.shiftKey){f.focus(1);return false}else if(e.target===f[0]&&e.shiftKey){g.focus(1);return false}}});\n  383: c(a.element.find(\":tabbable\").get().concat(d.find(\".ui-dialog-buttonpane :tabbable\").get().concat(d.get()))).eq(0).focus();a._isOpen=true;a._trigger(\"open\");return a}},_createButtons:function(a){var b=this,d=false,e=c(\"<div></div>\").addClass(\"ui-dialog-buttonpane ui-widget-content ui-helper-clearfix\"),g=c(\"<div></div>\").addClass(\"ui-dialog-buttonset\").appendTo(e);b.uiDialog.find(\".ui-dialog-buttonpane\").remove();typeof a===\"object\"&&a!==null&&c.each(a,function(){return!(d=true)});if(d){c.each(a,function(f,\n  384  h){h=c.isFunction(h)?{click:h,text:f}:h;f=c('<button type=\"button\"></button>').attr(h,true).unbind(\"click\").click(function(){h.click.apply(b.element[0],arguments)}).appendTo(g);c.fn.button&&f.button()});e.appendTo(b.uiDialog)}},_makeDraggable:function(){function a(f){return{position:f.position,offset:f.offset}}var b=this,d=b.options,e=c(document),g;b.uiDialog.draggable({cancel:\".ui-dialog-content, .ui-dialog-titlebar-close\",handle:\".ui-dialog-titlebar\",containment:\"document\",start:function(f,h){g=\n  385  d.height===\"auto\"?\"auto\":c(this).height();c(this).height(c(this).height()).addClass(\"ui-dialog-dragging\");b._trigger(\"dragStart\",f,a(h))},drag:function(f,h){b._trigger(\"drag\",f,a(h))},stop:function(f,h){d.position=[h.position.left-e.scrollLeft(),h.position.top-e.scrollTop()];c(this).removeClass(\"ui-dialog-dragging\").height(g);b._trigger(\"dragStop\",f,a(h));c.ui.dialog.overlay.resize()}})},_makeResizable:function(a){function b(f){return{originalPosition:f.originalPosition,originalSize:f.originalSize,\n  ...\n  445  d(this);b.html(b.data(\"label.tabs\")).removeData(\"label.tabs\")})},_tabify:function(b){function e(g,f){g.css(\"display\",\"\");!d.support.opacity&&f.opacity&&g[0].style.removeAttribute(\"filter\")}var a=this,c=this.options,h=/^#.+/;this.list=this.element.find(\"ol,ul\").eq(0);this.lis=d(\" > li:has(a[href])\",this.list);this.anchors=this.lis.map(function(){return d(\"a\",this)[0]});this.panels=d([]);this.anchors.each(function(g,f){var i=d(f).attr(\"href\"),l=i.split(\"#\")[0],q;if(l&&(l===location.toString().split(\"#\")[0]||\n  446  (q=d(\"base\")[0])&&l===q.href)){i=f.hash;f.href=i}if(h.test(i))a.panels=a.panels.add(a.element.find(a._sanitizeSelector(i)));else if(i&&i!==\"#\"){d.data(f,\"href.tabs\",i);d.data(f,\"load.tabs\",i.replace(/#.*$/,\"\"));i=a._tabId(f);f.href=\"#\"+i;f=a.element.find(\"#\"+i);if(!f.length){f=d(c.panelTemplate).attr(\"id\",i).addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\").insertAfter(a.panels[g-1]||a.list);f.data(\"destroy.tabs\",true)}a.panels=a.panels.add(f)}else c.disabled.push(g)});if(b){this.element.addClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all\");\n  447: this.list.addClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");this.lis.addClass(\"ui-state-default ui-corner-top\");this.panels.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom\");if(c.selected===p){location.hash&&this.anchors.each(function(g,f){if(f.hash==location.hash){c.selected=g;return false}});if(typeof c.selected!==\"number\"&&c.cookie)c.selected=parseInt(a._cookie(),10);if(typeof c.selected!==\"number\"&&this.lis.filter(\".ui-tabs-selected\").length)c.selected=\n  448  this.lis.index(this.lis.filter(\".ui-tabs-selected\"));c.selected=c.selected||(this.lis.length?0:-1)}else if(c.selected===null)c.selected=-1;c.selected=c.selected>=0&&this.anchors[c.selected]||c.selected<0?c.selected:0;c.disabled=d.unique(c.disabled.concat(d.map(this.lis.filter(\".ui-state-disabled\"),function(g){return a.lis.index(g)}))).sort();d.inArray(c.selected,c.disabled)!=-1&&c.disabled.splice(d.inArray(c.selected,c.disabled),1);this.panels.addClass(\"ui-tabs-hide\");this.lis.removeClass(\"ui-tabs-selected ui-state-active\");\n  449  if(c.selected>=0&&this.anchors.length){a.element.find(a._sanitizeSelector(a.anchors[c.selected].hash)).removeClass(\"ui-tabs-hide\");this.lis.eq(c.selected).addClass(\"ui-tabs-selected ui-state-active\");a.element.queue(\"tabs\",function(){a._trigger(\"show\",null,a._ui(a.anchors[c.selected],a.element.find(a._sanitizeSelector(a.anchors[c.selected].hash))))});this.load(c.selected)}d(window).bind(\"unload\",function(){a.lis.add(a.anchors).unbind(\".tabs\");a.lis=a.anchors=a.panels=null})}else c.selected=this.lis.index(this.lis.filter(\".ui-tabs-selected\"));\n  ...\n  453  this.anchors.bind(c.event+\".tabs\",function(){var g=this,f=d(g).closest(\"li\"),i=a.panels.filter(\":not(.ui-tabs-hide)\"),l=a.element.find(a._sanitizeSelector(g.hash));if(f.hasClass(\"ui-tabs-selected\")&&!c.collapsible||f.hasClass(\"ui-state-disabled\")||f.hasClass(\"ui-state-processing\")||a.panels.filter(\":animated\").length||a._trigger(\"select\",null,a._ui(this,l[0]))===false){this.blur();return false}c.selected=a.anchors.index(this);a.abort();if(c.collapsible)if(f.hasClass(\"ui-tabs-selected\")){c.selected=\n  454  -1;c.cookie&&a._cookie(c.selected,c.cookie);a.element.queue(\"tabs\",function(){s(g,i)}).dequeue(\"tabs\");this.blur();return false}else if(!i.length){c.cookie&&a._cookie(c.selected,c.cookie);a.element.queue(\"tabs\",function(){r(g,l)});a.load(a.anchors.index(this));this.blur();return false}c.cookie&&a._cookie(c.selected,c.cookie);if(l.length){i.length&&a.element.queue(\"tabs\",function(){s(g,i)});a.element.queue(\"tabs\",function(){r(g,l)});a.load(a.anchors.index(this))}else throw\"jQuery UI Tabs: Mismatching fragment identifier.\";\n  455: d.browser.msie&&this.blur()});this.anchors.bind(\"click.tabs\",function(){return false})},_getIndex:function(b){if(typeof b==\"string\")b=this.anchors.index(this.anchors.filter(\"[href$=\"+b+\"]\"));return b},destroy:function(){var b=this.options;this.abort();this.element.unbind(\".tabs\").removeClass(\"ui-tabs ui-widget ui-widget-content ui-corner-all ui-tabs-collapsible\").removeData(\"tabs\");this.list.removeClass(\"ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all\");this.anchors.each(function(){var e=\n  456  d.data(this,\"href.tabs\");if(e)this.href=e;var a=d(this).unbind(\".tabs\");d.each([\"href\",\"load\",\"cache\"],function(c,h){a.removeData(h+\".tabs\")})});this.lis.unbind(\".tabs\").add(this.panels).each(function(){d.data(this,\"destroy.tabs\")?d(this).remove():d(this).removeClass(\"ui-state-default ui-corner-top ui-tabs-selected ui-state-active ui-state-hover ui-state-focus ui-state-disabled ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide\")});b.cookie&&this._cookie(null,b.cookie);return this},add:function(b,\n  457  e,a){if(a===p)a=this.anchors.length;var c=this,h=this.options;e=d(h.tabTemplate.replace(/#\\{href\\}/g,b).replace(/#\\{label\\}/g,e));b=!b.indexOf(\"#\")?b.replace(\"#\",\"\"):this._tabId(d(\"a\",e)[0]);e.addClass(\"ui-state-default ui-corner-top\").data(\"destroy.tabs\",true);var j=c.element.find(\"#\"+b);j.length||(j=d(h.panelTemplate).attr(\"id\",b).data(\"destroy.tabs\",true));j.addClass(\"ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide\");if(a>=this.lis.length){e.appendTo(this.list);j.appendTo(this.list[0].parentNode)}else{e.insertBefore(this.lis[a]);\n  ...\n  478  \"ui-datepicker-days-cell-over\";this.regional=[];this.regional[\"\"]={closeText:\"Done\",prevText:\"Prev\",nextText:\"Next\",currentText:\"Today\",monthNames:[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],monthNamesShort:[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],dayNames:[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],dayNamesShort:[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],dayNamesMin:[\"Su\",\n  479  \"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],weekHeader:\"Wk\",dateFormat:\"mm/dd/yy\",firstDay:0,isRTL:false,showMonthAfterYear:false,yearSuffix:\"\"};this._defaults={showOn:\"focus\",showAnim:\"fadeIn\",showOptions:{},defaultDate:null,appendText:\"\",buttonText:\"...\",buttonImage:\"\",buttonImageOnly:false,hideIfNoPrevNext:false,navigationAsDateFormat:false,gotoCurrent:false,changeMonth:false,changeYear:false,yearRange:\"c-10:c+10\",showOtherMonths:false,selectOtherMonths:false,showWeek:false,calculateWeek:this.iso8601Week,shortYearCutoff:\"+10\",\n  480: minDate:null,maxDate:null,duration:\"fast\",beforeShowDay:null,beforeShow:null,onSelect:null,onChangeMonthYear:null,onClose:null,numberOfMonths:1,showCurrentAtPos:0,stepMonths:1,stepBigMonths:12,altField:\"\",altFormat:\"\",constrainInput:true,showButtonPanel:false,autoSize:false};d.extend(this._defaults,this.regional[\"\"]);this.dpDiv=d('<div id=\"'+this._mainDivId+'\" class=\"ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all\"></div>')}function E(a,b){d.extend(a,b);for(var c in b)if(b[c]==\n  481  null||b[c]==G)a[c]=b[c];return a}d.extend(d.ui,{datepicker:{version:\"1.8.7\"}});var y=(new Date).getTime();d.extend(K.prototype,{markerClassName:\"hasDatepicker\",log:function(){this.debug&&console.log.apply(\"\",arguments)},_widgetDatepicker:function(){return this.dpDiv},setDefaults:function(a){E(this._defaults,a||{});return this},_attachDatepicker:function(a,b){var c=null;for(var e in this._defaults){var f=a.getAttribute(\"date:\"+e);if(f){c=c||{};try{c[e]=eval(f)}catch(h){c[e]=f}}}e=a.nodeName.toLowerCase();\n  482: f=e==\"div\"||e==\"span\";if(!a.id){this.uuid+=1;a.id=\"dp\"+this.uuid}var i=this._newInst(d(a),f);i.settings=d.extend({},b||{},c||{});if(e==\"input\")this._connectDatepicker(a,i);else f&&this._inlineDatepicker(a,i)},_newInst:function(a,b){return{id:a[0].id.replace(/([^A-Za-z0-9_-])/g,\"\\\\\\\\$1\"),input:a,selectedDay:0,selectedMonth:0,selectedYear:0,drawMonth:0,drawYear:0,inline:b,dpDiv:!b?this.dpDiv:d('<div class=\"'+this._inlineClass+' ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all\"></div>')}},\n  483  _connectDatepicker:function(a,b){var c=d(a);b.append=d([]);b.trigger=d([]);if(!c.hasClass(this.markerClassName)){this._attachments(c,b);c.addClass(this.markerClassName).keydown(this._doKeyDown).keypress(this._doKeyPress).keyup(this._doKeyUp).bind(\"setData.datepicker\",function(e,f,h){b.settings[f]=h}).bind(\"getData.datepicker\",function(e,f){return this._get(b,f)});this._autoSize(b);d.data(a,\"datepicker\",b)}},_attachments:function(a,b){var c=this._get(b,\"appendText\"),e=this._get(b,\"isRTL\");b.append&&\n  484  b.append.remove();if(c){b.append=d('<span class=\"'+this._appendClass+'\">'+c+\"</span>\");a[e?\"before\":\"after\"](b.append)}a.unbind(\"focus\",this._showDatepicker);b.trigger&&b.trigger.remove();c=this._get(b,\"showOn\");if(c==\"focus\"||c==\"both\")a.focus(this._showDatepicker);if(c==\"button\"||c==\"both\"){c=this._get(b,\"buttonText\");var f=this._get(b,\"buttonImage\");b.trigger=d(this._get(b,\"buttonImageOnly\")?d(\"<img/>\").addClass(this._triggerClass).attr({src:f,alt:c,title:c}):d('<button type=\"button\"></button>').addClass(this._triggerClass).html(f==\n  ...\n  530  \"closeText\")+\"</button>\":\"\";e=e?'<div class=\"ui-datepicker-buttonpane ui-widget-content\">'+(c?h:\"\")+(this._isInRange(a,r)?'<button type=\"button\" class=\"ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all\" onclick=\"DP_jQuery_'+y+\".datepicker._gotoToday('#\"+a.id+\"');\\\">\"+j+\"</button>\":\"\")+(c?\"\":h)+\"</div>\":\"\";h=parseInt(this._get(a,\"firstDay\"),10);h=isNaN(h)?0:h;j=this._get(a,\"showWeek\");r=this._get(a,\"dayNames\");this._get(a,\"dayNamesShort\");var s=this._get(a,\"dayNamesMin\"),z=\n  531  this._get(a,\"monthNames\"),w=this._get(a,\"monthNamesShort\"),p=this._get(a,\"beforeShowDay\"),v=this._get(a,\"showOtherMonths\"),H=this._get(a,\"selectOtherMonths\");this._get(a,\"calculateWeek\");for(var L=this._getDefaultDate(a),I=\"\",C=0;C<i[0];C++){for(var M=\"\",D=0;D<i[1];D++){var N=this._daylightSavingAdjust(new Date(m,g,a.selectedDay)),t=\" ui-corner-all\",x=\"\";if(l){x+='<div class=\"ui-datepicker-group';if(i[1]>1)switch(D){case 0:x+=\" ui-datepicker-group-first\";t=\" ui-corner-\"+(c?\"right\":\"left\");break;case i[1]-\n  532: 1:x+=\" ui-datepicker-group-last\";t=\" ui-corner-\"+(c?\"left\":\"right\");break;default:x+=\" ui-datepicker-group-middle\";t=\"\";break}x+='\">'}x+='<div class=\"ui-datepicker-header ui-widget-header ui-helper-clearfix'+t+'\">'+(/all|left/.test(t)&&C==0?c?f:n:\"\")+(/all|right/.test(t)&&C==0?c?n:f:\"\")+this._generateMonthYearHeader(a,g,m,k,o,C>0||D>0,z,w)+'</div><table class=\"ui-datepicker-calendar\"><thead><tr>';var A=j?'<th class=\"ui-datepicker-week-col\">'+this._get(a,\"weekHeader\")+\"</th>\":\"\";for(t=0;t<7;t++){var q=\n  533  (t+h)%7;A+=\"<th\"+((t+h+6)%7>=5?' class=\"ui-datepicker-week-end\"':\"\")+'><span title=\"'+r[q]+'\">'+s[q]+\"</span></th>\"}x+=A+\"</tr></thead><tbody>\";A=this._getDaysInMonth(m,g);if(m==a.selectedYear&&g==a.selectedMonth)a.selectedDay=Math.min(a.selectedDay,A);t=(this._getFirstDayOfMonth(m,g)-h+7)%7;A=l?6:Math.ceil((t+A)/7);q=this._daylightSavingAdjust(new Date(m,g,1-t));for(var O=0;O<A;O++){x+=\"<tr>\";var P=!j?\"\":'<td class=\"ui-datepicker-week-col\">'+this._get(a,\"calculateWeek\")(q)+\"</td>\";for(t=0;t<7;t++){var F=\n  534  p?p.apply(a.input?a.input[0]:null,[q]):[true,\"\"],B=q.getMonth()!=g,J=B&&!H||!F[0]||k&&q<k||o&&q>o;P+='<td class=\"'+((t+h+6)%7>=5?\" ui-datepicker-week-end\":\"\")+(B?\" ui-datepicker-other-month\":\"\")+(q.getTime()==N.getTime()&&g==a.selectedMonth&&a._keyEvent||L.getTime()==q.getTime()&&L.getTime()==N.getTime()?\" \"+this._dayOverClass:\"\")+(J?\" \"+this._unselectableClass+\" ui-state-disabled\":\"\")+(B&&!v?\"\":\" \"+F[1]+(q.getTime()==u.getTime()?\" \"+this._currentClass:\"\")+(q.getTime()==b.getTime()?\" ui-datepicker-today\":\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\demo.html:\n   11   * Designed and built with all the love in the world @twitter by @mdo and @fat.\n   12   */\n   13: .clearfix {\n   14    *zoom: 1;\n   15  }\n   16: .clearfix:before,\n   17: .clearfix:after {\n   18    display: table;\n   19    content: \"\";\n   20    line-height: 0;\n   21  }\n   22: .clearfix:after {\n   23    clear: both;\n   24  }\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\button-groups.less:\n   35  .btn-toolbar {\n   36    margin-left: -5px; // Offset the first child's margin\n   37:   &:extend(.clearfix all);\n   38  \n   39    .btn-group,\n   ..\n  153    // Clear floats so dropdown menus can be properly placed\n  154    > .btn-group {\n  155:     &:extend(.clearfix all);\n  156      > .btn {\n  157        float: none;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins.less:\n   33  \n   34  // Layout\n   35: @import \"mixins/clearfix.less\";\n   36  @import \"mixins/center-block.less\";\n   37  @import \"mixins/nav-vertical-align.less\";\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\clearfix.less:\n    1: // Clearfix\n    2  //\n    3  // For modern browsers\n    .\n    5  //    contenteditable attribute is included anywhere else in the document.\n    6  //    Otherwise it causes space to appear at the top and bottom of elements\n    7: //    that are clearfixed.\n    8  // 2. The use of `table` rather than `block` is only necessary if using\n    9  //    `:before` to contain the top-margins of child elements.\n   10  //\n   11: // Source: http://nicolasgallagher.com/micro-clearfix-hack/\n   12  \n   13: .clearfix() {\n   14    &:before,\n   15    &:after {\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\grid.less:\n    9    padding-left:  (@gutter / 2);\n   10    padding-right: (@gutter / 2);\n   11:   &:extend(.clearfix all);\n   12  }\n   13  \n   ..\n   16    margin-left:  (@gutter / -2);\n   17    margin-right: (@gutter / -2);\n   18:   &:extend(.clearfix all);\n   19  }\n   20  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\modals.less:\n  105    text-align: right; // right align buttons\n  106    border-top: 1px solid @modal-footer-border-color;\n  107:   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons\n  108  \n  109    // Properly space out buttons\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navbar.less:\n   16  \n   17    // Prevent floats from breaking the navbar\n   18:   &:extend(.clearfix all);\n   19  \n   20    @media (min-width: @grid-float-breakpoint) {\n   ..\n   30  \n   31  .navbar-header {\n   32:   &:extend(.clearfix all);\n   33  \n   34    @media (min-width: @grid-float-breakpoint) {\n   ..\n   54    border-top: 1px solid transparent;\n   55    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);\n   56:   &:extend(.clearfix all);\n   57    -webkit-overflow-scrolling: touch;\n   58  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navs.less:\n   11    padding-left: 0; // Override default ul/ol\n   12    list-style: none;\n   13:   &:extend(.clearfix all);\n   14  \n   15    > li {\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\pager.less:\n    9    list-style: none;\n   10    text-align: center;\n   11:   &:extend(.clearfix all);\n   12    li {\n   13      display: inline;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\panels.less:\n   16  .panel-body {\n   17    padding: @panel-body-padding;\n   18:   &:extend(.clearfix all);\n   19  }\n   20  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\type.less:\n  209  .dl-horizontal {\n  210    dd {\n  211:     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present\n  212    }\n  213  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\utilities.less:\n    7  // -------------------------\n    8  \n    9: .clearfix {\n   10:   .clearfix();\n   11  }\n   12  .center-block {\n\n37 matches across 14 files\n\n\nSearching 270 files for \"center-block\"\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins.less:\n   34  // Layout\n   35  @import \"mixins/clearfix.less\";\n   36: @import \"mixins/center-block.less\";\n   37  @import \"mixins/nav-vertical-align.less\";\n   38  @import \"mixins/grid-framework.less\";\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\center-block.less:\n    1  // Center-align a block level element\n    2  \n    3: .center-block() {\n    4    display: block;\n    5    margin-left: auto;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\utilities.less:\n   10    .clearfix();\n   11  }\n   12: .center-block {\n   13:   .center-block();\n   14  }\n   15  .pull-right {\n\n4 matches across 3 files\n\n\nSearching 270 files for \"float: left\"\n\nC:\\Winginx\\home\\todo\\public_html\\bootstrap-select\\dist\\css\\bootstrap-select.css:\n  233  }\n  234  .bs-actionsbox {\n  235:   float: left;\n  236    width: 100%;\n  237    -webkit-box-sizing: border-box;\n\nC:\\Winginx\\home\\todo\\public_html\\bootstrap-select\\dist\\css\\bootstrap-select.css.map:\n    1: {\"version\":3,\"sources\":[\"less/bootstrap-select.less\",\"bootstrap-select.css\"],\"names\":[],\"mappings\":\"AAQA;ECPE,kCAAiC;EDUjC,iBAAA;ECRA,kBAAiB;EAClB;ADID;EAOI,aAAA;EACA,qBAAA;ECRH;ADYC;EACE,2BAAA;ECVH;ADcC;EACE,uBAAA;ECZH;ADeC;EACE,wBAAA;ECbH;ADgBC;EACE,cAAA;ECdH;ADZD;EA8BI,yCAAA;EACA,uDAAA;EACA,sBAAA;ECfH;ADmBD;EACE,kBAAA;EACA,YAAA;EACA,cAAA;ECjBD;ADmBC;EACE,aAAA;ECjBH;ADuBC;;EAEE,aAAA;EACA,uBAAA;EACA,gBAAA;ECrBH;AD4BG;;;EACE,cAAA;ECxBL;AD4BC;;;;EAIE,kBAAA;EC1BH;AD6BC;;EAEE,YAAA;EC3BH;ADgCC;EACE,aAAA;EC9BH;ADiCC;EACE,mBAAA;EC/BH;ADkCC;EACE,oBAAA;EChCH;ADRD;EAnDE,qBAAA;EC8DD;ADmCG;EACE,0BAAA;ECjCL;ADdD;EAsDM,uBAAA;EACA,kBAAA;EACA,aAAA;EACA,kBAAA;ECrCL;ADpBD;EA6DM,oBAAA;EACA,UAAA;EACA,aAAA;EACA,kBAAA;EACA,wBAAA;ECtCL;AD0CC;EACE,aAAA;ECxCH;AD9BD;EA2EI,iBAAA;EACA,eAAA;EACA,gCAAA;KAAA,6BAAA;UAAA,wBAAA;EC1CH;AD4CG;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,0BAAA;UAAA,kBAAA;EC1CL;AD3CD;EAyFM,oBAAA;EC3CL;AD6CK;;;EAGE,gBAAA;EACA,iCAAA;EC3CP;AD8CK;EArJJ,qBAAA;EC0GD;ADvDD;EAuGQ,iBAAA;EC7CP;AD+CO;EACE,oBAAA;EACA,sBAAA;EC7CT;AD9DD;EA+GU,eAAA;EC9CT;ADjED;EAkHU,uBAAA;EC9CT;ADpED;EAuHQ,qBAAA;EChDP;ADvED;EA4HM,oBAAA;EACA,aAAA;EACA,YAAA;EACA,cAAA;EACA,kBAAA;EACA,kBAAA;EACA,qBAAA;EACA,2BAAA;EACA,yDAAA;UAAA,iDAAA;EACA,sBAAA;EACA,cAAA;EACA,gCAAA;KAAA,6BAAA;UAAA,wBAAA;EClDL;ADrFD;EA4II,cAAA;EACA,qBAAA;EACA,eAAA;ECpDH;ADuDC;EAEI,kBAAA;ECtDL;ADoDC;EAMI,kBAAA;EACA,WAAA;EACA,kBAAA;ECvDL;AD4DG;EACE,oBAAA;EACA,uBAAA;EACA,aAAA;EACA,iBAAA;EC1DL;ADqDC;EASI,oBAAA;EC3DL;ADiEC;EACE,mBAAA;EC/DH;ADmEG;EACE,aAAA;EACA,oCAAA;EACA,qCAAA;EACA,0BAAA;EACA,4BAAA;EACA,8BAAA;EACA,+CAAA;EACA,oBAAA;EACA,cAAA;EACA,WAAA;EACA,eAAA;ECjEL;ADoEG;EACE,aAAA;EACA,oCAAA;EACA,qCAAA;EACA,gCAAA;EACA,oBAAA;EACA,cAAA;EACA,YAAA;EACA,eAAA;EClEL;ADuEG;EACE,cAAA;EACA,WAAA;EACA,kBAAA;EACA,uBAAA;EACA,yBAAA;EACA,2BAAA;EACA,4CAAA;ECrEL;ADwEG;EACE,cAAA;EACA,WAAA;EACA,6BAAA;EACA,kBAAA;ECtEL;AD2EG;EACE,aAAA;EACA,YAAA;ECzEL;AD4EG;EACE,aAAA;EACA,YAAA;EC1EL;AD+EG;;EAEE,gBAAA;EC7EL;ADkFD;;EAEE,kBAAA;EChFD;ADmFD;EACE,aAAA;EACA,aAAA;EACA,gCAAA;KAAA,6BAAA;UAAA,wBAAA;ECjFD;ADmFC;EACE,YAAA;ECjFH;ADsFC;EACE,oBAAA;ECpFH;ADuFC;EACE,kBAAA;EACA,aAAA;ECrFH;ADyFD;EACE,oBAAA;EACA,QAAA;EACA,SAAA;EACA,2BAAA;EACA,aAAA;EACA,yBAAA;EACA,YAAA;ECvFD\",\"file\":\"bootstrap-select.css\",\"sourcesContent\":[\"@import \\\"variables\\\";\\n\\n// Mixins\\n.cursor-disabled() {\\n  cursor: not-allowed;\\n}\\n\\n// Rules\\n.bootstrap-select {\\n  /*width: 220px\\\\9; IE8 and below*/\\n  //noinspection CssShorthandPropertyValue\\n  width: 220px \\\\0; /*IE9 and below*/\\n\\n  // The selectpicker button\\n  > .btn {\\n    width: 100%;\\n    padding-right: 25px;\\n  }\\n\\n  // Error display\\n  .error & .btn {\\n    border: 1px solid @color-red-error;\\n  }\\n\\n  // Error display\\n  .control-group.error & .dropdown-toggle {\\n    border-color: @color-red-error;\\n  }\\n\\n  &.fit-width {\\n    width: auto !important;\\n  }\\n\\n  &:not([class*=\\\"col-\\\"]):not([class*=\\\"form-control\\\"]):not(.input-group-btn) {\\n    width: @width-default;\\n  }\\n\\n  .btn:focus {\\n    outline: thin dotted #333333 !important;\\n    outline: 5px auto -webkit-focus-ring-color !important;\\n    outline-offset: -2px;\\n  }\\n}\\n\\n.bootstrap-select.form-control {\\n  margin-bottom: 0;\\n  padding: 0;\\n  border: none;\\n\\n  &:not([class*=\\\"col-\\\"]) {\\n    width: 100%;\\n  }\\n}\\n\\n// The selectpicker components\\n.bootstrap-select.btn-group {\\n  &:not(.input-group-btn),\\n  &[class*=\\\"col-\\\"] {\\n    float: none;\\n    display: inline-block;\\n    margin-left: 0;\\n  }\\n\\n  // Forces the pull to the right, if necessary\\n  &,\\n  &[class*=\\\"col-\\\"],\\n  .row-fluid &[class*=\\\"col-\\\"] {\\n    &.dropdown-menu-right {\\n      float: right;\\n    }\\n  }\\n\\n  .form-search &,\\n  .form-inline &,\\n  .form-horizontal &,\\n  .form-group & {\\n    margin-bottom: 0;\\n  }\\n\\n  .form-group-lg  &.form-control,\\n  .form-group-sm  &.form-control {\\n    padding: 0;\\n  }\\n\\n  // Set the width of the live search (and any other form control within an inline form)\\n  // see https://github.com/silviomoreto/bootstrap-select/issues/685\\n  .form-inline & .form-control {\\n    width: 100%;\\n  }\\n\\n  .input-append & {\\n    margin-left: -1px;\\n  }\\n\\n  .input-prepend & {\\n    margin-right: -1px;\\n  }\\n\\n  > .disabled {\\n    .cursor-disabled();\\n\\n    &:focus {\\n      outline: none !important;\\n    }\\n  }\\n\\n  // The selectpicker button\\n  .btn {\\n    .filter-option {\\n      display: inline-block;\\n      overflow: hidden;\\n      width: 100%;\\n      text-align: left;\\n    }\\n\\n    .caret {\\n      position: absolute;\\n      top: 50%;\\n      right: 12px;\\n      margin-top: -2px;\\n      vertical-align: middle;\\n    }\\n  }\\n\\n  &[class*=\\\"col-\\\"] .btn {\\n    width: 100%;\\n  }\\n\\n  // The selectpicker dropdown\\n  .dropdown-menu {\\n    min-width: 100%;\\n    z-index: @zindex-select-dropdown;\\n    box-sizing: border-box;\\n\\n    &.inner {\\n      position: static;\\n      border: 0;\\n      padding: 0;\\n      margin: 0;\\n      border-radius: 0;\\n      box-shadow: none;\\n    }\\n\\n    li {\\n      position: relative;\\n\\n      &:not(.disabled) a:hover small,\\n      &:not(.disabled) a:focus small,\\n      &.active:not(.disabled) a small {\\n        color: @color-blue-hover;\\n        color: fade(@color-blue-hover, 40%);\\n      }\\n\\n      &.disabled a {\\n        .cursor-disabled();\\n      }\\n\\n      a {\\n        cursor: pointer;\\n\\n        &.opt {\\n          position: relative;\\n          padding-left: 2.25em;\\n        }\\n\\n        span.check-mark {\\n          display: none;\\n        }\\n        span.text {\\n          display: inline-block;\\n        }\\n      }\\n\\n      small {\\n        padding-left: 0.5em;\\n      }\\n    }\\n\\n    .notify {\\n      position: absolute;\\n      bottom: 5px;\\n      width: 96%;\\n      margin: 0 2%;\\n      min-height: 26px;\\n      padding: 3px 5px;\\n      background: rgb(245, 245, 245);\\n      border: 1px solid rgb(227, 227, 227);\\n      box-shadow: inset 0 1px 1px fade(rgb(0, 0, 0), 5%);\\n      pointer-events: none;\\n      opacity: 0.9;\\n      box-sizing: border-box;\\n    }\\n  }\\n\\n  .no-results {\\n    padding: 3px;\\n    background: #f5f5f5;\\n    margin: 0 5px;\\n  }\\n\\n  &.fit-width .btn {\\n    .filter-option {\\n      position: static;\\n    }\\n\\n    .caret {\\n      position: static;\\n      top: auto;\\n      margin-top: -1px;\\n    }\\n  }\\n\\n  &.show-tick .dropdown-menu li {\\n    &.selected a span.check-mark {\\n      position: absolute;\\n      display: inline-block;\\n      right: 15px;\\n      margin-top: 5px;\\n    }\\n\\n    a span.text {\\n      margin-right: 34px;\\n    }\\n  }\\n}\\n\\n.bootstrap-select.show-menu-arrow {\\n  &.open > .btn {\\n    z-index: @zindex-select-dropdown + 1;\\n  }\\n\\n  .dropdown-toggle {\\n    &:before {\\n      content: '';\\n      border-left: 7px solid transparent;\\n      border-right: 7px solid transparent;\\n      border-bottom-width: 7px;\\n      border-bottom-style: solid;\\n      border-bottom-color: @color-grey-arrow;\\n      border-bottom-color: fade(@color-grey-arrow, 20%);\\n      position: absolute;\\n      bottom: -4px;\\n      left: 9px;\\n      display: none;\\n    }\\n\\n    &:after {\\n      content: '';\\n      border-left: 6px solid transparent;\\n      border-right: 6px solid transparent;\\n      border-bottom: 6px solid white;\\n      position: absolute;\\n      bottom: -4px;\\n      left: 10px;\\n      display: none;\\n    }\\n  }\\n\\n  &.dropup .dropdown-toggle {\\n    &:before {\\n      bottom: auto;\\n      top: -3px;\\n      border-bottom: 0;\\n      border-top-width: 7px;\\n      border-top-style: solid;\\n      border-top-color: @color-grey-arrow;\\n      border-top-color: fade(@color-grey-arrow, 20%);\\n    }\\n\\n    &:after {\\n      bottom: auto;\\n      top: -3px;\\n      border-top: 6px solid white;\\n      border-bottom: 0;\\n    }\\n  }\\n\\n  &.pull-right .dropdown-toggle {\\n    &:before {\\n      right: 12px;\\n      left: auto;\\n    }\\n\\n    &:after {\\n      right: 13px;\\n      left: auto;\\n    }\\n  }\\n\\n  &.open > .dropdown-toggle {\\n    &:before,\\n    &:after {\\n      display: block;\\n    }\\n  }\\n}\\n\\n.bs-searchbox,\\n.bs-actionsbox {\\n  padding: 4px 8px;\\n}\\n\\n.bs-actionsbox {\\n  float: left;\\n  width: 100%;\\n  box-sizing: border-box;\\n\\n  & .btn-group button {\\n    width: 50%;\\n  }\\n}\\n\\n.bs-searchbox {\\n  & + .bs-actionsbox {\\n    padding: 0 8px 4px;\\n  }\\n\\n  & input.form-control {\\n    margin-bottom: 0;\\n    width: 100%;\\n  }\\n}\\n\\n.mobile-device {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  display: block !important;\\n  width: 100%;\\n  height: 100% !important;\\n  opacity: 0;\\n}\\n\",\".bootstrap-select {\\n  /*width: 220px\\\\9; IE8 and below*/\\n  width: 220px \\\\0;\\n  /*IE9 and below*/\\n}\\n.bootstrap-select > .btn {\\n  width: 100%;\\n  padding-right: 25px;\\n}\\n.error .bootstrap-select .btn {\\n  border: 1px solid #b94a48;\\n}\\n.control-group.error .bootstrap-select .dropdown-toggle {\\n  border-color: #b94a48;\\n}\\n.bootstrap-select.fit-width {\\n  width: auto !important;\\n}\\n.bootstrap-select:not([class*=\\\"col-\\\"]):not([class*=\\\"form-control\\\"]):not(.input-group-btn) {\\n  width: 220px;\\n}\\n.bootstrap-select .btn:focus {\\n  outline: thin dotted #333333 !important;\\n  outline: 5px auto -webkit-focus-ring-color !important;\\n  outline-offset: -2px;\\n}\\n.bootstrap-select.form-control {\\n  margin-bottom: 0;\\n  padding: 0;\\n  border: none;\\n}\\n.bootstrap-select.form-control:not([class*=\\\"col-\\\"]) {\\n  width: 100%;\\n}\\n.bootstrap-select.btn-group:not(.input-group-btn),\\n.bootstrap-select.btn-group[class*=\\\"col-\\\"] {\\n  float: none;\\n  display: inline-block;\\n  margin-left: 0;\\n}\\n.bootstrap-select.btn-group.dropdown-menu-right,\\n.bootstrap-select.btn-group[class*=\\\"col-\\\"].dropdown-menu-right,\\n.row-fluid .bootstrap-select.btn-group[class*=\\\"col-\\\"].dropdown-menu-right {\\n  float: right;\\n}\\n.form-search .bootstrap-select.btn-group,\\n.form-inline .bootstrap-select.btn-group,\\n.form-horizontal .bootstrap-select.btn-group,\\n.form-group .bootstrap-select.btn-group {\\n  margin-bottom: 0;\\n}\\n.form-group-lg .bootstrap-select.btn-group.form-control,\\n.form-group-sm .bootstrap-select.btn-group.form-control {\\n  padding: 0;\\n}\\n.form-inline .bootstrap-select.btn-group .form-control {\\n  width: 100%;\\n}\\n.input-append .bootstrap-select.btn-group {\\n  margin-left: -1px;\\n}\\n.input-prepend .bootstrap-select.btn-group {\\n  margin-right: -1px;\\n}\\n.bootstrap-select.btn-group > .disabled {\\n  cursor: not-allowed;\\n}\\n.bootstrap-select.btn-group > .disabled:focus {\\n  outline: none !important;\\n}\\n.bootstrap-select.btn-group .btn .filter-option {\\n  display: inline-block;\\n  overflow: hidden;\\n  width: 100%;\\n  text-align: left;\\n}\\n.bootstrap-select.btn-group .btn .caret {\\n  position: absolute;\\n  top: 50%;\\n  right: 12px;\\n  margin-top: -2px;\\n  vertical-align: middle;\\n}\\n.bootstrap-select.btn-group[class*=\\\"col-\\\"] .btn {\\n  width: 100%;\\n}\\n.bootstrap-select.btn-group .dropdown-menu {\\n  min-width: 100%;\\n  z-index: 1035;\\n  box-sizing: border-box;\\n}\\n.bootstrap-select.btn-group .dropdown-menu.inner {\\n  position: static;\\n  border: 0;\\n  padding: 0;\\n  margin: 0;\\n  border-radius: 0;\\n  box-shadow: none;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li {\\n  position: relative;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) a:hover small,\\n.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) a:focus small,\\n.bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) a small {\\n  color: #64b1d8;\\n  color: rgba(100, 177, 216, 0.4);\\n}\\n.bootstrap-select.btn-group .dropdown-menu li.disabled a {\\n  cursor: not-allowed;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li a {\\n  cursor: pointer;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li a.opt {\\n  position: relative;\\n  padding-left: 2.25em;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li a span.check-mark {\\n  display: none;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li a span.text {\\n  display: inline-block;\\n}\\n.bootstrap-select.btn-group .dropdown-menu li small {\\n  padding-left: 0.5em;\\n}\\n.bootstrap-select.btn-group .dropdown-menu .notify {\\n  position: absolute;\\n  bottom: 5px;\\n  width: 96%;\\n  margin: 0 2%;\\n  min-height: 26px;\\n  padding: 3px 5px;\\n  background: #f5f5f5;\\n  border: 1px solid #e3e3e3;\\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);\\n  pointer-events: none;\\n  opacity: 0.9;\\n  box-sizing: border-box;\\n}\\n.bootstrap-select.btn-group .no-results {\\n  padding: 3px;\\n  background: #f5f5f5;\\n  margin: 0 5px;\\n}\\n.bootstrap-select.btn-group.fit-width .btn .filter-option {\\n  position: static;\\n}\\n.bootstrap-select.btn-group.fit-width .btn .caret {\\n  position: static;\\n  top: auto;\\n  margin-top: -1px;\\n}\\n.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {\\n  position: absolute;\\n  display: inline-block;\\n  right: 15px;\\n  margin-top: 5px;\\n}\\n.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {\\n  margin-right: 34px;\\n}\\n.bootstrap-select.show-menu-arrow.open > .btn {\\n  z-index: 1035 + 1;\\n}\\n.bootstrap-select.show-menu-arrow .dropdown-toggle:before {\\n  content: '';\\n  border-left: 7px solid transparent;\\n  border-right: 7px solid transparent;\\n  border-bottom-width: 7px;\\n  border-bottom-style: solid;\\n  border-bottom-color: #cccccc;\\n  border-bottom-color: rgba(204, 204, 204, 0.2);\\n  position: absolute;\\n  bottom: -4px;\\n  left: 9px;\\n  display: none;\\n}\\n.bootstrap-select.show-menu-arrow .dropdown-toggle:after {\\n  content: '';\\n  border-left: 6px solid transparent;\\n  border-right: 6px solid transparent;\\n  border-bottom: 6px solid white;\\n  position: absolute;\\n  bottom: -4px;\\n  left: 10px;\\n  display: none;\\n}\\n.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:before {\\n  bottom: auto;\\n  top: -3px;\\n  border-bottom: 0;\\n  border-top-width: 7px;\\n  border-top-style: solid;\\n  border-top-color: #cccccc;\\n  border-top-color: rgba(204, 204, 204, 0.2);\\n}\\n.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:after {\\n  bottom: auto;\\n  top: -3px;\\n  border-top: 6px solid white;\\n  border-bottom: 0;\\n}\\n.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:before {\\n  right: 12px;\\n  left: auto;\\n}\\n.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:after {\\n  right: 13px;\\n  left: auto;\\n}\\n.bootstrap-select.show-menu-arrow.open > .dropdown-toggle:before,\\n.bootstrap-select.show-menu-arrow.open > .dropdown-toggle:after {\\n  display: block;\\n}\\n.bs-searchbox,\\n.bs-actionsbox {\\n  padding: 4px 8px;\\n}\\n.bs-actionsbox {\\n  float: left;\\n  width: 100%;\\n  box-sizing: border-box;\\n}\\n.bs-actionsbox .btn-group button {\\n  width: 50%;\\n}\\n.bs-searchbox + .bs-actionsbox {\\n  padding: 0 8px 4px;\\n}\\n.bs-searchbox input.form-control {\\n  margin-bottom: 0;\\n  width: 100%;\\n}\\n.mobile-device {\\n  position: absolute;\\n  top: 0;\\n  left: 0;\\n  display: block !important;\\n  width: 100%;\\n  height: 100% !important;\\n  opacity: 0;\\n}\\n/*# sourceMappingURL=bootstrap-select.css.map */\"]}\n\nC:\\Winginx\\home\\todo\\public_html\\bootstrap-select\\less\\bootstrap-select.less:\n  302  \n  303  .bs-actionsbox {\n  304:   float: left;\n  305    width: 100%;\n  306    box-sizing: border-box;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\demo.html:\n   85  }\n   86  [class*=\"span\"] {\n   87:   float: left;\n   88    min-height: 1px;\n   89    margin-left: 20px;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\button-groups.less:\n   11    > .btn {\n   12      position: relative;\n   13:     float: left;\n   14      // Bring the \"active\" button to the front\n   15      &:hover,\n   ..\n   39    .btn-group,\n   40    .input-group {\n   41:     float: left;\n   42    }\n   43    > .btn,\n   ..\n   67  // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)\n   68  .btn-group > .btn-group {\n   69:   float: left;\n   70  }\n   71  .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\dropdowns.less:\n   34    z-index: @zindex-dropdown;\n   35    display: none; // none by default, but block on \"open\" of the menu\n   36:   float: left;\n   37    min-width: 160px;\n   38    padding: 5px 0;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\input-groups.less:\n   26      // select elements in input groups. To fix it, we float the input. Details:\n   27      // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855\n   28:     float: left;\n   29  \n   30      width: 100%;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\grid-framework.less:\n   38    .col(@index, @list) when (@index > @grid-columns) { // terminal\n   39      @{list} {\n   40:       float: left;\n   41      }\n   42    }\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\mixins\\grid.less:\n   22  .make-xs-column(@columns; @gutter: @grid-gutter-width) {\n   23    position: relative;\n   24:   float: left;\n   25    width: percentage((@columns / @grid-columns));\n   26    min-height: 1px;\n   ..\n   46  \n   47    @media (min-width: @screen-sm-min) {\n   48:     float: left;\n   49      width: percentage((@columns / @grid-columns));\n   50    }\n   ..\n   74  \n   75    @media (min-width: @screen-md-min) {\n   76:     float: left;\n   77      width: percentage((@columns / @grid-columns));\n   78    }\n   ..\n  102  \n  103    @media (min-width: @screen-lg-min) {\n  104:     float: left;\n  105      width: percentage((@columns / @grid-columns));\n  106    }\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navbar.less:\n   33  \n   34    @media (min-width: @grid-float-breakpoint) {\n   35:     float: left;\n   36    }\n   37  }\n   ..\n  162  \n  163  .navbar-brand {\n  164:   float: left;\n  165    padding: @navbar-padding-vertical @navbar-padding-horizontal;\n  166    font-size: @font-size-large;\n  ...\n  265    // Uncollapse the nav\n  266    @media (min-width: @grid-float-breakpoint) {\n  267:     float: left;\n  268      margin: 0;\n  269  \n  270      > li {\n  271:       float: left;\n  272        > a {\n  273          padding-top:    @navbar-padding-vertical;\n  ...\n  361  \n  362    @media (min-width: @grid-float-breakpoint) {\n  363:     float: left;\n  364      margin-left: @navbar-padding-horizontal;\n  365      margin-right: @navbar-padding-horizontal;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\navs.less:\n   77    border-bottom: 1px solid @nav-tabs-border-color;\n   78    > li {\n   79:     float: left;\n   80      // Make the list-items overlay the bottom border\n   81      margin-bottom: -1px;\n   ..\n  117  .nav-pills {\n  118    > li {\n  119:     float: left;\n  120  \n  121      // Links rendered as pills\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\pager.less:\n   38      > a,\n   39      > span {\n   40:       float: left;\n   41      }\n   42    }\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\pagination.less:\n   13      > span {\n   14        position: relative;\n   15:       float: left; // Collapse white-space\n   16        padding: @padding-base-vertical @padding-base-horizontal;\n   17        line-height: @line-height-base;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\progress-bars.less:\n   35  // Bar of progress\n   36  .progress-bar {\n   37:   float: left;\n   38    width: 0%;\n   39    height: 100%;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\select.less:\n  302  \n  303  .bs-actionsbox {\n  304:   float: left;\n  305    width: 100%;\n  306    box-sizing: border-box;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\type.less:\n  214    @media (min-width: @grid-float-breakpoint) {\n  215      dt {\n  216:       float: left;\n  217        width: (@dl-horizontal-offset - 20);\n  218        clear: left;\n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\less\\utilities.less:\n   17  }\n   18  .pull-left {\n   19:   float: left !important;\n   20  }\n   21  \n\nC:\\Winginx\\home\\todo\\public_html\\themes\\ls\\style.less:\n  110      z-index: 300;\n  111      .header-left {\n  112:         float: left;\n  113      }\n  114      .header-right {\n  ...\n  173          padding: 0px;\n  174          color: rgba(255, 255, 255, 0.5);\n  175:         float: left;\n  176          font-size: 26px;\n  177          height: 62px;\n  ...\n  238  }\n  239  #msg {\n  240:     float: left;\n  241      .msg-text {\n  242          padding: 1px 4px;\n  ...\n  683      	}\n  684      	.task-left {\n  685:             float: left;\n  686              width: 20px;\n  687              margin-right: 10px;\n  ...\n  750      width: 15px;\n  751      height: 15px;\n  752:     float: left;\n  753      background: url(images/icons.gif) -64px -16px no-repeat;\n  754  }\n  ...\n 1197          cursor: pointer;\n 1198          font-size: 12px;\n 1199:         float: left;\n 1200      }\n 1201  }\n\n34 matches across 18 files\n\n\nSearching 270 files for \"prepareTagsStr\"\n\nC:\\Winginx\\home\\todo\\public_html\\mytinytodo.js:\n  924  				'<span class=\"task-title\">' + prepareHtml(item.title) + '</span> ' +\n  925  				// Теги\n  926: 				'<span class=\"label label-info\">' + prepareTagsStr(item)  +'</span>' +\n  927  			\n  928  			// При отображении всех задач - \"название раздела\"\n  ...\n 1012  	};\n 1013  \n 1014: 	function prepareTagsStr(item) {\n 1015  		if (!item.tags || item.tags == '') return '';\n 1016  		var a = item.tags.split(',');\n\n2 matches in 1 file\n\n\nSearching 270 files for \"prepareTagsStr\"\n\nC:\\Winginx\\home\\todo\\public_html\\mytinytodo.js:\n  924  				'<span class=\"task-title\">' + prepareHtml(item.title) + '</span> ' +\n  925  				// Теги\n  926: 				'<span class=\"label label-info\">' + prepareTagsStr(item)  +'</span>' +\n  927  			\n  928  			// При отображении всех задач - \"название раздела\"\n  ...\n 1012  	};\n 1013  \n 1014: 	function prepareTagsStr(item) {\n 1015  		if (!item.tags || item.tags == '') return '';\n 1016  		var a = item.tags.split(',');\n\n2 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 65778,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "themes/ls/less/mixins/center-block.less",
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/ls/less/utilities.less",
+			"settings":
+			{
+				"buffer_size": 747,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.php",
+			"settings":
+			{
+				"buffer_size": 10149,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mytinytodo.js",
+			"settings":
+			{
+				"buffer_size": 66001,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/ls/main.php",
+			"settings":
+			{
+				"buffer_size": 13956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/ls/demo.html",
+			"settings":
+			{
+				"buffer_size": 19853,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveStyle: Install WebKit extension",
+				"LiveStyle: Install WebKit extension"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Winginx/home/todo/public_html/themes",
+		"/C/Winginx/home/todo/public_html/themes/ls"
+	],
+	"file_history":
+	[
+		"/C/Winginx/home/todo/public_html/js/jquery.mCustomScrollbar.concat.min.js",
+		"/C/Winginx/home/todo/public_html/jquery/jquery-ui-1.8.7.custom.min.js",
+		"/C/Winginx/home/todo/public_html/js/jquery-ui-1.8.7.custom.min.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/index.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/header.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/main.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/sidebar.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/reset.css",
+		"/C/Winginx/home/todo/public_html/mytinytodo.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/style.css",
+		"/C/Winginx/home/todo/public_html/themes/ls/footer.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/less/.csscomb.json",
+		"/C/Winginx/home/todo/public_html/settings.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/demo.html",
+		"/C/Winginx/home/tdo/public_html/mytinytodo.js",
+		"/D/todo/mytinytodo.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/font.css",
+		"/C/Winginx/home/todo/public_html/themes/ls/config.json",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/LiveStyle.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/LiveStyle/LiveStyle.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"C:\\Winginx\\home\\todo\\public_html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"toggle",
+			"prepareTagsStr",
+			"due",
+			"task-through",
+			"through",
+			"task-through",
+			"float: left",
+			"task-through",
+			"task-title",
+			"center-block",
+			"clearfix",
+			"clearfix all",
+			"extend",
+			"ui-widget-header",
+			"{\n",
+			"displa",
+			"mCSB_scrollTools",
+			"lists",
+			"();\n",
+			"main",
+			"sidebar-inner",
+			"lists",
+			"page_tasks",
+			"taskview",
+			"_alltasks",
+			"alltasks",
+			"sortable",
+			"placeholder",
+			"ui-sortable",
+			"placeholder",
+			"#lists",
+			"sortable",
+			"z-index",
+			"left",
+			"mtt-menu-button-active",
+			"menu",
+			"listMenu",
+			"list-action",
+			"mttMenu",
+			"listMenu",
+			"mttMenu",
+			"listmenucontainer",
+			"container",
+			"mtt-",
+			"mtt-menu-container",
+			"pad",
+			"Autotagging",
+			"mtt-page-settings",
+			"page_ajax",
+			"position",
+			"block",
+			"display",
+			"listmenucontainer",
+			"titleOpt",
+			"mtt-menu-container",
+			"listmenucontainer",
+			"tagcloudbtn",
+			"icon-tag",
+			".pad {\n    padding: 8px 20px;\n}",
+			"taskcontainer",
+			"form-row",
+			".h",
+			"Теги",
+			"task",
+			"taskedit_form",
+			"mtt-inadd",
+			"taskedit_form",
+			"page_taskedit",
+			"loading",
+			"newtask_adv",
+			"mtt-img-button",
+			"#task_placeholder span {\n    color: #cccccc;\n    display: none;\n    left: 25px;\n    line-height: 40px;\n    padding: 0;\n    top: 5px;\n	font-family: Helvetica;\n	font-size: 14px;\n	position: absolute;\n}",
+			"newtask_form",
+			"htab_newtask",
+			"mtt-tb-c",
+			"task_placeholder",
+			"mtt-taskbox",
+			"mtt-htabs",
+			"import",
+			"bLightBlue"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "themes/ls/style.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17840,
+								17840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15331.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "themes/ls/sidebar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								574,
+								574
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65778,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										325,
+										341
+									],
+									[
+										751,
+										767
+									],
+									[
+										1110,
+										1126
+									],
+									[
+										1547,
+										1563
+									],
+									[
+										1735,
+										1751
+									],
+									[
+										2283,
+										2299
+									],
+									[
+										3951,
+										3967
+									],
+									[
+										6142,
+										6158
+									],
+									[
+										8565,
+										8581
+									],
+									[
+										11619,
+										11635
+									],
+									[
+										13981,
+										13997
+									],
+									[
+										15749,
+										15765
+									],
+									[
+										17082,
+										17098
+									],
+									[
+										17360,
+										17376
+									],
+									[
+										17705,
+										17717
+									],
+									[
+										17866,
+										17878
+									],
+									[
+										18091,
+										18103
+									],
+									[
+										18226,
+										18238
+									],
+									[
+										18449,
+										18461
+									],
+									[
+										18709,
+										18721
+									],
+									[
+										18843,
+										18855
+									],
+									[
+										19046,
+										19058
+									],
+									[
+										19271,
+										19283
+									],
+									[
+										19446,
+										19458
+									],
+									[
+										19644,
+										19656
+									],
+									[
+										19795,
+										19807
+									],
+									[
+										20270,
+										20278
+									],
+									[
+										20580,
+										20588
+									],
+									[
+										20911,
+										20919
+									],
+									[
+										21348,
+										21356
+									],
+									[
+										21641,
+										21649
+									],
+									[
+										21873,
+										21881
+									],
+									[
+										22051,
+										22059
+									],
+									[
+										24019,
+										24027
+									],
+									[
+										26536,
+										26544
+									],
+									[
+										28941,
+										28949
+									],
+									[
+										31995,
+										32003
+									],
+									[
+										34634,
+										34642
+									],
+									[
+										35728,
+										35736
+									],
+									[
+										38063,
+										38071
+									],
+									[
+										39569,
+										39577
+									],
+									[
+										39616,
+										39624
+									],
+									[
+										39641,
+										39649
+									],
+									[
+										39747,
+										39755
+									],
+									[
+										39968,
+										39976
+									],
+									[
+										40129,
+										40137
+									],
+									[
+										40300,
+										40308
+									],
+									[
+										40489,
+										40497
+									],
+									[
+										40731,
+										40739
+									],
+									[
+										40953,
+										40961
+									],
+									[
+										40984,
+										40992
+									],
+									[
+										41199,
+										41207
+									],
+									[
+										41334,
+										41342
+									],
+									[
+										41557,
+										41565
+									],
+									[
+										41817,
+										41825
+									],
+									[
+										41951,
+										41959
+									],
+									[
+										42154,
+										42162
+									],
+									[
+										42379,
+										42387
+									],
+									[
+										42554,
+										42562
+									],
+									[
+										42752,
+										42760
+									],
+									[
+										42903,
+										42911
+									],
+									[
+										43108,
+										43116
+									],
+									[
+										43129,
+										43137
+									],
+									[
+										43383,
+										43395
+									],
+									[
+										43633,
+										43645
+									],
+									[
+										43807,
+										43819
+									],
+									[
+										43832,
+										43844
+									],
+									[
+										44068,
+										44079
+									],
+									[
+										52261,
+										52272
+									],
+									[
+										58610,
+										58621
+									],
+									[
+										59188,
+										59199
+									],
+									[
+										59354,
+										59365
+									],
+									[
+										59550,
+										59561
+									],
+									[
+										59698,
+										59709
+									],
+									[
+										59912,
+										59923
+									],
+									[
+										60195,
+										60206
+									],
+									[
+										60509,
+										60520
+									],
+									[
+										60738,
+										60749
+									],
+									[
+										60944,
+										60955
+									],
+									[
+										61110,
+										61121
+									],
+									[
+										61263,
+										61274
+									],
+									[
+										61416,
+										61427
+									],
+									[
+										61633,
+										61644
+									],
+									[
+										61712,
+										61723
+									],
+									[
+										61936,
+										61947
+									],
+									[
+										62010,
+										62021
+									],
+									[
+										62178,
+										62189
+									],
+									[
+										62441,
+										62452
+									],
+									[
+										62599,
+										62610
+									],
+									[
+										62768,
+										62779
+									],
+									[
+										62937,
+										62948
+									],
+									[
+										63217,
+										63228
+									],
+									[
+										63376,
+										63387
+									],
+									[
+										63587,
+										63598
+									],
+									[
+										63779,
+										63790
+									],
+									[
+										63942,
+										63953
+									],
+									[
+										64093,
+										64104
+									],
+									[
+										64207,
+										64218
+									],
+									[
+										64340,
+										64351
+									],
+									[
+										64490,
+										64501
+									],
+									[
+										64665,
+										64676
+									],
+									[
+										64966,
+										64980
+									],
+									[
+										65115,
+										65129
+									],
+									[
+										65491,
+										65505
+									],
+									[
+										65640,
+										65654
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								65645,
+								65645
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 7,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 23617.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "themes/ls/less/mixins/center-block.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "themes/ls/less/utilities.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "settings.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3504,
+								3504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1918.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "mytinytodo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11227,
+								11227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8282.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "themes/ls/main.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								942,
+								942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "themes/ls/demo.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 19853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.0693568726356,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 140.0
+	},
+	"pinned_build_system": "",
+	"project": "todo_proj.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
