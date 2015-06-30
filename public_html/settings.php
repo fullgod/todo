@@ -125,7 +125,7 @@ function timezoneIdentifiers()
 header('Content-type:text/html; charset=utf-8');
 ?>
 <div class="ui-widget-header ui-datepicker-header">
-	<a href="#" class="mtt-back-button ui-datepicker-prev" title="<?php _e('go_back');?>">	
+	<a href="#" class="mtt-back-button ui-datepicker-prev" title="<?php _e('go_back');?>">
 		<i class="icon icon-left-circled">&#xe828;</i>
 	</a>
 	<div class="ui-datepicker-title">
@@ -143,7 +143,7 @@ header('Content-type:text/html; charset=utf-8');
 		<?php _e('set_title');?>:
 	</div>
 	<div class="col-sm-8">
-		<input name="title" value="<?php echo htmlspecialchars(_c('title'));?>" class="form-control form-white" /> 
+		<input name="title" value="<?php echo htmlspecialchars(_c('title'));?>" class="form-control form-white" />
 	</div>
 </div>
 
@@ -167,16 +167,16 @@ header('Content-type:text/html; charset=utf-8');
 		<label><input type="radio" name="allowpassword" value="0" <?php if(_c('password')=='') echo 'checked="checked"'; ?> onclick='$(this.form).find("input[name=password]").attr("disabled","disabled")' /><?php _e('set_disabled');?></label>
 	</div>
 </div>
- 
+
 <div class="row page-settings">
 	<div class="col-sm-4">
 		<?php _e('set_newpass');?>:<span class="descr"><?php _e('set_newpass_descr');?></span>
  	</div>
 	<div class="col-sm-8">
- <input type="password" name="password" <?php if(_c('password')=='') echo "disabled"; ?> /> 
+ <input type="password" name="password" <?php if(_c('password')=='') echo "disabled"; ?> />
  </div>
  </div>
- 
+
 <div class="row page-settings">
 	<div class="col-sm-4">
  <?php _e('set_smartsyntax');?>: <span class="descr"><?php _e('set_smartsyntax_descr');?></span>
@@ -186,16 +186,16 @@ header('Content-type:text/html; charset=utf-8');
  <label><input type="radio" name="smartsyntax" value="0" <?php if(!_c('smartsyntax')) echo 'checked="checked"'; ?> /><?php _e('set_disabled');?></label>
 </div>
 </div>
- 
+
 <div class="row page-settings">
 	<div class="col-sm-4">
- <?php _e('set_autotag');?>: <span class="descr"><?php _e('set_autotag_descr');?></span> 
+ <?php _e('set_autotag');?>: <span class="descr"><?php _e('set_autotag_descr');?></span>
  </div>
 	<div class="col-sm-8">
 		<label>
 			<input type="radio" name="autotag" value="1" <?php if(_c('autotag')) echo 'checked="checked"'; ?>/>
 			<?php _e('set_enabled');?>
-		</label> 
+		</label>
 		<label>
 			<input type="radio" name="autotag" value="0" <?php if(!_c('autotag')) echo 'checked="checked"'; ?>/><?php _e('set_disabled');?>
 		</label>
@@ -264,7 +264,7 @@ header('Content-type:text/html; charset=utf-8');
 
 <div class="row page-settings">
 	<div class="col-sm-4">
-	<?php _e('set_shortdate');?>	
+	<?php _e('set_shortdate');?>
 	</div>
 	<div class="col-sm-8">
  <input name="dateformatshort" value="<?php echo htmlspecialchars(_c('dateformatshort'));?>" />
@@ -276,7 +276,7 @@ header('Content-type:text/html; charset=utf-8');
 
 <div class="row page-settings">
 <div class="col-sm-4">
-	<?php _e('set_clock');?>	
+	<?php _e('set_clock');?>
 </div>
 <div class="col-sm-8">
  <select class="selectpicker" name="clock"><?php echo selectOptions(array(12=>__('set_12hour').' ('.date('g:i A').')', 24=>__('set_24hour').' ('.date('H:i').')'), _c('clock')); ?></select>
@@ -285,7 +285,7 @@ header('Content-type:text/html; charset=utf-8');
 
 <div class="row page-settings">
 	<div class="col-sm-4">
-		<?php _e('set_showdate');?>	
+		<?php _e('set_showdate');?>
 	</div>
 	<div class="col-sm-8">
  <label><input type="radio" name="showdate" value="1" <?php if(_c('showdate')) echo 'checked="checked"'; ?> /><?php _e('set_enabled');?></label>

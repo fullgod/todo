@@ -847,7 +847,6 @@
 		});
 	};
 
-
 	function loadTasks(opts) {
 		if (!curList) return false;
 		setSort(curList.sort, 1);
@@ -889,12 +888,6 @@
 // http://seantheme.com/color-admin-v1.7/admin/html/email_inbox_v2.html
 // http://seantheme.com/color-admin-v1.7/admin/html/email_inbox.html
 // http://wrapbootstrap.com/preview/WB0N89JMK
-
-
-
-
-
-
 
 
 
@@ -2376,7 +2369,6 @@
 			theme:"minimal-dark",
 			advanced: {
 				updateOnContentResize: true
-
 			}
 		});		
 	});
