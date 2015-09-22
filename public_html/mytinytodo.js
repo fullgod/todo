@@ -897,38 +897,34 @@
 		// &mdash; = &#8212; = —
 		var id = item.id;
 		var prio = item.prio;
-		return '<li id="taskrow_' + id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
+		return '<li id="taskrow_' 
+		+ id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
 
-			'<div class="info">' +
-			'<div class="col-md-1 info">' +
+	'<div class="info">' +
+		'<div class="col-md-1">' +
 				// Срок окончания задачи
-				'<span class="label label-info">'+ prepareDuedate(item) +'</span>' +
-			'</div>'+
-			'<div class="col-md-9">' +
+			'<small>' + prepareDuedate(item) + '</small>' +
+		'</div>'+
+		
+		'<div class="col-md-9">' +
 			'<span class="name">' +
 			'<div class="task-toggle"></div>' +
 			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/>' + "\n" +
  			// Приоритет
  			preparePrio(prio, id) +
- 			'</span>' +
-			'<strong>' +
 				//Название:
 				'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
-				// Теги
-				'<div class="task-tags pull-right">' + prepareTagsStr(item)  + '</div>' +
 			
 			// При отображении всех задач - "название раздела"
 			//(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
-			
-			'</strong>' +
 			'</span>' +
 			'</div>'+
 			'<div class="col-md-1">' +
-			'<span class="time pull-right">' +
-					// Дата добавления задачи
-					'<span class="task-date label label-default pull-right">' + item.dateInlineTitle + '</span>' +
-					// Дата выполненных задач
+			'<span class="pull-right">' +
+				// Дата добавления задачи
+				'<small>' + item.dateInline + '</small>' + 
+				// Дата выполненных задач
 					'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
 					'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span>' + "\n" +
 			'</span>' +
@@ -945,13 +941,18 @@
 
 
 			// Заметка к задаче
-			//'<div class="task-note-block">' +
-			//'<div id="tasknote' + id + '" class="task-note"><span>' + prepareHtml(item.note) + '</span></div>' +
-			//'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
-			//'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
-			//'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
-			//'</div>' +
-			//'</div>' +
+			'<div class="task-note-block">' +
+				// Теги
+				'<div class="task-tags pull-right">' + prepareTagsStr(item)  + 
+				'</div>' +
+				'<div id="tasknote' + id + '" class="task-note"><span>' + 
+				prepareHtml(item.note) + 
+			'</span></div>' +
+			'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
+			'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
+			'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
+			'</div>' +
+			'</div>' +
 
 
 			"</li>\n";
@@ -1027,7 +1028,7 @@
 
 	function prepareDuedate(item) {
 		if (!item.duedate) return '';
-		return '<span class="duedate" title="' + item.dueTitle + '"><span class="duedate-arrow">→</span> ' + item.dueStr + '</span>';
+		return '<span class="duedate" title="' + item.dueTitle + '">' + item.dueStr + '</span>';
 	};
 
 
