@@ -1,0 +1,348 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"text-",
+				"text-decoration"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"LiveStyle: Install WebKit extension",
+				"LiveStyle: Install WebKit extension"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city_github/index.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/css/css.css",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/includes/bottom.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/scripts/js_scripts.js",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/1/city/scripts/js_scripts.js",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/bottom.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/index.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/header.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/1/city/scripts/core_ajaxconst.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/js_scripts.js",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/style.css",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/city/single.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/footer.php",
+		"/C/Winginx/home/wp/public_html/wp-content/themes/js_jquery.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/main.php",
+		"/C/Winginx/home/todo/public_html/mytinytodo.js",
+		"/C/Winginx/home/todo/public_html/settings.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/less/utilities.less",
+		"/C/Winginx/home/todo/public_html/themes/ls/less/mixins/center-block.less",
+		"/C/Winginx/home/todo/public_html/themes/ls/sidebar.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/style.less",
+		"/C/Winginx/home/todo/public_html/js/jquery.mCustomScrollbar.concat.min.js",
+		"/C/Winginx/home/todo/public_html/jquery/jquery-ui-1.8.7.custom.min.js",
+		"/C/Winginx/home/todo/public_html/js/jquery-ui-1.8.7.custom.min.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/index.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/header.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/reset.css",
+		"/C/Winginx/home/todo/public_html/themes/ls/style.css",
+		"/C/Winginx/home/todo/public_html/themes/ls/footer.php",
+		"/C/Winginx/home/todo/public_html/themes/ls/less/.csscomb.json",
+		"/C/Winginx/home/todo/public_html/themes/ls/demo.html",
+		"/C/Winginx/home/tdo/public_html/mytinytodo.js",
+		"/D/todo/mytinytodo.js",
+		"/C/Winginx/home/todo/public_html/themes/ls/font.css",
+		"/C/Winginx/home/todo/public_html/themes/ls/config.json",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/User/LiveStyle.sublime-settings",
+		"/C/Users/bege/AppData/Roaming/Sublime Text 3/Packages/LiveStyle/LiveStyle.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"C:\\Winginx\\home\\wp\\public_html\\wp-content\\themes\\city",
+			"C:\\Winginx\\home\\wp\\public_html\\wp-content\\themes\\1",
+			"C:\\Winginx\\home\\wp\\public_html\\wp-content\\themes\\city",
+			"C:\\Winginx\\home\\todo\\public_html"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"category_sel",
+			"newselect",
+			"fancybox",
+			"JSonData",
+			"footer_text",
+			"JSonData",
+			"constants",
+			"ConstJS",
+			"core_ajaxconst.php",
+			"ConstJS",
+			"core_ajaxconst.php",
+			"ConstJS",
+			";\n",
+			"nav",
+			"horizontal-nav",
+			"#nav",
+			"toggle",
+			"prepareTagsStr",
+			"due",
+			"task-through",
+			"through",
+			"task-through",
+			"float: left",
+			"task-through",
+			"task-title",
+			"center-block",
+			"clearfix",
+			"clearfix all",
+			"extend",
+			"ui-widget-header",
+			"{\n",
+			"displa",
+			"mCSB_scrollTools",
+			"lists",
+			"();\n",
+			"main",
+			"sidebar-inner",
+			"lists",
+			"page_tasks",
+			"taskview",
+			"_alltasks",
+			"alltasks",
+			"sortable",
+			"placeholder",
+			"ui-sortable",
+			"placeholder",
+			"#lists",
+			"sortable",
+			"z-index",
+			"left",
+			"mtt-menu-button-active",
+			"menu",
+			"listMenu",
+			"list-action",
+			"mttMenu",
+			"listMenu",
+			"mttMenu",
+			"listmenucontainer",
+			"container",
+			"mtt-",
+			"mtt-menu-container",
+			"pad",
+			"Autotagging",
+			"mtt-page-settings",
+			"page_ajax",
+			"position",
+			"block",
+			"display",
+			"listmenucontainer",
+			"titleOpt",
+			"mtt-menu-container",
+			"listmenucontainer",
+			"tagcloudbtn",
+			"icon-tag",
+			".pad {\n    padding: 8px 20px;\n}",
+			"taskcontainer",
+			"form-row",
+			".h",
+			"Теги",
+			"task",
+			"taskedit_form",
+			"mtt-inadd",
+			"taskedit_form",
+			"page_taskedit",
+			"loading",
+			"newtask_adv",
+			"mtt-img-button",
+			"#task_placeholder span {\n    color: #cccccc;\n    display: none;\n    left: 25px;\n    line-height: 40px;\n    padding: 0;\n    top: 5px;\n	font-family: Helvetica;\n	font-size: 14px;\n	position: absolute;\n}",
+			"newtask_form",
+			"htab_newtask",
+			"mtt-tb-c",
+			"task_placeholder",
+			"mtt-taskbox",
+			"mtt-htabs",
+			"import",
+			"bLightBlue"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "todo.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 166.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

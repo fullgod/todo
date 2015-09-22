@@ -1,5 +1,5 @@
 <div id="toolbar" class="topbar">
-
+<!-- http://codecanyon.net/item/freelance-manager/full_screen_preview/1225423 -->
             <div class="header-left col-sm-6 col-md-6">
                 <div id="htab_newtask" class="pad"> 
                     <form id="newtask_form" method="post">
@@ -108,7 +108,6 @@ https://dribbble.com/shots/893089-Email-App-Design/attachments/97134
 
 
 <div id="page_tasks" class="col-md-7" style="display:none">
-    <div id="page_tasks" class="col-md-7" style="display:none">
     	<div id="searchbar" style="display:none">
     		<?php _e( 'searching');?> 
     		<span id="searchbarkeyword"></span>
