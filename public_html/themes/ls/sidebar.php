@@ -15,9 +15,6 @@
 </div>
 -->
 
-
-
-	
 <div id="lists">
     <ul class="mtt-tabs"></ul>
 	<!--

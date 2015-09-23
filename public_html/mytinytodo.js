@@ -464,7 +464,7 @@
 				delay: 150,
 				start: sortStart,
 				update: orderChanged,
-				placeholder: 'mtt-task-placeholder'
+				placeholder: 'task-placeholder'
 			});
 
 			$("#lists ul").sortable({
@@ -636,7 +636,6 @@
 				tabSelect(openListId);
 
 				$('#page_tasks').show();
-				$('#page_tasks').addClass('col-sm-5 col-md-5');
 
 			});
 
@@ -848,7 +847,6 @@
 		});
 	};
 
-
 	function loadTasks(opts) {
 		if (!curList) return false;
 		setSort(curList.sort, 1);
@@ -884,30 +882,104 @@
 		});
 	};
 
+// Основной список задач
+// Пример http://themes-lab.com/make/admin/layout2/ui-tree-view.html
+// Цвета http://www.materialui.co/colors
+// http://seantheme.com/color-admin-v1.7/admin/html/email_inbox_v2.html
+// http://seantheme.com/color-admin-v1.7/admin/html/email_inbox.html
+// http://wrapbootstrap.com/preview/WB0N89JMK
+
+
+
+
 
 	function prepareTaskStr(item, noteExp) {
 		// &mdash; = &#8212; = —
 		var id = item.id;
 		var prio = item.prio;
-		return '<li id="taskrow_' + id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
+		return '<li id="taskrow_' 
+		+ id + '" class="' + (item.compl ? 'task-completed ' : '') + item.dueClass + (item.note != '' ? ' task-has-note' : '') +
 			((curList.showNotes && item.note != '') || noteExp ? ' task-expanded' : '') + prepareTagsClass(item.tags_ids) + '">' +
+
+	'<div class="info">' +
+		'<div class="col-md-1">' +
+				// Срок окончания задачи
+			'<small>' + prepareDuedate(item) + '</small>' +
+		'</div>'+
+		
+		'<div class="col-md-9">' +
+			'<span class="name">' +
+			'<div class="task-toggle"></div>' +
+			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/>' + "\n" +
+ 			// Приоритет
+ 			preparePrio(prio, id) +
+				//Название:
+				'<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
+			
+			// При отображении всех задач - "название раздела"
+			//(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
+			'</span>' +
+			'</div>'+
+			'<div class="col-md-1">' +
+			'<span class="pull-right">' +
+				// Дата добавления задачи
+				'<small>' + item.dateInline + '</small>' + 
+				// Дата выполненных задач
+					'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
+					'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span>' + "\n" +
+			'</span>' +
+			'</div>'+
+			'<div class="col-md-1 pull-right">' +
 			'<div class="task-actions"><a href="#" class="taskactionbtn"></a></div>' + "\n" +
-			'<div class="task-left"><div class="task-toggle"></div>' +
-			'<input type="checkbox" ' + (flag.readOnly ? 'disabled="disabled"' : '') + (item.compl ? 'checked="checked"' : '') + '/></div>' + "\n" +
-			'<div class="task-middle"><div class="task-through-right">' + prepareDuedate(item) +
-			'<span class="task-date-completed"><span title="' + item.dateInlineTitle + '">' + item.dateInline + '</span>&#8212;' +
-			'<span title="' + item.dateCompletedInlineTitle + '">' + item.dateCompletedInline + '</span></span></div>' + "\n" +
-			'<div class="task-through">' + preparePrio(prio, id) + '<span class="task-title">' + prepareHtml(item.title) + '</span> ' +
-			(curList.id == -1 ? '<span class="task-listname">' + tabLists.get(item.listId).name + '</span>' : '') + "\n" +
-			prepareTagsStr(item) + '<span class="task-date">' + item.dateInlineTitle + '</span></div>' +
+			'</div>'+
+			'</div>' +
+
+			//'<div class="task-left"><div class="task-toggle"></div>' +
+			//'<div class="task-middle"><div class="task-through-right">'  +
+
+
+
+
+			// Заметка к задаче
 			'<div class="task-note-block">' +
-			'<div id="tasknote' + id + '" class="task-note"><span>' + prepareHtml(item.note) + '</span></div>' +
+				// Теги
+				'<div class="task-tags pull-right">' + prepareTagsStr(item)  + 
+				'</div>' +
+				'<div id="tasknote' + id + '" class="task-note"><span>' + 
+				prepareHtml(item.note) + 
+			'</span></div>' +
 			'<div id="tasknotearea' + id + '" class="task-note-area"><textarea id="notetext' + id + '"></textarea>' +
 			'<span class="task-note-actions"><a href="#" class="mtt-action-note-save">' + _mtt.lang.get('actionNoteSave') +
 			'</a> | <a href="#" class="mtt-action-note-cancel">' + _mtt.lang.get('actionNoteCancel') + '</a></span></div>' +
 			'</div>' +
-			"</div></li>\n";
+			'</div>' +
+
+
+			"</li>\n";
 	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	function prepareHtml(s) {
@@ -941,7 +1013,7 @@
 		for (var i in a) {
 			a[i] = '<a href="#" class="tag" tag="' + a[i] + '" tagid="' + b[i] + '">' + a[i] + '</a>';
 		}
-		return '<span class="task-tags">' + a.join(', ') + '</span>';
+		return  a.join(', ');
 	};
 
 	function prepareTagsClass(ids) {
@@ -956,7 +1028,7 @@
 
 	function prepareDuedate(item) {
 		if (!item.duedate) return '';
-		return '<span class="duedate" title="' + item.dueTitle + '"><span class="duedate-arrow">→</span> ' + item.dueStr + '</span>';
+		return '<span class="duedate" title="' + item.dueTitle + '">' + item.dueStr + '</span>';
 	};
 
 
@@ -1136,8 +1208,8 @@
 		else if (dir < 0) dir = -1;
 		if (dir == 0 && old != null && task.dueClass != old.dueClass) //on saveTask
 		{
-			if (old.dueClass != '') taskCnt[old.dueClass] --;
-			if (task.dueClass != '') taskCnt[task.dueClass] ++;
+			if (old.dueClass != '') taskCnt[old.dueClass]--;
+			if (task.dueClass != '') taskCnt[task.dueClass]++;
 		} else if (dir == 0 && old == null) //on comleteTask
 		{
 			if (!curList.showCompl && task.compl) taskCnt.total--;
@@ -2285,7 +2357,20 @@
 })();
 (function($) {
 	$(window).load(function() {
-		$(".sidebar-inner").mCustomScrollbar();
-		$("#page_tasks").mCustomScrollbar();
+		$(".sidebar-inner").mCustomScrollbar({
+			advanced: {
+				updateOnContentResize: true
+			},
+			scrollButtons: {
+                enable: true
+            },
+            theme: "light-2"
+		});
+		$("#page_tasks").mCustomScrollbar({
+			theme:"minimal-dark",
+			advanced: {
+				updateOnContentResize: true
+			}
+		});		
 	});
 })(jQuery);

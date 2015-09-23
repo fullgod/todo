@@ -6,10 +6,12 @@
 		<div class="container-fluid">
 		  <div class="row">
 			<div class="sidebar">
-				<?php include ($template.'sidebar.php');?>
+				<?php //  include ($template.'sidebar.php');?>
 			</div>
 			<div class="main">
+				<?php // include ($template.'/inc/topbar.php');?>
 				<?php include ($template.'main.php');?>
+				<?php include ($template.'/inc/containers.php');?>
 			</div>
 
 		  </div>
