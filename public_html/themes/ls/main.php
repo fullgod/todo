@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div id="toolbar" class="topbar">
 <!-- http://codecanyon.net/item/freelance-manager/full_screen_preview/1225423 -->
             <div class="header-left col-sm-6 col-md-6">
@@ -70,8 +69,7 @@
             </div>
 </div>
         
-=======
->>>>>>> origin/master
+
 <div class="main-content">
 	
 <!--    Ссылки на демо
@@ -89,21 +87,12 @@
     http://material-ui.com/#/
     https://dribbble.com/shots/893089-Email-App-Design/attachments/97134
 
-    -->
-
-
-<<<<<<< HEAD
-
-http://material-ui.com/#/
-https://dribbble.com/shots/893089-Email-App-Design/attachments/97134
 -->
 
 
-<div id="page_tasks" class="col-md-7" style="display:none">
-=======
+
 <div id="page_tasks" class="col-md-7">
 	<p>Поисковая форма</p>
->>>>>>> origin/master
     	<div id="searchbar" style="display:none">
     		<?php _e( 'searching');?> 
     		<span id="searchbarkeyword"></span>
